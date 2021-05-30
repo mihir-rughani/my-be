@@ -1,0 +1,21 @@
+export declare enum BarsScalarFieldEnum {
+    id = "id",
+    title = "title",
+    description = "description",
+    suburb = "suburb",
+    city = "city",
+    postCode = "postCode",
+    lat = "lat",
+    lon = "lon",
+    breakfast = "breakfast",
+    lunch = "lunch",
+    dinner = "dinner",
+    bachelorParty = "bachelorParty",
+    henParty = "henParty",
+    visible = "visible",
+    published_at = "published_at",
+    created_by = "created_by",
+    updated_by = "updated_by",
+    created_at = "created_at",
+    updated_at = "updated_at"
+}

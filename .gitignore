@@ -1,0 +1,40 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+
+# testing
+coverage
+
+# production
+build
+
+# misc
+.DS_Store
+.env
+.env-SIT
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/src/npm-debug.log
+.vscode
+.idea
+buildServer
+/src/server/.env
+stats.txt
+RP-Admin-Tool.json
+/.env-SIT
+/src/config/Rp-Admin-Tool-PRD.json
+/src/config/Rp-Admin-Tool-SIT.json
+/src/config/Rp-Admin-Tool.json
+/src/config/Rp-Admin-Tool-STG.json
+stdout.log
+backup-restore/config
+package-lock.json
+
+*.log

@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"resolveJsonModule": true,
+		"outDir": "build",
+		"module": "commonjs",
+		"baseUrl": ".",
+		"target": "es2019",
+		"lib": ["esnext"],
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"sourceMap": true,
+		"allowJs": true,
+		"moduleResolution": "node",
+		"rootDir": ".",
+		"forceConsistentCasingInFileNames": true,
+		"suppressImplicitAnyIndexErrors": true,
+		"noUnusedLocals": false,
+      "allowSyntheticDefaultImports": true
+    },
+	"include": ["./index.ts","./src/**/*.ts" ,"./src/config/*.json"],
+	"exclude": ["node_modules", "src/emailTemplates", "**/__mocks__/*", "src/**/*.test.ts"]
+}

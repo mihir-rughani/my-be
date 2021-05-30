@@ -1,0 +1,95 @@
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://mihirrughani:@localhost:5432/MaseSays?schema=public"
+}
+
+model restaurants {
+  id            Int       @id @default(autoincrement())
+  title         String?   @db.VarChar(255)
+  description   String?
+  lat           Float?
+  lon           Float?
+  suburb        String?   @db.VarChar(255)
+  city          String?   @db.VarChar(255)
+  postCode      Int?
+  published_at  DateTime? @db.Timestamptz(6)
+  created_by    Int?
+  updated_by    Int?
+  created_at    DateTime? @default(now()) @db.Timestamptz(6)
+  updated_at    DateTime? @default(now()) @db.Timestamptz(6)
+  breakfast     Boolean?
+  lunch         Boolean?
+  dinner        Boolean?
+  bachelorParty Boolean?
+  henParty      Boolean?
+  image         upload_file_morph?
+}
+
+model bars {
+  id            Int       @id @default(autoincrement())
+  title         String?   @db.VarChar(255)
+  description   String?
+  suburb        String?   @db.VarChar(255)
+  city          String?   @db.VarChar(255)
+  postCode      String?   @db.VarChar(255)
+  lat           Float?
+  lon           Float?
+  breakfast     Boolean?
+  lunch         Boolean?
+  dinner        Boolean?
+  bachelorParty Boolean?
+  henParty      Boolean?
+  visible       Boolean?
+  published_at  DateTime? @db.Timestamptz(6)
+  created_by    Int?
+  updated_by    Int?
+  created_at    DateTime? @default(now()) @db.Timestamptz(6)
+  updated_at    DateTime? @default(now()) @db.Timestamptz(6)
+  image         upload_file_morph?
+}
+
+model upload_file {
+  id                Int       @id @default(autoincrement())
+  name              String    @db.VarChar(255)
+  alternativeText   String?   @db.VarChar(255)
+  caption           String?   @db.VarChar(255)
+  width             Int?
+  height            Int?
+  formats           Json?
+  hash              String    @db.VarChar(255)
+  ext               String?   @db.VarChar(255)
+  mime              String    @db.VarChar(255)
+  size              Decimal   @db.Decimal(10, 2)
+  url               String    @db.VarChar(255)
+  previewUrl        String?   @db.VarChar(255)
+  provider          String    @db.VarChar(255)
+  provider_metadata Json?
+  created_by        Int?
+  updated_by        Int?
+  created_at        DateTime? @default(now()) @db.Timestamptz(6)
+  updated_at        DateTime? @default(now()) @db.Timestamptz(6)
+  image             upload_file_morph?
+}
+
+model upload_file_morph {
+  upload_file_id Int
+  related_id     Int
+  related_type   String?
+  field          String?
+  order          Int?
+  image          upload_file @relation(fields:[upload_file_id], references:[id])
+  bars           bars @relation(fields: [related_id], references: [id])
+  restaurants    restaurants @relation(fields: [related_id], references: [id])
+  @@id([upload_file_id, related_id])
+}
+
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator typegraphql {
+  provider = "typegraphql-prisma"
+  output   = "./src/prisma/generated/type-graphql"
+  emitTranspiledCode = true
+}
