@@ -1,25 +1,16 @@
 import "reflect-metadata";
 import * as express from "express";
 import * as bodyParser from "body-parser";
-//import * as helmet from "helmet";
-//import * as csp from "helmet-csp";
 import { buildSchema } from "type-graphql";
-import { authChecker } from "./src/routes/authChecker/authChecker";
-import {graphqlHTTP} from "express-graphql";
-//import * as moment from "moment";
+import { graphqlHTTP } from "express-graphql";
 import * as dotenv from "dotenv";
-//import { BarResolver, RestaurantResolver, UserResolver } from "./src/modules";
-//import { dbConnect } from "./src/config/typeorm";
-import {resolvers} from "./src/prisma/generated/type-graphql"
+import { resolvers } from "./src/prisma/generated/type-graphql";
 import { PrismaClient } from "@prisma/client";
+
 const PORT = process.env.PORT || 3500;
 const prisma = new PrismaClient();
 
 dotenv.config();
-
-// (async () => {
-// 	await dbConnect();
-// })();
 
 const app = express();
 app.set("port", process.env.PORT || 3500);
@@ -28,44 +19,7 @@ app.use(
 		type: ["json", "application/csp-report"]
 	})
 );
-
 app.use(bodyParser.urlencoded({ extended: false }));
-//app.use(helmet());
-//app.use(helmet.noCache());
-//app.use(helmet.referrerPolicy({ policy: "no-referrer" }));
-//app.use(helmet({ frameguard: { action: "deny" } }));
-//app.use(helmet.hsts({ maxAge: 31536000, includeSubDomains: true }));
-// app.use(helmet.referrerPolicy({ policy: "no-referrer" }));
-// app.use(
-// 	helmet({
-// 		frameguard: {
-// 			action: "deny"
-// 		}
-// 	})
-// );
-//
-// if (process.env.ENV!=="development") {
-// 	app.use(
-// 		csp({
-// 			directives: {
-// 				defaultSrc: ["'self'"],
-// 				connectSrc: ["'self'"],
-// 				scriptSrc: ["'self'", "'none'"],
-// 				reportUri: "/report-violation",
-// 				objectSrc: ["'none'"]
-// 			},
-// 			browserSniff: false
-// 		})
-// 	);
-// }
-//
-// app.use(
-// 	helmet.hsts({
-// 		maxAge: 31536000,
-// 		includeSubDomains: true
-// 	})
-// );
-
 
 app.use((req, res, next) => {
 	res.header("Access-Control-Allow-Origin", "*");
@@ -84,17 +38,6 @@ app.use((req, res, next) => {
 		next();
 	}
 });
-
-// app.post("/report-violation", function(req, res) {
-// 	if (req.body) {
-// 		console.log("CSP Violation: ", req.body);
-// 	} else {
-// 		console.log("CSP Violation: No data received!");
-// 	}
-//
-// 	res.status(204).end();
-// });
-
 
 app.get("/", (req, res) => {
 	console.log("Health check API");
@@ -147,7 +90,7 @@ app.use("/graphql", async (req, res) => {
 			schema: schema,
 			rootValue: rootValue,
 			graphiql: true,
-			context: {prisma:prisma},
+			context: {prisma:cxt.prisma},
 		})(req, res);
 
 	} catch (e) {
