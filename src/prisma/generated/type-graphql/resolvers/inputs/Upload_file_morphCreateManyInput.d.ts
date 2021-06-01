@@ -1,6 +1,7 @@
 export declare class Upload_file_morphCreateManyInput {
-    upload_file_id: number;
-    related_id: number;
+    id?: number | undefined;
+    upload_file_id?: number | undefined;
+    related_id?: number | undefined;
     related_type?: string | undefined;
     field?: string | undefined;
     order?: number | undefined;

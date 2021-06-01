@@ -18,4 +18,5 @@ export declare class BarsCreateManyInput {
     updated_by?: number | undefined;
     created_at?: Date | undefined;
     updated_at?: Date | undefined;
+    bar_image?: number | undefined;
 }

@@ -3,7 +3,7 @@ import { NullableDateTimeFieldUpdateOperationsInput } from "../inputs/NullableDa
 import { NullableFloatFieldUpdateOperationsInput } from "../inputs/NullableFloatFieldUpdateOperationsInput";
 import { NullableIntFieldUpdateOperationsInput } from "../inputs/NullableIntFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
-import { Upload_file_morphUpdateOneWithoutBarsInput } from "../inputs/Upload_file_morphUpdateOneWithoutBarsInput";
+import { Upload_file_morphUpdateManyWithoutBarsInput } from "../inputs/Upload_file_morphUpdateManyWithoutBarsInput";
 export declare class BarsUpdateInput {
     title?: NullableStringFieldUpdateOperationsInput | undefined;
     description?: NullableStringFieldUpdateOperationsInput | undefined;
@@ -23,5 +23,6 @@ export declare class BarsUpdateInput {
     updated_by?: NullableIntFieldUpdateOperationsInput | undefined;
     created_at?: NullableDateTimeFieldUpdateOperationsInput | undefined;
     updated_at?: NullableDateTimeFieldUpdateOperationsInput | undefined;
-    image?: Upload_file_morphUpdateOneWithoutBarsInput | undefined;
+    bar_image?: NullableIntFieldUpdateOperationsInput | undefined;
+    uploadFileMorph?: Upload_file_morphUpdateManyWithoutBarsInput | undefined;
 }

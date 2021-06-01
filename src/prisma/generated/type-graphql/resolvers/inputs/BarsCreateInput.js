@@ -30,7 +30,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.BarsCreateInput = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
-const Upload_file_morphCreateNestedOneWithoutBarsInput_1 = require("../inputs/Upload_file_morphCreateNestedOneWithoutBarsInput");
+const Upload_file_morphCreateNestedManyWithoutBarsInput_1 = require("../inputs/Upload_file_morphCreateNestedManyWithoutBarsInput");
 let BarsCreateInput = class BarsCreateInput {
 };
 __decorate([
@@ -142,11 +142,17 @@ __decorate([
     __metadata("design:type", Date)
 ], BarsCreateInput.prototype, "updated_at", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => Upload_file_morphCreateNestedOneWithoutBarsInput_1.Upload_file_morphCreateNestedOneWithoutBarsInput, {
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: true
     }),
-    __metadata("design:type", Upload_file_morphCreateNestedOneWithoutBarsInput_1.Upload_file_morphCreateNestedOneWithoutBarsInput)
-], BarsCreateInput.prototype, "image", void 0);
+    __metadata("design:type", Number)
+], BarsCreateInput.prototype, "bar_image", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Upload_file_morphCreateNestedManyWithoutBarsInput_1.Upload_file_morphCreateNestedManyWithoutBarsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", Upload_file_morphCreateNestedManyWithoutBarsInput_1.Upload_file_morphCreateNestedManyWithoutBarsInput)
+], BarsCreateInput.prototype, "uploadFileMorph", void 0);
 BarsCreateInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

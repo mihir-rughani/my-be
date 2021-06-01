@@ -38,6 +38,12 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", String)
+], Upload_file_morphOrderByInput.prototype, "id", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
 ], Upload_file_morphOrderByInput.prototype, "upload_file_id", void 0);
 __decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {

@@ -4,7 +4,7 @@ import { NullableDateTimeFieldUpdateOperationsInput } from "../inputs/NullableDa
 import { NullableIntFieldUpdateOperationsInput } from "../inputs/NullableIntFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
-import { Upload_file_morphUpdateOneWithoutImageInput } from "../inputs/Upload_file_morphUpdateOneWithoutImageInput";
+import { Upload_file_morphUpdateManyWithoutUploadFileInput } from "../inputs/Upload_file_morphUpdateManyWithoutUploadFileInput";
 export declare class Upload_fileUpdateInput {
     name?: StringFieldUpdateOperationsInput | undefined;
     alternativeText?: NullableStringFieldUpdateOperationsInput | undefined;
@@ -24,5 +24,5 @@ export declare class Upload_fileUpdateInput {
     updated_by?: NullableIntFieldUpdateOperationsInput | undefined;
     created_at?: NullableDateTimeFieldUpdateOperationsInput | undefined;
     updated_at?: NullableDateTimeFieldUpdateOperationsInput | undefined;
-    image?: Upload_file_morphUpdateOneWithoutImageInput | undefined;
+    uploadFileMorph?: Upload_file_morphUpdateManyWithoutUploadFileInput | undefined;
 }

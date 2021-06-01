@@ -22,6 +22,7 @@ export declare class RestaurantsGroupBy {
     dinner: boolean | null;
     bachelorParty: boolean | null;
     henParty: boolean | null;
+    restaurant_image: number | null;
     _count: RestaurantsCountAggregate | null;
     _avg: RestaurantsAvgAggregate | null;
     _sum: RestaurantsSumAggregate | null;

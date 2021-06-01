@@ -23,6 +23,7 @@ export declare class BarsGroupBy {
     updated_by: number | null;
     created_at: Date | null;
     updated_at: Date | null;
+    bar_image: number | null;
     _count: BarsCountAggregate | null;
     _avg: BarsAvgAggregate | null;
     _sum: BarsSumAggregate | null;

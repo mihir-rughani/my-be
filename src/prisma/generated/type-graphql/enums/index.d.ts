@@ -1,4 +1,5 @@
 export { BarsScalarFieldEnum } from "./BarsScalarFieldEnum";
+export { CitiesScalarFieldEnum } from "./CitiesScalarFieldEnum";
 export { QueryMode } from "./QueryMode";
 export { RestaurantsScalarFieldEnum } from "./RestaurantsScalarFieldEnum";
 export { SortOrder } from "./SortOrder";

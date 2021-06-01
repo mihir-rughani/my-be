@@ -35,7 +35,7 @@ const NullableDateTimeFieldUpdateOperationsInput_1 = require("../inputs/Nullable
 const NullableFloatFieldUpdateOperationsInput_1 = require("../inputs/NullableFloatFieldUpdateOperationsInput");
 const NullableIntFieldUpdateOperationsInput_1 = require("../inputs/NullableIntFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
-const Upload_file_morphUpdateOneWithoutBarsInput_1 = require("../inputs/Upload_file_morphUpdateOneWithoutBarsInput");
+const Upload_file_morphUpdateManyWithoutBarsInput_1 = require("../inputs/Upload_file_morphUpdateManyWithoutBarsInput");
 let BarsUpdateInput = class BarsUpdateInput {
 };
 __decorate([
@@ -147,11 +147,17 @@ __decorate([
     __metadata("design:type", NullableDateTimeFieldUpdateOperationsInput_1.NullableDateTimeFieldUpdateOperationsInput)
 ], BarsUpdateInput.prototype, "updated_at", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => Upload_file_morphUpdateOneWithoutBarsInput_1.Upload_file_morphUpdateOneWithoutBarsInput, {
+    TypeGraphQL.Field(_type => NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput, {
         nullable: true
     }),
-    __metadata("design:type", Upload_file_morphUpdateOneWithoutBarsInput_1.Upload_file_morphUpdateOneWithoutBarsInput)
-], BarsUpdateInput.prototype, "image", void 0);
+    __metadata("design:type", NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput)
+], BarsUpdateInput.prototype, "bar_image", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Upload_file_morphUpdateManyWithoutBarsInput_1.Upload_file_morphUpdateManyWithoutBarsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", Upload_file_morphUpdateManyWithoutBarsInput_1.Upload_file_morphUpdateManyWithoutBarsInput)
+], BarsUpdateInput.prototype, "uploadFileMorph", void 0);
 BarsUpdateInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

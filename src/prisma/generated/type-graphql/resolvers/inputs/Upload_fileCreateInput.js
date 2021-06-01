@@ -33,7 +33,7 @@ const TypeGraphQL = __importStar(require("type-graphql"));
 const GraphQLScalars = __importStar(require("graphql-scalars"));
 const client_1 = require("@prisma/client");
 const scalars_1 = require("../../scalars");
-const Upload_file_morphCreateNestedOneWithoutImageInput_1 = require("../inputs/Upload_file_morphCreateNestedOneWithoutImageInput");
+const Upload_file_morphCreateNestedManyWithoutUploadFileInput_1 = require("../inputs/Upload_file_morphCreateNestedManyWithoutUploadFileInput");
 let Upload_fileCreateInput = class Upload_fileCreateInput {
 };
 __decorate([
@@ -145,11 +145,11 @@ __decorate([
     __metadata("design:type", Date)
 ], Upload_fileCreateInput.prototype, "updated_at", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => Upload_file_morphCreateNestedOneWithoutImageInput_1.Upload_file_morphCreateNestedOneWithoutImageInput, {
+    TypeGraphQL.Field(_type => Upload_file_morphCreateNestedManyWithoutUploadFileInput_1.Upload_file_morphCreateNestedManyWithoutUploadFileInput, {
         nullable: true
     }),
-    __metadata("design:type", Upload_file_morphCreateNestedOneWithoutImageInput_1.Upload_file_morphCreateNestedOneWithoutImageInput)
-], Upload_fileCreateInput.prototype, "image", void 0);
+    __metadata("design:type", Upload_file_morphCreateNestedManyWithoutUploadFileInput_1.Upload_file_morphCreateNestedManyWithoutUploadFileInput)
+], Upload_fileCreateInput.prototype, "uploadFileMorph", void 0);
 Upload_fileCreateInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

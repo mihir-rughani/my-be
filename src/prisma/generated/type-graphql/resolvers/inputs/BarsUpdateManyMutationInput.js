@@ -145,6 +145,12 @@ __decorate([
     }),
     __metadata("design:type", NullableDateTimeFieldUpdateOperationsInput_1.NullableDateTimeFieldUpdateOperationsInput)
 ], BarsUpdateManyMutationInput.prototype, "updated_at", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput)
+], BarsUpdateManyMutationInput.prototype, "bar_image", void 0);
 BarsUpdateManyMutationInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

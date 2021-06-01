@@ -7,5 +7,5 @@ export declare class FindFirstUpload_file_morphArgs {
     cursor?: Upload_file_morphWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"upload_file_id" | "related_id" | "related_type" | "field" | "order"> | undefined;
+    distinct?: Array<"id" | "upload_file_id" | "related_id" | "related_type" | "field" | "order"> | undefined;
 }

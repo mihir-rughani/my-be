@@ -20,5 +20,5 @@ export declare class Upload_file {
     updated_by?: number | null;
     created_at?: Date | null;
     updated_at?: Date | null;
-    image?: Upload_file_morph | null;
+    uploadFileMorph?: Upload_file_morph[];
 }

@@ -22,4 +22,5 @@ export declare class BarsUpdateManyMutationInput {
     updated_by?: NullableIntFieldUpdateOperationsInput | undefined;
     created_at?: NullableDateTimeFieldUpdateOperationsInput | undefined;
     updated_at?: NullableDateTimeFieldUpdateOperationsInput | undefined;
+    bar_image?: NullableIntFieldUpdateOperationsInput | undefined;
 }

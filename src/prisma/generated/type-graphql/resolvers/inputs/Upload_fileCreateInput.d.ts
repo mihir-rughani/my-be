@@ -1,5 +1,5 @@
 import { Prisma } from "@prisma/client";
-import { Upload_file_morphCreateNestedOneWithoutImageInput } from "../inputs/Upload_file_morphCreateNestedOneWithoutImageInput";
+import { Upload_file_morphCreateNestedManyWithoutUploadFileInput } from "../inputs/Upload_file_morphCreateNestedManyWithoutUploadFileInput";
 export declare class Upload_fileCreateInput {
     name: string;
     alternativeText?: string | undefined;
@@ -19,5 +19,5 @@ export declare class Upload_fileCreateInput {
     updated_by?: number | undefined;
     created_at?: Date | undefined;
     updated_at?: Date | undefined;
-    image?: Upload_file_morphCreateNestedOneWithoutImageInput | undefined;
+    uploadFileMorph?: Upload_file_morphCreateNestedManyWithoutUploadFileInput | undefined;
 }

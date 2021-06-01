@@ -39,49 +39,40 @@ const Upload_file_1 = require("../../../models/Upload_file");
 const Upload_file_morph_1 = require("../../../models/Upload_file_morph");
 const helpers_1 = require("../../../helpers");
 let Upload_file_morphRelationsResolver = class Upload_file_morphRelationsResolver {
-    async image(upload_file_morph, ctx) {
+    async uploadFile(upload_file_morph, ctx) {
         return helpers_1.getPrismaFromContext(ctx).upload_file_morph.findUnique({
             where: {
-                upload_file_id_related_id: {
-                    upload_file_id: upload_file_morph.upload_file_id,
-                    related_id: upload_file_morph.related_id,
-                },
+                id: upload_file_morph.id,
             },
-        }).image({});
+        }).uploadFile({});
     }
     async bars(upload_file_morph, ctx) {
         return helpers_1.getPrismaFromContext(ctx).upload_file_morph.findUnique({
             where: {
-                upload_file_id_related_id: {
-                    upload_file_id: upload_file_morph.upload_file_id,
-                    related_id: upload_file_morph.related_id,
-                },
+                id: upload_file_morph.id,
             },
         }).bars({});
     }
     async restaurants(upload_file_morph, ctx) {
         return helpers_1.getPrismaFromContext(ctx).upload_file_morph.findUnique({
             where: {
-                upload_file_id_related_id: {
-                    upload_file_id: upload_file_morph.upload_file_id,
-                    related_id: upload_file_morph.related_id,
-                },
+                id: upload_file_morph.id,
             },
         }).restaurants({});
     }
 };
 __decorate([
     TypeGraphQL.FieldResolver(_type => Upload_file_1.Upload_file, {
-        nullable: false
+        nullable: true
     }),
     __param(0, TypeGraphQL.Root()), __param(1, TypeGraphQL.Ctx()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Upload_file_morph_1.Upload_file_morph, Object]),
     __metadata("design:returntype", Promise)
-], Upload_file_morphRelationsResolver.prototype, "image", null);
+], Upload_file_morphRelationsResolver.prototype, "uploadFile", null);
 __decorate([
     TypeGraphQL.FieldResolver(_type => Bars_1.Bars, {
-        nullable: false
+        nullable: true
     }),
     __param(0, TypeGraphQL.Root()), __param(1, TypeGraphQL.Ctx()),
     __metadata("design:type", Function),
@@ -90,7 +81,7 @@ __decorate([
 ], Upload_file_morphRelationsResolver.prototype, "bars", null);
 __decorate([
     TypeGraphQL.FieldResolver(_type => Restaurants_1.Restaurants, {
-        nullable: false
+        nullable: true
     }),
     __param(0, TypeGraphQL.Root()), __param(1, TypeGraphQL.Ctx()),
     __metadata("design:type", Function),

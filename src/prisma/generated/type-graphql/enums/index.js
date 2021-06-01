@@ -1,8 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Upload_file_morphScalarFieldEnum = exports.Upload_fileScalarFieldEnum = exports.SortOrder = exports.RestaurantsScalarFieldEnum = exports.QueryMode = exports.BarsScalarFieldEnum = void 0;
+exports.Upload_file_morphScalarFieldEnum = exports.Upload_fileScalarFieldEnum = exports.SortOrder = exports.RestaurantsScalarFieldEnum = exports.QueryMode = exports.CitiesScalarFieldEnum = exports.BarsScalarFieldEnum = void 0;
 var BarsScalarFieldEnum_1 = require("./BarsScalarFieldEnum");
 Object.defineProperty(exports, "BarsScalarFieldEnum", { enumerable: true, get: function () { return BarsScalarFieldEnum_1.BarsScalarFieldEnum; } });
+var CitiesScalarFieldEnum_1 = require("./CitiesScalarFieldEnum");
+Object.defineProperty(exports, "CitiesScalarFieldEnum", { enumerable: true, get: function () { return CitiesScalarFieldEnum_1.CitiesScalarFieldEnum; } });
 var QueryMode_1 = require("./QueryMode");
 Object.defineProperty(exports, "QueryMode", { enumerable: true, get: function () { return QueryMode_1.QueryMode; } });
 var RestaurantsScalarFieldEnum_1 = require("./RestaurantsScalarFieldEnum");

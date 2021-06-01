@@ -140,6 +140,12 @@ __decorate([
     }),
     __metadata("design:type", Boolean)
 ], RestaurantsCreateManyInput.prototype, "henParty", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    __metadata("design:type", Number)
+], RestaurantsCreateManyInput.prototype, "restaurant_image", void 0);
 RestaurantsCreateManyInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

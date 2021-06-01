@@ -17,5 +17,6 @@ export declare class RestaurantsCountAggregate {
     dinner: number;
     bachelorParty: number;
     henParty: number;
+    restaurant_image: number;
     _all: number;
 }

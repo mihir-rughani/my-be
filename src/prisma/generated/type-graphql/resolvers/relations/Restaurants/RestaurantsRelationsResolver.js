@@ -35,25 +35,26 @@ exports.RestaurantsRelationsResolver = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
 const Restaurants_1 = require("../../../models/Restaurants");
 const Upload_file_morph_1 = require("../../../models/Upload_file_morph");
+const RestaurantsUploadFileMorphArgs_1 = require("./args/RestaurantsUploadFileMorphArgs");
 const helpers_1 = require("../../../helpers");
 let RestaurantsRelationsResolver = class RestaurantsRelationsResolver {
-    async image(restaurants, ctx) {
+    async uploadFileMorph(restaurants, ctx, args) {
         return helpers_1.getPrismaFromContext(ctx).restaurants.findUnique({
             where: {
                 id: restaurants.id,
             },
-        }).image({});
+        }).uploadFileMorph(args);
     }
 };
 __decorate([
-    TypeGraphQL.FieldResolver(_type => Upload_file_morph_1.Upload_file_morph, {
-        nullable: true
+    TypeGraphQL.FieldResolver(_type => [Upload_file_morph_1.Upload_file_morph], {
+        nullable: false
     }),
-    __param(0, TypeGraphQL.Root()), __param(1, TypeGraphQL.Ctx()),
+    __param(0, TypeGraphQL.Root()), __param(1, TypeGraphQL.Ctx()), __param(2, TypeGraphQL.Args()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Restaurants_1.Restaurants, Object]),
+    __metadata("design:paramtypes", [Restaurants_1.Restaurants, Object, RestaurantsUploadFileMorphArgs_1.RestaurantsUploadFileMorphArgs]),
     __metadata("design:returntype", Promise)
-], RestaurantsRelationsResolver.prototype, "image", null);
+], RestaurantsRelationsResolver.prototype, "uploadFileMorph", null);
 RestaurantsRelationsResolver = __decorate([
     TypeGraphQL.Resolver(_of => Restaurants_1.Restaurants)
 ], RestaurantsRelationsResolver);

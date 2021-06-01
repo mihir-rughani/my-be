@@ -59,12 +59,18 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", IntWithAggregatesFilter_1.IntWithAggregatesFilter)
-], Upload_file_morphScalarWhereWithAggregatesInput.prototype, "upload_file_id", void 0);
+], Upload_file_morphScalarWhereWithAggregatesInput.prototype, "id", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => IntWithAggregatesFilter_1.IntWithAggregatesFilter, {
+    TypeGraphQL.Field(_type => IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter, {
         nullable: true
     }),
-    __metadata("design:type", IntWithAggregatesFilter_1.IntWithAggregatesFilter)
+    __metadata("design:type", IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter)
+], Upload_file_morphScalarWhereWithAggregatesInput.prototype, "upload_file_id", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter)
 ], Upload_file_morphScalarWhereWithAggregatesInput.prototype, "related_id", void 0);
 __decorate([
     TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {

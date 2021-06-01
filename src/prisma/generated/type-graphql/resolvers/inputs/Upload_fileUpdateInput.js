@@ -37,7 +37,7 @@ const NullableDateTimeFieldUpdateOperationsInput_1 = require("../inputs/Nullable
 const NullableIntFieldUpdateOperationsInput_1 = require("../inputs/NullableIntFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
-const Upload_file_morphUpdateOneWithoutImageInput_1 = require("../inputs/Upload_file_morphUpdateOneWithoutImageInput");
+const Upload_file_morphUpdateManyWithoutUploadFileInput_1 = require("../inputs/Upload_file_morphUpdateManyWithoutUploadFileInput");
 let Upload_fileUpdateInput = class Upload_fileUpdateInput {
 };
 __decorate([
@@ -149,11 +149,11 @@ __decorate([
     __metadata("design:type", NullableDateTimeFieldUpdateOperationsInput_1.NullableDateTimeFieldUpdateOperationsInput)
 ], Upload_fileUpdateInput.prototype, "updated_at", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => Upload_file_morphUpdateOneWithoutImageInput_1.Upload_file_morphUpdateOneWithoutImageInput, {
+    TypeGraphQL.Field(_type => Upload_file_morphUpdateManyWithoutUploadFileInput_1.Upload_file_morphUpdateManyWithoutUploadFileInput, {
         nullable: true
     }),
-    __metadata("design:type", Upload_file_morphUpdateOneWithoutImageInput_1.Upload_file_morphUpdateOneWithoutImageInput)
-], Upload_fileUpdateInput.prototype, "image", void 0);
+    __metadata("design:type", Upload_file_morphUpdateManyWithoutUploadFileInput_1.Upload_file_morphUpdateManyWithoutUploadFileInput)
+], Upload_fileUpdateInput.prototype, "uploadFileMorph", void 0);
 Upload_fileUpdateInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

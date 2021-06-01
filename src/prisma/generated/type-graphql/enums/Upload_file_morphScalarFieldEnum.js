@@ -23,6 +23,7 @@ exports.Upload_file_morphScalarFieldEnum = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
 var Upload_file_morphScalarFieldEnum;
 (function (Upload_file_morphScalarFieldEnum) {
+    Upload_file_morphScalarFieldEnum["id"] = "id";
     Upload_file_morphScalarFieldEnum["upload_file_id"] = "upload_file_id";
     Upload_file_morphScalarFieldEnum["related_id"] = "related_id";
     Upload_file_morphScalarFieldEnum["related_type"] = "related_type";

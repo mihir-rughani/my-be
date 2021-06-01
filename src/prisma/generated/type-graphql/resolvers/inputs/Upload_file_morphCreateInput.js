@@ -30,9 +30,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Upload_file_morphCreateInput = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
-const BarsCreateNestedOneWithoutImageInput_1 = require("../inputs/BarsCreateNestedOneWithoutImageInput");
-const RestaurantsCreateNestedOneWithoutImageInput_1 = require("../inputs/RestaurantsCreateNestedOneWithoutImageInput");
-const Upload_fileCreateNestedOneWithoutImageInput_1 = require("../inputs/Upload_fileCreateNestedOneWithoutImageInput");
+const BarsCreateNestedOneWithoutUploadFileMorphInput_1 = require("../inputs/BarsCreateNestedOneWithoutUploadFileMorphInput");
+const RestaurantsCreateNestedOneWithoutUploadFileMorphInput_1 = require("../inputs/RestaurantsCreateNestedOneWithoutUploadFileMorphInput");
+const Upload_fileCreateNestedOneWithoutUploadFileMorphInput_1 = require("../inputs/Upload_fileCreateNestedOneWithoutUploadFileMorphInput");
 let Upload_file_morphCreateInput = class Upload_file_morphCreateInput {
 };
 __decorate([
@@ -54,22 +54,22 @@ __decorate([
     __metadata("design:type", Number)
 ], Upload_file_morphCreateInput.prototype, "order", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => Upload_fileCreateNestedOneWithoutImageInput_1.Upload_fileCreateNestedOneWithoutImageInput, {
-        nullable: false
+    TypeGraphQL.Field(_type => Upload_fileCreateNestedOneWithoutUploadFileMorphInput_1.Upload_fileCreateNestedOneWithoutUploadFileMorphInput, {
+        nullable: true
     }),
-    __metadata("design:type", Upload_fileCreateNestedOneWithoutImageInput_1.Upload_fileCreateNestedOneWithoutImageInput)
-], Upload_file_morphCreateInput.prototype, "image", void 0);
+    __metadata("design:type", Upload_fileCreateNestedOneWithoutUploadFileMorphInput_1.Upload_fileCreateNestedOneWithoutUploadFileMorphInput)
+], Upload_file_morphCreateInput.prototype, "uploadFile", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => BarsCreateNestedOneWithoutImageInput_1.BarsCreateNestedOneWithoutImageInput, {
-        nullable: false
+    TypeGraphQL.Field(_type => BarsCreateNestedOneWithoutUploadFileMorphInput_1.BarsCreateNestedOneWithoutUploadFileMorphInput, {
+        nullable: true
     }),
-    __metadata("design:type", BarsCreateNestedOneWithoutImageInput_1.BarsCreateNestedOneWithoutImageInput)
+    __metadata("design:type", BarsCreateNestedOneWithoutUploadFileMorphInput_1.BarsCreateNestedOneWithoutUploadFileMorphInput)
 ], Upload_file_morphCreateInput.prototype, "bars", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => RestaurantsCreateNestedOneWithoutImageInput_1.RestaurantsCreateNestedOneWithoutImageInput, {
-        nullable: false
+    TypeGraphQL.Field(_type => RestaurantsCreateNestedOneWithoutUploadFileMorphInput_1.RestaurantsCreateNestedOneWithoutUploadFileMorphInput, {
+        nullable: true
     }),
-    __metadata("design:type", RestaurantsCreateNestedOneWithoutImageInput_1.RestaurantsCreateNestedOneWithoutImageInput)
+    __metadata("design:type", RestaurantsCreateNestedOneWithoutUploadFileMorphInput_1.RestaurantsCreateNestedOneWithoutUploadFileMorphInput)
 ], Upload_file_morphCreateInput.prototype, "restaurants", void 0);
 Upload_file_morphCreateInput = __decorate([
     TypeGraphQL.InputType({

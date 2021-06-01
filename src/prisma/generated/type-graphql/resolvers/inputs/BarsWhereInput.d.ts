@@ -4,7 +4,7 @@ import { FloatNullableFilter } from "../inputs/FloatNullableFilter";
 import { IntFilter } from "../inputs/IntFilter";
 import { IntNullableFilter } from "../inputs/IntNullableFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
-import { Upload_file_morphRelationFilter } from "../inputs/Upload_file_morphRelationFilter";
+import { Upload_file_morphListRelationFilter } from "../inputs/Upload_file_morphListRelationFilter";
 export declare class BarsWhereInput {
     AND?: BarsWhereInput[] | undefined;
     OR?: BarsWhereInput[] | undefined;
@@ -28,5 +28,6 @@ export declare class BarsWhereInput {
     updated_by?: IntNullableFilter | undefined;
     created_at?: DateTimeNullableFilter | undefined;
     updated_at?: DateTimeNullableFilter | undefined;
-    image?: Upload_file_morphRelationFilter | undefined;
+    bar_image?: IntNullableFilter | undefined;
+    uploadFileMorph?: Upload_file_morphListRelationFilter | undefined;
 }

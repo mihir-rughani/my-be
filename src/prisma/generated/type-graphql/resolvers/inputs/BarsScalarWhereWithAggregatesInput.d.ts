@@ -27,4 +27,5 @@ export declare class BarsScalarWhereWithAggregatesInput {
     updated_by?: IntNullableWithAggregatesFilter | undefined;
     created_at?: DateTimeNullableWithAggregatesFilter | undefined;
     updated_at?: DateTimeNullableWithAggregatesFilter | undefined;
+    bar_image?: IntNullableWithAggregatesFilter | undefined;
 }

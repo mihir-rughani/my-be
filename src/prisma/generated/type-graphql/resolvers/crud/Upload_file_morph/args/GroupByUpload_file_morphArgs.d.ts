@@ -4,7 +4,7 @@ import { Upload_file_morphWhereInput } from "../../../inputs/Upload_file_morphWh
 export declare class GroupByUpload_file_morphArgs {
     where?: Upload_file_morphWhereInput | undefined;
     orderBy?: Upload_file_morphOrderByInput[] | undefined;
-    by: Array<"upload_file_id" | "related_id" | "related_type" | "field" | "order">;
+    by: Array<"id" | "upload_file_id" | "related_id" | "related_type" | "field" | "order">;
     having?: Upload_file_morphScalarWhereWithAggregatesInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;

@@ -5,14 +5,15 @@ import * as outputTypes from "./resolvers/outputs";
 import * as inputTypes from "./resolvers/inputs";
 import * as argsTypes from "./resolvers/crud/args.index";
 declare const crudResolversMap: {
-    Restaurants: typeof crudResolvers.RestaurantsCrudResolver;
     Bars: typeof crudResolvers.BarsCrudResolver;
+    Cities: typeof crudResolvers.CitiesCrudResolver;
+    Restaurants: typeof crudResolvers.RestaurantsCrudResolver;
     Upload_file: typeof crudResolvers.Upload_fileCrudResolver;
     Upload_file_morph: typeof crudResolvers.Upload_file_morphCrudResolver;
 };
 declare const relationResolversMap: {
-    Restaurants: typeof relationResolvers.RestaurantsRelationsResolver;
     Bars: typeof relationResolvers.BarsRelationsResolver;
+    Restaurants: typeof relationResolvers.RestaurantsRelationsResolver;
     Upload_file: typeof relationResolvers.Upload_fileRelationsResolver;
     Upload_file_morph: typeof relationResolvers.Upload_file_morphRelationsResolver;
 };

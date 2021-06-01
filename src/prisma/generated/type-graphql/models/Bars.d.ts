@@ -19,5 +19,6 @@ export declare class Bars {
     updated_by?: number | null;
     created_at?: Date | null;
     updated_at?: Date | null;
-    image?: Upload_file_morph | null;
+    bar_image?: number | null;
+    uploadFileMorph?: Upload_file_morph[];
 }

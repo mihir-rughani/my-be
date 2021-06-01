@@ -38,7 +38,7 @@ const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
 const JsonNullableFilter_1 = require("../inputs/JsonNullableFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
-const Upload_file_morphRelationFilter_1 = require("../inputs/Upload_file_morphRelationFilter");
+const Upload_file_morphListRelationFilter_1 = require("../inputs/Upload_file_morphListRelationFilter");
 let Upload_fileWhereInput = Upload_fileWhereInput_1 = class Upload_fileWhereInput {
 };
 __decorate([
@@ -174,11 +174,11 @@ __decorate([
     __metadata("design:type", DateTimeNullableFilter_1.DateTimeNullableFilter)
 ], Upload_fileWhereInput.prototype, "updated_at", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => Upload_file_morphRelationFilter_1.Upload_file_morphRelationFilter, {
+    TypeGraphQL.Field(_type => Upload_file_morphListRelationFilter_1.Upload_file_morphListRelationFilter, {
         nullable: true
     }),
-    __metadata("design:type", Upload_file_morphRelationFilter_1.Upload_file_morphRelationFilter)
-], Upload_fileWhereInput.prototype, "image", void 0);
+    __metadata("design:type", Upload_file_morphListRelationFilter_1.Upload_file_morphListRelationFilter)
+], Upload_fileWhereInput.prototype, "uploadFileMorph", void 0);
 Upload_fileWhereInput = Upload_fileWhereInput_1 = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

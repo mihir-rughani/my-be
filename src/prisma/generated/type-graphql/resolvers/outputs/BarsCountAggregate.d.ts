@@ -18,5 +18,6 @@ export declare class BarsCountAggregate {
     updated_by: number;
     created_at: number;
     updated_at: number;
+    bar_image: number;
     _all: number;
 }

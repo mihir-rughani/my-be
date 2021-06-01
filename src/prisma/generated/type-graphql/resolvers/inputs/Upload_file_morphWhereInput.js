@@ -62,12 +62,18 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", IntFilter_1.IntFilter)
-], Upload_file_morphWhereInput.prototype, "upload_file_id", void 0);
+], Upload_file_morphWhereInput.prototype, "id", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
+    TypeGraphQL.Field(_type => IntNullableFilter_1.IntNullableFilter, {
         nullable: true
     }),
-    __metadata("design:type", IntFilter_1.IntFilter)
+    __metadata("design:type", IntNullableFilter_1.IntNullableFilter)
+], Upload_file_morphWhereInput.prototype, "upload_file_id", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => IntNullableFilter_1.IntNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", IntNullableFilter_1.IntNullableFilter)
 ], Upload_file_morphWhereInput.prototype, "related_id", void 0);
 __decorate([
     TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
@@ -92,7 +98,7 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", Upload_fileRelationFilter_1.Upload_fileRelationFilter)
-], Upload_file_morphWhereInput.prototype, "image", void 0);
+], Upload_file_morphWhereInput.prototype, "uploadFile", void 0);
 __decorate([
     TypeGraphQL.Field(_type => BarsRelationFilter_1.BarsRelationFilter, {
         nullable: true

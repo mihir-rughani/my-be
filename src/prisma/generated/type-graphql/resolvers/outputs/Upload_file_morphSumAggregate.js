@@ -37,6 +37,12 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", Number)
+], Upload_file_morphSumAggregate.prototype, "id", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    __metadata("design:type", Number)
 ], Upload_file_morphSumAggregate.prototype, "upload_file_id", void 0);
 __decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {

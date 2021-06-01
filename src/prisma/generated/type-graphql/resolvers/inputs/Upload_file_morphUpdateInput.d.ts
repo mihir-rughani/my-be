@@ -1,13 +1,13 @@
-import { BarsUpdateOneRequiredWithoutImageInput } from "../inputs/BarsUpdateOneRequiredWithoutImageInput";
+import { BarsUpdateOneWithoutUploadFileMorphInput } from "../inputs/BarsUpdateOneWithoutUploadFileMorphInput";
 import { NullableIntFieldUpdateOperationsInput } from "../inputs/NullableIntFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
-import { RestaurantsUpdateOneRequiredWithoutImageInput } from "../inputs/RestaurantsUpdateOneRequiredWithoutImageInput";
-import { Upload_fileUpdateOneRequiredWithoutImageInput } from "../inputs/Upload_fileUpdateOneRequiredWithoutImageInput";
+import { RestaurantsUpdateOneWithoutUploadFileMorphInput } from "../inputs/RestaurantsUpdateOneWithoutUploadFileMorphInput";
+import { Upload_fileUpdateOneWithoutUploadFileMorphInput } from "../inputs/Upload_fileUpdateOneWithoutUploadFileMorphInput";
 export declare class Upload_file_morphUpdateInput {
     related_type?: NullableStringFieldUpdateOperationsInput | undefined;
     field?: NullableStringFieldUpdateOperationsInput | undefined;
     order?: NullableIntFieldUpdateOperationsInput | undefined;
-    image?: Upload_fileUpdateOneRequiredWithoutImageInput | undefined;
-    bars?: BarsUpdateOneRequiredWithoutImageInput | undefined;
-    restaurants?: RestaurantsUpdateOneRequiredWithoutImageInput | undefined;
+    uploadFile?: Upload_fileUpdateOneWithoutUploadFileMorphInput | undefined;
+    bars?: BarsUpdateOneWithoutUploadFileMorphInput | undefined;
+    restaurants?: RestaurantsUpdateOneWithoutUploadFileMorphInput | undefined;
 }

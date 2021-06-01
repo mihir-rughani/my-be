@@ -17,4 +17,5 @@ export declare class RestaurantsMinAggregate {
     dinner: boolean | null;
     bachelorParty: boolean | null;
     henParty: boolean | null;
+    restaurant_image: number | null;
 }

@@ -35,7 +35,7 @@ const NullableDateTimeFieldUpdateOperationsInput_1 = require("../inputs/Nullable
 const NullableFloatFieldUpdateOperationsInput_1 = require("../inputs/NullableFloatFieldUpdateOperationsInput");
 const NullableIntFieldUpdateOperationsInput_1 = require("../inputs/NullableIntFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
-const Upload_file_morphUpdateOneWithoutRestaurantsInput_1 = require("../inputs/Upload_file_morphUpdateOneWithoutRestaurantsInput");
+const Upload_file_morphUpdateManyWithoutRestaurantsInput_1 = require("../inputs/Upload_file_morphUpdateManyWithoutRestaurantsInput");
 let RestaurantsUpdateInput = class RestaurantsUpdateInput {
 };
 __decorate([
@@ -141,11 +141,17 @@ __decorate([
     __metadata("design:type", NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput)
 ], RestaurantsUpdateInput.prototype, "henParty", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => Upload_file_morphUpdateOneWithoutRestaurantsInput_1.Upload_file_morphUpdateOneWithoutRestaurantsInput, {
+    TypeGraphQL.Field(_type => NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput, {
         nullable: true
     }),
-    __metadata("design:type", Upload_file_morphUpdateOneWithoutRestaurantsInput_1.Upload_file_morphUpdateOneWithoutRestaurantsInput)
-], RestaurantsUpdateInput.prototype, "image", void 0);
+    __metadata("design:type", NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput)
+], RestaurantsUpdateInput.prototype, "restaurant_image", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Upload_file_morphUpdateManyWithoutRestaurantsInput_1.Upload_file_morphUpdateManyWithoutRestaurantsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", Upload_file_morphUpdateManyWithoutRestaurantsInput_1.Upload_file_morphUpdateManyWithoutRestaurantsInput)
+], RestaurantsUpdateInput.prototype, "uploadFileMorph", void 0);
 RestaurantsUpdateInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

@@ -18,5 +18,6 @@ export declare class Restaurants {
     dinner?: boolean | null;
     bachelorParty?: boolean | null;
     henParty?: boolean | null;
-    image?: Upload_file_morph | null;
+    restaurant_image?: number | null;
+    uploadFileMorph?: Upload_file_morph[];
 }

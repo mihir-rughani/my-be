@@ -21,4 +21,5 @@ export declare class RestaurantsUpdateManyMutationInput {
     dinner?: NullableBoolFieldUpdateOperationsInput | undefined;
     bachelorParty?: NullableBoolFieldUpdateOperationsInput | undefined;
     henParty?: NullableBoolFieldUpdateOperationsInput | undefined;
+    restaurant_image?: NullableIntFieldUpdateOperationsInput | undefined;
 }

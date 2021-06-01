@@ -30,15 +30,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Upload_file_morphWhereUniqueInput = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
-const upload_file_morphUpload_file_idRelated_idCompoundUniqueInput_1 = require("../inputs/upload_file_morphUpload_file_idRelated_idCompoundUniqueInput");
 let Upload_file_morphWhereUniqueInput = class Upload_file_morphWhereUniqueInput {
 };
 __decorate([
-    TypeGraphQL.Field(_type => upload_file_morphUpload_file_idRelated_idCompoundUniqueInput_1.upload_file_morphUpload_file_idRelated_idCompoundUniqueInput, {
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: true
     }),
-    __metadata("design:type", upload_file_morphUpload_file_idRelated_idCompoundUniqueInput_1.upload_file_morphUpload_file_idRelated_idCompoundUniqueInput)
-], Upload_file_morphWhereUniqueInput.prototype, "upload_file_id_related_id", void 0);
+    __metadata("design:type", Number)
+], Upload_file_morphWhereUniqueInput.prototype, "id", void 0);
 Upload_file_morphWhereUniqueInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

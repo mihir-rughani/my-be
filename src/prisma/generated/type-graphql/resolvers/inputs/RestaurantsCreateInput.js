@@ -30,7 +30,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.RestaurantsCreateInput = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
-const Upload_file_morphCreateNestedOneWithoutRestaurantsInput_1 = require("../inputs/Upload_file_morphCreateNestedOneWithoutRestaurantsInput");
+const Upload_file_morphCreateNestedManyWithoutRestaurantsInput_1 = require("../inputs/Upload_file_morphCreateNestedManyWithoutRestaurantsInput");
 let RestaurantsCreateInput = class RestaurantsCreateInput {
 };
 __decorate([
@@ -136,11 +136,17 @@ __decorate([
     __metadata("design:type", Boolean)
 ], RestaurantsCreateInput.prototype, "henParty", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => Upload_file_morphCreateNestedOneWithoutRestaurantsInput_1.Upload_file_morphCreateNestedOneWithoutRestaurantsInput, {
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: true
     }),
-    __metadata("design:type", Upload_file_morphCreateNestedOneWithoutRestaurantsInput_1.Upload_file_morphCreateNestedOneWithoutRestaurantsInput)
-], RestaurantsCreateInput.prototype, "image", void 0);
+    __metadata("design:type", Number)
+], RestaurantsCreateInput.prototype, "restaurant_image", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Upload_file_morphCreateNestedManyWithoutRestaurantsInput_1.Upload_file_morphCreateNestedManyWithoutRestaurantsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", Upload_file_morphCreateNestedManyWithoutRestaurantsInput_1.Upload_file_morphCreateNestedManyWithoutRestaurantsInput)
+], RestaurantsCreateInput.prototype, "uploadFileMorph", void 0);
 RestaurantsCreateInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

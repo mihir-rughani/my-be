@@ -1,4 +1,4 @@
-import { Upload_file_morphCreateNestedOneWithoutRestaurantsInput } from "../inputs/Upload_file_morphCreateNestedOneWithoutRestaurantsInput";
+import { Upload_file_morphCreateNestedManyWithoutRestaurantsInput } from "../inputs/Upload_file_morphCreateNestedManyWithoutRestaurantsInput";
 export declare class RestaurantsCreateInput {
     title?: string | undefined;
     description?: string | undefined;
@@ -17,5 +17,6 @@ export declare class RestaurantsCreateInput {
     dinner?: boolean | undefined;
     bachelorParty?: boolean | undefined;
     henParty?: boolean | undefined;
-    image?: Upload_file_morphCreateNestedOneWithoutRestaurantsInput | undefined;
+    restaurant_image?: number | undefined;
+    uploadFileMorph?: Upload_file_morphCreateNestedManyWithoutRestaurantsInput | undefined;
 }

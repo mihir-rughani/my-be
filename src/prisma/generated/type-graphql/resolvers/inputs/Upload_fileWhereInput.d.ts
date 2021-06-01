@@ -5,7 +5,7 @@ import { IntNullableFilter } from "../inputs/IntNullableFilter";
 import { JsonNullableFilter } from "../inputs/JsonNullableFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
-import { Upload_file_morphRelationFilter } from "../inputs/Upload_file_morphRelationFilter";
+import { Upload_file_morphListRelationFilter } from "../inputs/Upload_file_morphListRelationFilter";
 export declare class Upload_fileWhereInput {
     AND?: Upload_fileWhereInput[] | undefined;
     OR?: Upload_fileWhereInput[] | undefined;
@@ -29,5 +29,5 @@ export declare class Upload_fileWhereInput {
     updated_by?: IntNullableFilter | undefined;
     created_at?: DateTimeNullableFilter | undefined;
     updated_at?: DateTimeNullableFilter | undefined;
-    image?: Upload_file_morphRelationFilter | undefined;
+    uploadFileMorph?: Upload_file_morphListRelationFilter | undefined;
 }

@@ -139,6 +139,12 @@ __decorate([
     }),
     __metadata("design:type", NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput)
 ], RestaurantsUpdateManyMutationInput.prototype, "henParty", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput)
+], RestaurantsUpdateManyMutationInput.prototype, "restaurant_image", void 0);
 RestaurantsUpdateManyMutationInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

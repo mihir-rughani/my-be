@@ -4,8 +4,9 @@ import { Upload_file_morphMaxAggregate } from "../outputs/Upload_file_morphMaxAg
 import { Upload_file_morphMinAggregate } from "../outputs/Upload_file_morphMinAggregate";
 import { Upload_file_morphSumAggregate } from "../outputs/Upload_file_morphSumAggregate";
 export declare class Upload_file_morphGroupBy {
-    upload_file_id: number;
-    related_id: number;
+    id: number;
+    upload_file_id: number | null;
+    related_id: number | null;
     related_type: string | null;
     field: string | null;
     order: number | null;

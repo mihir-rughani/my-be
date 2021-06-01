@@ -4,7 +4,7 @@ import { FloatNullableFilter } from "../inputs/FloatNullableFilter";
 import { IntFilter } from "../inputs/IntFilter";
 import { IntNullableFilter } from "../inputs/IntNullableFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
-import { Upload_file_morphRelationFilter } from "../inputs/Upload_file_morphRelationFilter";
+import { Upload_file_morphListRelationFilter } from "../inputs/Upload_file_morphListRelationFilter";
 export declare class RestaurantsWhereInput {
     AND?: RestaurantsWhereInput[] | undefined;
     OR?: RestaurantsWhereInput[] | undefined;
@@ -27,5 +27,6 @@ export declare class RestaurantsWhereInput {
     dinner?: BoolNullableFilter | undefined;
     bachelorParty?: BoolNullableFilter | undefined;
     henParty?: BoolNullableFilter | undefined;
-    image?: Upload_file_morphRelationFilter | undefined;
+    restaurant_image?: IntNullableFilter | undefined;
+    uploadFileMorph?: Upload_file_morphListRelationFilter | undefined;
 }

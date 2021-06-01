@@ -1,22 +1,16 @@
-import { Authorized, Query, Resolver } from "type-graphql";
-import { RolesEnum } from "../../types/enums";
-import { Bars } from "../../data/entities";
-//import { IResponseError } from "../../types/interfaces";
-import { getRepository } from "typeorm";
+import { Query, Resolver } from "type-graphql";
+import { getManager, getRepository } from "typeorm";
+import { Bars } from "../../data/entities/Bars";
+
 
 @Resolver(() => Bars)
 export class BarResolver {
 
-	protected readonly userRepository = getRepository(Bars);
-
-	@Authorized(RolesEnum.Admin, RolesEnum.Artist, RolesEnum.User)
 	@Query(() => [Bars])
 	async bars(): Promise<Bars[]> {
 
-		console.log("calling the users api");
-
-		return await this.userRepository.createQueryBuilder("bars")
-			.getMany();
+		console.log("calling my own bars api");
+		return await getRepository(Bars).find()
 
 	}
 }

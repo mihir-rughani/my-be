@@ -37,6 +37,12 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", Number)
+], Upload_file_morphAvgAggregate.prototype, "id", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Float, {
+        nullable: true
+    }),
+    __metadata("design:type", Number)
 ], Upload_file_morphAvgAggregate.prototype, "upload_file_id", void 0);
 __decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Float, {

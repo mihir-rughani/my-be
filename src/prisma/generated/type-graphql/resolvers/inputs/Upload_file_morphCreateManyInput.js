@@ -34,13 +34,19 @@ let Upload_file_morphCreateManyInput = class Upload_file_morphCreateManyInput {
 };
 __decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
+        nullable: true
+    }),
+    __metadata("design:type", Number)
+], Upload_file_morphCreateManyInput.prototype, "id", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
     }),
     __metadata("design:type", Number)
 ], Upload_file_morphCreateManyInput.prototype, "upload_file_id", void 0);
 __decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
+        nullable: true
     }),
     __metadata("design:type", Number)
 ], Upload_file_morphCreateManyInput.prototype, "related_id", void 0);

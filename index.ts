@@ -6,11 +6,16 @@ import { graphqlHTTP } from "express-graphql";
 import * as dotenv from "dotenv";
 import { resolvers } from "./src/prisma/generated/type-graphql";
 import { PrismaClient } from "@prisma/client";
+import { BarResolver } from "./src/modules";
+//import { dbConnect } from "./src/config/typeorm";
 
 const PORT = process.env.PORT || 3500;
 const prisma = new PrismaClient();
 
 dotenv.config();
+// (async () => {
+// 	await dbConnect();
+// })()
 
 const app = express();
 app.set("port", process.env.PORT || 3500);
@@ -57,16 +62,16 @@ app.post("/api/media-convert-status-update", (req, res) => {
 	console.log("---------------------------------------");
 	console.log(id, status, uid);
 	console.log("---------------------------------------");
-
 	if (status === "PROGRESSING" || status === "COMPLETE") {
 
 	}
 });
 
 class Context {
-	prisma:any;
-	constructor(prisma:any) {
-		this.prisma = prisma
+	prisma: any;
+
+	constructor(prisma: any) {
+		this.prisma = prisma;
 	}
 }
 
@@ -74,7 +79,7 @@ app.use("/graphql", async (req, res) => {
 
 	let schema = await buildSchema({
 		resolvers: resolvers,
-		validate: {enableDebugMessages:true}
+		validate: { enableDebugMessages: true }
 	});
 
 	try {
@@ -90,7 +95,7 @@ app.use("/graphql", async (req, res) => {
 			schema: schema,
 			rootValue: rootValue,
 			graphiql: true,
-			context: {prisma:cxt.prisma},
+			context: { prisma: cxt.prisma }
 		})(req, res);
 
 	} catch (e) {

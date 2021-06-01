@@ -17,4 +17,5 @@ export declare class RestaurantsCreateManyInput {
     dinner?: boolean | undefined;
     bachelorParty?: boolean | undefined;
     henParty?: boolean | undefined;
+    restaurant_image?: number | undefined;
 }

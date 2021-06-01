@@ -146,6 +146,12 @@ __decorate([
     }),
     __metadata("design:type", Date)
 ], BarsMaxAggregate.prototype, "updated_at", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    __metadata("design:type", Number)
+], BarsMaxAggregate.prototype, "bar_image", void 0);
 BarsMaxAggregate = __decorate([
     TypeGraphQL.ObjectType({
         isAbstract: true

@@ -35,25 +35,26 @@ exports.BarsRelationsResolver = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
 const Bars_1 = require("../../../models/Bars");
 const Upload_file_morph_1 = require("../../../models/Upload_file_morph");
+const BarsUploadFileMorphArgs_1 = require("./args/BarsUploadFileMorphArgs");
 const helpers_1 = require("../../../helpers");
 let BarsRelationsResolver = class BarsRelationsResolver {
-    async image(bars, ctx) {
+    async uploadFileMorph(bars, ctx, args) {
         return helpers_1.getPrismaFromContext(ctx).bars.findUnique({
             where: {
                 id: bars.id,
             },
-        }).image({});
+        }).uploadFileMorph(args);
     }
 };
 __decorate([
-    TypeGraphQL.FieldResolver(_type => Upload_file_morph_1.Upload_file_morph, {
-        nullable: true
+    TypeGraphQL.FieldResolver(_type => [Upload_file_morph_1.Upload_file_morph], {
+        nullable: false
     }),
-    __param(0, TypeGraphQL.Root()), __param(1, TypeGraphQL.Ctx()),
+    __param(0, TypeGraphQL.Root()), __param(1, TypeGraphQL.Ctx()), __param(2, TypeGraphQL.Args()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Bars_1.Bars, Object]),
+    __metadata("design:paramtypes", [Bars_1.Bars, Object, BarsUploadFileMorphArgs_1.BarsUploadFileMorphArgs]),
     __metadata("design:returntype", Promise)
-], BarsRelationsResolver.prototype, "image", null);
+], BarsRelationsResolver.prototype, "uploadFileMorph", null);
 BarsRelationsResolver = __decorate([
     TypeGraphQL.Resolver(_of => Bars_1.Bars)
 ], BarsRelationsResolver);

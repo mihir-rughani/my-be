@@ -3,7 +3,7 @@ import { NullableDateTimeFieldUpdateOperationsInput } from "../inputs/NullableDa
 import { NullableFloatFieldUpdateOperationsInput } from "../inputs/NullableFloatFieldUpdateOperationsInput";
 import { NullableIntFieldUpdateOperationsInput } from "../inputs/NullableIntFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
-import { Upload_file_morphUpdateOneWithoutRestaurantsInput } from "../inputs/Upload_file_morphUpdateOneWithoutRestaurantsInput";
+import { Upload_file_morphUpdateManyWithoutRestaurantsInput } from "../inputs/Upload_file_morphUpdateManyWithoutRestaurantsInput";
 export declare class RestaurantsUpdateInput {
     title?: NullableStringFieldUpdateOperationsInput | undefined;
     description?: NullableStringFieldUpdateOperationsInput | undefined;
@@ -22,5 +22,6 @@ export declare class RestaurantsUpdateInput {
     dinner?: NullableBoolFieldUpdateOperationsInput | undefined;
     bachelorParty?: NullableBoolFieldUpdateOperationsInput | undefined;
     henParty?: NullableBoolFieldUpdateOperationsInput | undefined;
-    image?: Upload_file_morphUpdateOneWithoutRestaurantsInput | undefined;
+    restaurant_image?: NullableIntFieldUpdateOperationsInput | undefined;
+    uploadFileMorph?: Upload_file_morphUpdateManyWithoutRestaurantsInput | undefined;
 }

@@ -1,4 +1,4 @@
-import { Upload_file_morphCreateNestedOneWithoutBarsInput } from "../inputs/Upload_file_morphCreateNestedOneWithoutBarsInput";
+import { Upload_file_morphCreateNestedManyWithoutBarsInput } from "../inputs/Upload_file_morphCreateNestedManyWithoutBarsInput";
 export declare class BarsCreateInput {
     title?: string | undefined;
     description?: string | undefined;
@@ -18,5 +18,6 @@ export declare class BarsCreateInput {
     updated_by?: number | undefined;
     created_at?: Date | undefined;
     updated_at?: Date | undefined;
-    image?: Upload_file_morphCreateNestedOneWithoutBarsInput | undefined;
+    bar_image?: number | undefined;
+    uploadFileMorph?: Upload_file_morphCreateNestedManyWithoutBarsInput | undefined;
 }
