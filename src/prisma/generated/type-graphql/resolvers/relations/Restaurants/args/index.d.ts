@@ -1,0 +1,1 @@
+export { RestaurantsUploadFileMorphArgs } from "./RestaurantsUploadFileMorphArgs";
