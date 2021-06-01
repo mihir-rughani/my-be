@@ -6,12 +6,16 @@ import { graphqlHTTP } from "express-graphql";
 import * as dotenv from "dotenv";
 import { resolvers } from "./src/prisma/generated/type-graphql";
 import { PrismaClient } from "@prisma/client";
-import { BarResolver } from "./src/modules";
-//import { dbConnect } from "./src/config/typeorm";
 
 const PORT = process.env.PORT || 3500;
 const prisma = new PrismaClient();
 
+class Context {
+	prisma: any;
+	constructor(prisma: any) {
+		this.prisma = prisma;
+	}
+}
 dotenv.config();
 // (async () => {
 // 	await dbConnect();
@@ -67,19 +71,11 @@ app.post("/api/media-convert-status-update", (req, res) => {
 	}
 });
 
-class Context {
-	prisma: any;
-
-	constructor(prisma: any) {
-		this.prisma = prisma;
-	}
-}
-
 app.use("/graphql", async (req, res) => {
 
 	let schema = await buildSchema({
 		resolvers: resolvers,
-		validate: { enableDebugMessages: true }
+		validate: { enableDebugMessages: false }
 	});
 
 	try {
@@ -110,6 +106,5 @@ app.listen(PORT, () => {
 	console.log("App is running on port %d in %s mode", PORT, app.get("env"));
 	console.log("Press CTRL-C to stop\n");
 });
-
 
 export default app;
