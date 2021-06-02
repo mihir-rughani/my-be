@@ -4,6 +4,7 @@
 	"engines": {
 		"node": "14.17.0"
 	},
+	"type" : "commonjs",
 	"description": "",
 	"main": "./src/server",
 	"scripts": {
@@ -13,7 +14,7 @@
 		"dev:run": "nodemon --watch build/index.js --exec 'node build/index.js'",
 		"test": "jest --coverage",
 		"test:watch": "jest --watch --coverage",
-		"start:prod": "cd build && node ./index.js",
+		"start:prod": "node build",
 		"start:dev": "nodemon",
 		"build": "tsc",
 		"lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
