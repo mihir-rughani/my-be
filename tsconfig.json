@@ -1,7 +1,6 @@
 {
 	"compilerOptions": {
 		"resolveJsonModule": true,
-		"outDir": ".build",
 		"module": "commonjs",
 		"baseUrl": ".",
 		"target": "es2019",
@@ -17,5 +16,6 @@
 		"noUnusedLocals": false,
       	"allowSyntheticDefaultImports": true
     },
+	"include": ["src/**/*"],
 	"exclude": ["node_modules", "src/emailTemplates", "**/__mocks__/*", "src/**/*.test.ts"]
 }

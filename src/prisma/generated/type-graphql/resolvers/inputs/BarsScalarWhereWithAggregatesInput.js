@@ -171,12 +171,6 @@ __decorate([
     }),
     __metadata("design:type", DateTimeNullableWithAggregatesFilter_1.DateTimeNullableWithAggregatesFilter)
 ], BarsScalarWhereWithAggregatesInput.prototype, "updated_at", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter, {
-        nullable: true
-    }),
-    __metadata("design:type", IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter)
-], BarsScalarWhereWithAggregatesInput.prototype, "bar_image", void 0);
 BarsScalarWhereWithAggregatesInput = BarsScalarWhereWithAggregatesInput_1 = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

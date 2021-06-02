@@ -27,6 +27,5 @@ export declare class RestaurantsWhereInput {
     dinner?: BoolNullableFilter | undefined;
     bachelorParty?: BoolNullableFilter | undefined;
     henParty?: BoolNullableFilter | undefined;
-    restaurant_image?: IntNullableFilter | undefined;
     uploadFileMorph?: Upload_file_morphListRelationFilter | undefined;
 }

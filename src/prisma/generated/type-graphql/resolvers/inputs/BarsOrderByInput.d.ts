@@ -18,5 +18,4 @@ export declare class BarsOrderByInput {
     updated_by?: "asc" | "desc" | undefined;
     created_at?: "asc" | "desc" | undefined;
     updated_at?: "asc" | "desc" | undefined;
-    bar_image?: "asc" | "desc" | undefined;
 }

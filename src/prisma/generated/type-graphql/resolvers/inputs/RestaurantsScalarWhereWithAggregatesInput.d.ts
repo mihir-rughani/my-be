@@ -26,5 +26,4 @@ export declare class RestaurantsScalarWhereWithAggregatesInput {
     dinner?: BoolNullableWithAggregatesFilter | undefined;
     bachelorParty?: BoolNullableWithAggregatesFilter | undefined;
     henParty?: BoolNullableWithAggregatesFilter | undefined;
-    restaurant_image?: IntNullableWithAggregatesFilter | undefined;
 }

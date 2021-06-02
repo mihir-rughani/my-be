@@ -16,6 +16,5 @@ export declare enum RestaurantsScalarFieldEnum {
     lunch = "lunch",
     dinner = "dinner",
     bachelorParty = "bachelorParty",
-    henParty = "henParty",
-    restaurant_image = "restaurant_image"
+    henParty = "henParty"
 }

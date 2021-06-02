@@ -22,6 +22,5 @@ export declare class RestaurantsUpdateInput {
     dinner?: NullableBoolFieldUpdateOperationsInput | undefined;
     bachelorParty?: NullableBoolFieldUpdateOperationsInput | undefined;
     henParty?: NullableBoolFieldUpdateOperationsInput | undefined;
-    restaurant_image?: NullableIntFieldUpdateOperationsInput | undefined;
     uploadFileMorph?: Upload_file_morphUpdateManyWithoutRestaurantsInput | undefined;
 }

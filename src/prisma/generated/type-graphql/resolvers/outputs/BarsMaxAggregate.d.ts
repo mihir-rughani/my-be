@@ -18,5 +18,4 @@ export declare class BarsMaxAggregate {
     updated_by: number | null;
     created_at: Date | null;
     updated_at: Date | null;
-    bar_image: number | null;
 }

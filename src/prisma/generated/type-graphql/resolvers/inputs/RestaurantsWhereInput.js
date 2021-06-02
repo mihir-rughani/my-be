@@ -167,12 +167,6 @@ __decorate([
     __metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
 ], RestaurantsWhereInput.prototype, "henParty", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => IntNullableFilter_1.IntNullableFilter, {
-        nullable: true
-    }),
-    __metadata("design:type", IntNullableFilter_1.IntNullableFilter)
-], RestaurantsWhereInput.prototype, "restaurant_image", void 0);
-__decorate([
     TypeGraphQL.Field(_type => Upload_file_morphListRelationFilter_1.Upload_file_morphListRelationFilter, {
         nullable: true
     }),

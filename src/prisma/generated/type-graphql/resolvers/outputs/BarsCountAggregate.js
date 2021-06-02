@@ -151,12 +151,6 @@ __decorate([
         nullable: false
     }),
     __metadata("design:type", Number)
-], BarsCountAggregate.prototype, "bar_image", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    __metadata("design:type", Number)
 ], BarsCountAggregate.prototype, "_all", void 0);
 BarsCountAggregate = __decorate([
     TypeGraphQL.ObjectType({

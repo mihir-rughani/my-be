@@ -41,7 +41,6 @@ var RestaurantsScalarFieldEnum;
     RestaurantsScalarFieldEnum["dinner"] = "dinner";
     RestaurantsScalarFieldEnum["bachelorParty"] = "bachelorParty";
     RestaurantsScalarFieldEnum["henParty"] = "henParty";
-    RestaurantsScalarFieldEnum["restaurant_image"] = "restaurant_image";
 })(RestaurantsScalarFieldEnum = exports.RestaurantsScalarFieldEnum || (exports.RestaurantsScalarFieldEnum = {}));
 TypeGraphQL.registerEnumType(RestaurantsScalarFieldEnum, {
     name: "RestaurantsScalarFieldEnum",

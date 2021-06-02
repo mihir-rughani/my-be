@@ -147,12 +147,6 @@ __decorate([
     }),
     __metadata("design:type", String)
 ], BarsOrderByInput.prototype, "updated_at", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    __metadata("design:type", String)
-], BarsOrderByInput.prototype, "bar_image", void 0);
 BarsOrderByInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

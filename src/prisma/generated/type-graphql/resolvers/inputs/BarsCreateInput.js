@@ -142,12 +142,6 @@ __decorate([
     __metadata("design:type", Date)
 ], BarsCreateInput.prototype, "updated_at", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    __metadata("design:type", Number)
-], BarsCreateInput.prototype, "bar_image", void 0);
-__decorate([
     TypeGraphQL.Field(_type => Upload_file_morphCreateNestedManyWithoutBarsInput_1.Upload_file_morphCreateNestedManyWithoutBarsInput, {
         nullable: true
     }),

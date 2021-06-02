@@ -165,12 +165,6 @@ __decorate([
     }),
     __metadata("design:type", BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter)
 ], RestaurantsScalarWhereWithAggregatesInput.prototype, "henParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter, {
-        nullable: true
-    }),
-    __metadata("design:type", IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter)
-], RestaurantsScalarWhereWithAggregatesInput.prototype, "restaurant_image", void 0);
 RestaurantsScalarWhereWithAggregatesInput = RestaurantsScalarWhereWithAggregatesInput_1 = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

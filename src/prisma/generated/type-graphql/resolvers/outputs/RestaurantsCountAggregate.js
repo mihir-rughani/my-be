@@ -145,12 +145,6 @@ __decorate([
         nullable: false
     }),
     __metadata("design:type", Number)
-], RestaurantsCountAggregate.prototype, "restaurant_image", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    __metadata("design:type", Number)
 ], RestaurantsCountAggregate.prototype, "_all", void 0);
 RestaurantsCountAggregate = __decorate([
     TypeGraphQL.ObjectType({

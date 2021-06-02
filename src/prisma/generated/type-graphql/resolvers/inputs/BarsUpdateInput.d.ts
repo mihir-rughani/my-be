@@ -23,6 +23,5 @@ export declare class BarsUpdateInput {
     updated_by?: NullableIntFieldUpdateOperationsInput | undefined;
     created_at?: NullableDateTimeFieldUpdateOperationsInput | undefined;
     updated_at?: NullableDateTimeFieldUpdateOperationsInput | undefined;
-    bar_image?: NullableIntFieldUpdateOperationsInput | undefined;
     uploadFileMorph?: Upload_file_morphUpdateManyWithoutBarsInput | undefined;
 }

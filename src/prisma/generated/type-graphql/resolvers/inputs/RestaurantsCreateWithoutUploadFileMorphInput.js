@@ -134,12 +134,6 @@ __decorate([
     }),
     __metadata("design:type", Boolean)
 ], RestaurantsCreateWithoutUploadFileMorphInput.prototype, "henParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    __metadata("design:type", Number)
-], RestaurantsCreateWithoutUploadFileMorphInput.prototype, "restaurant_image", void 0);
 RestaurantsCreateWithoutUploadFileMorphInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

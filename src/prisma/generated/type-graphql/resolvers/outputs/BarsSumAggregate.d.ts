@@ -4,5 +4,4 @@ export declare class BarsSumAggregate {
     lon: number | null;
     created_by: number | null;
     updated_by: number | null;
-    bar_image: number | null;
 }

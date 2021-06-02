@@ -9,14 +9,11 @@
 	"main": "index.ts",
 	"scripts": {
 		"start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-		"dev": "npm-run-all dev:*",
-		"dev:watch": "nodemon --watch '*/**.ts' -e ts --exec tsc",
-		"dev:run": "nodemon --watch build/index.js --exec 'node build/index.js'",
 		"test": "jest --coverage",
 		"test:watch": "jest --watch --coverage",
 		"start:prod": "node build",
-		"start:dev": "nodemon",
-		"build": "tsc",
+		"start:dev": "ts-node ./index.ts",
+		"build": "tsc --outDir ../masesays-prod-be/build",
 		"lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
 		"clear_jest": "jest --clearCache"
 	},

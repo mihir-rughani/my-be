@@ -68,12 +68,6 @@ __decorate([
     }),
     __metadata("design:type", Number)
 ], RestaurantsAvgAggregate.prototype, "updated_by", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Float, {
-        nullable: true
-    }),
-    __metadata("design:type", Number)
-], RestaurantsAvgAggregate.prototype, "restaurant_image", void 0);
 RestaurantsAvgAggregate = __decorate([
     TypeGraphQL.ObjectType({
         isAbstract: true

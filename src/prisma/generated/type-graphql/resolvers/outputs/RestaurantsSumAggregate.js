@@ -68,12 +68,6 @@ __decorate([
     }),
     __metadata("design:type", Number)
 ], RestaurantsSumAggregate.prototype, "updated_by", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    __metadata("design:type", Number)
-], RestaurantsSumAggregate.prototype, "restaurant_image", void 0);
 RestaurantsSumAggregate = __decorate([
     TypeGraphQL.ObjectType({
         isAbstract: true

@@ -141,12 +141,6 @@ __decorate([
     }),
     __metadata("design:type", String)
 ], RestaurantsOrderByInput.prototype, "henParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    __metadata("design:type", String)
-], RestaurantsOrderByInput.prototype, "restaurant_image", void 0);
 RestaurantsOrderByInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

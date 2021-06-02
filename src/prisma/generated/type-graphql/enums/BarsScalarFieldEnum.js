@@ -42,7 +42,6 @@ var BarsScalarFieldEnum;
     BarsScalarFieldEnum["updated_by"] = "updated_by";
     BarsScalarFieldEnum["created_at"] = "created_at";
     BarsScalarFieldEnum["updated_at"] = "updated_at";
-    BarsScalarFieldEnum["bar_image"] = "bar_image";
 })(BarsScalarFieldEnum = exports.BarsScalarFieldEnum || (exports.BarsScalarFieldEnum = {}));
 TypeGraphQL.registerEnumType(BarsScalarFieldEnum, {
     name: "BarsScalarFieldEnum",

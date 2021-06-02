@@ -18,6 +18,5 @@ export declare class BarsCreateInput {
     updated_by?: number | undefined;
     created_at?: Date | undefined;
     updated_at?: Date | undefined;
-    bar_image?: number | undefined;
     uploadFileMorph?: Upload_file_morphCreateNestedManyWithoutBarsInput | undefined;
 }

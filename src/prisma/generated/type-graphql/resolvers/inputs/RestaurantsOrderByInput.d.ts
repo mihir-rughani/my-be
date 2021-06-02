@@ -17,5 +17,4 @@ export declare class RestaurantsOrderByInput {
     dinner?: "asc" | "desc" | undefined;
     bachelorParty?: "asc" | "desc" | undefined;
     henParty?: "asc" | "desc" | undefined;
-    restaurant_image?: "asc" | "desc" | undefined;
 }

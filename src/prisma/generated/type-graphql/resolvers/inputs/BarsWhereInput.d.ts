@@ -28,6 +28,5 @@ export declare class BarsWhereInput {
     updated_by?: IntNullableFilter | undefined;
     created_at?: DateTimeNullableFilter | undefined;
     updated_at?: DateTimeNullableFilter | undefined;
-    bar_image?: IntNullableFilter | undefined;
     uploadFileMorph?: Upload_file_morphListRelationFilter | undefined;
 }

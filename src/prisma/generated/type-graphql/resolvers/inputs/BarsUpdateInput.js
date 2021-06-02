@@ -147,12 +147,6 @@ __decorate([
     __metadata("design:type", NullableDateTimeFieldUpdateOperationsInput_1.NullableDateTimeFieldUpdateOperationsInput)
 ], BarsUpdateInput.prototype, "updated_at", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput, {
-        nullable: true
-    }),
-    __metadata("design:type", NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput)
-], BarsUpdateInput.prototype, "bar_image", void 0);
-__decorate([
     TypeGraphQL.Field(_type => Upload_file_morphUpdateManyWithoutBarsInput_1.Upload_file_morphUpdateManyWithoutBarsInput, {
         nullable: true
     }),
