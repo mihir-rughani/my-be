@@ -6,7 +6,7 @@
 	},
 	"type" : "commonjs",
 	"description": "",
-	"main": "./src/server",
+	"main": "index.ts",
 	"scripts": {
 		"start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
 		"dev": "npm-run-all dev:*",
