@@ -13,7 +13,7 @@
 		"test:watch": "jest --watch --coverage",
 		"start:prod": "node build",
 		"start:dev": "ts-node ./index.ts",
-		"build": "tsc --outDir ../masesays-prod-be/build",
+		"build": "tsc --outDir ./build",
 		"lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
 		"clear_jest": "jest --clearCache"
 	},
