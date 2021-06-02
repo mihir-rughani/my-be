@@ -4,7 +4,7 @@
 	"engines": {
 		"node": "14.17.0"
 	},
-	"type" : "commonjs",
+	"type": "commonjs",
 	"description": "",
 	"main": "index.ts",
 	"scripts": {
@@ -91,7 +91,7 @@
 		"typedi": "latest",
 		"typeorm": "^0.2.32",
 		"winston": "latest",
-		"@prisma/client": "^2.23.0",
+		"@prisma/client": "2.23.0",
 		"@types/express": "latest",
 		"@types/graphql-fields": "^1.3.3",
 		"@types/jest": "latest",
@@ -109,7 +109,7 @@
 		"node-mocks-http": "latest",
 		"nodemon": "latest",
 		"prettier": "latest",
-		"prisma": "^2.23.0",
+		"prisma": "2.23.0",
 		"proxyquire": "latest",
 		"sinon": "latest",
 		"sinon-chai": "latest",
@@ -120,7 +120,5 @@
 		"typegraphql-prisma": "^0.14.3",
 		"typescript": "latest"
 	},
-	"devDependencies": {
-
-	}
+	"devDependencies": {}
 }
