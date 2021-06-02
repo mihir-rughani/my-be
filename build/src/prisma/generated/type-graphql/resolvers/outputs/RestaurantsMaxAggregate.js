@@ -151,12 +151,6 @@ __decorate([
     }),
     __metadata("design:type", Boolean)
 ], RestaurantsMaxAggregate.prototype, "henParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    __metadata("design:type", Number)
-], RestaurantsMaxAggregate.prototype, "restaurant_image", void 0);
 RestaurantsMaxAggregate = __decorate([
     TypeGraphQL.ObjectType({
         isAbstract: true

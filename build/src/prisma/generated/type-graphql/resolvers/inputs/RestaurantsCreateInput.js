@@ -147,12 +147,6 @@ __decorate([
     __metadata("design:type", Boolean)
 ], RestaurantsCreateInput.prototype, "henParty", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    __metadata("design:type", Number)
-], RestaurantsCreateInput.prototype, "restaurant_image", void 0);
-__decorate([
     TypeGraphQL.Field(_type => Upload_file_morphCreateNestedManyWithoutRestaurantsInput_1.Upload_file_morphCreateNestedManyWithoutRestaurantsInput, {
         nullable: true
     }),

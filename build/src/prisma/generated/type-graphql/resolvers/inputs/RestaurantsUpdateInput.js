@@ -152,12 +152,6 @@ __decorate([
     __metadata("design:type", NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput)
 ], RestaurantsUpdateInput.prototype, "henParty", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput, {
-        nullable: true
-    }),
-    __metadata("design:type", NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput)
-], RestaurantsUpdateInput.prototype, "restaurant_image", void 0);
-__decorate([
     TypeGraphQL.Field(_type => Upload_file_morphUpdateManyWithoutRestaurantsInput_1.Upload_file_morphUpdateManyWithoutRestaurantsInput, {
         nullable: true
     }),

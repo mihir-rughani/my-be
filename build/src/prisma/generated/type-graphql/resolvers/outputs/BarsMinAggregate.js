@@ -157,12 +157,6 @@ __decorate([
     }),
     __metadata("design:type", Date)
 ], BarsMinAggregate.prototype, "updated_at", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    __metadata("design:type", Number)
-], BarsMinAggregate.prototype, "bar_image", void 0);
 BarsMinAggregate = __decorate([
     TypeGraphQL.ObjectType({
         isAbstract: true

@@ -151,12 +151,6 @@ __decorate([
     }),
     __metadata("design:type", Boolean)
 ], RestaurantsMinAggregate.prototype, "henParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    __metadata("design:type", Number)
-], RestaurantsMinAggregate.prototype, "restaurant_image", void 0);
 RestaurantsMinAggregate = __decorate([
     TypeGraphQL.ObjectType({
         isAbstract: true

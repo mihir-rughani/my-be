@@ -157,12 +157,6 @@ __decorate([
     __metadata("design:type", Boolean)
 ], RestaurantsGroupBy.prototype, "henParty", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    __metadata("design:type", Number)
-], RestaurantsGroupBy.prototype, "restaurant_image", void 0);
-__decorate([
     TypeGraphQL.Field(_type => RestaurantsCountAggregate_1.RestaurantsCountAggregate, {
         nullable: true
     }),
