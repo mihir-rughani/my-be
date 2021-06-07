@@ -5,17 +5,15 @@ import * as outputTypes from "./resolvers/outputs";
 import * as inputTypes from "./resolvers/inputs";
 import * as argsTypes from "./resolvers/crud/args.index";
 declare const crudResolversMap: {
-    Bars: typeof crudResolvers.BarsCrudResolver;
-    Cities: typeof crudResolvers.CitiesCrudResolver;
-    Restaurants: typeof crudResolvers.RestaurantsCrudResolver;
-    Upload_file: typeof crudResolvers.Upload_fileCrudResolver;
     Upload_file_morph: typeof crudResolvers.Upload_file_morphCrudResolver;
+    VenueType: typeof crudResolvers.VenueTypeCrudResolver;
+    Venues: typeof crudResolvers.VenuesCrudResolver;
+    Upload_file: typeof crudResolvers.Upload_fileCrudResolver;
 };
 declare const relationResolversMap: {
-    Bars: typeof relationResolvers.BarsRelationsResolver;
-    Restaurants: typeof relationResolvers.RestaurantsRelationsResolver;
-    Upload_file: typeof relationResolvers.Upload_fileRelationsResolver;
     Upload_file_morph: typeof relationResolvers.Upload_file_morphRelationsResolver;
+    Venues: typeof relationResolvers.VenuesRelationsResolver;
+    Upload_file: typeof relationResolvers.Upload_fileRelationsResolver;
 };
 declare type ResolverModelNames = keyof typeof crudResolversMap;
 declare type ModelResolverActionNames<TModel extends ResolverModelNames> = keyof typeof crudResolversMap[TModel]["prototype"];

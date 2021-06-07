@@ -1,13 +1,84 @@
-# CIA Points Pilot
+# MaseSays Backend API
 
-This application is a simple graphql API developed using nodejs v10.15.3 and express server. The API connects to Firebase firestore document database using the firebase token - points-pilot.json to connect.
+This application is a simple graphql API developed using nodejs v14.7.0 and express server. The API connects to PostgresSQL DB which is also managed by Strapi CMS.
 
-     
   
 [GraphQL](http://graphql.org/) and express-graphql backend API's developed in [TypeScript](https://www.typescriptlang.org/) and with [Express.js](http://expressjs.com/) framework.  
+
+This seed repository has a complete GraphQL starter kit written in TypeSciprt. This app also uses the TypeGrapQL Prisma library to generate schema definitions and resolvers.
+
+type-graphql TypeScript
+(https://typegraphql.com/)
+(https://github.com/MichalLytek/type-graphql)
+
+Prisma 2 Integration
+(https://typegraphql.com/docs/prisma.html)
+(https://www.npmjs.com/package/typegraphql-prisma)
+(https://github.com/MichalLytek/typegraphql-prisma)
   
-This seed repository has a complete GraphQL starter kit written in TypeSciprt. For building our API we use various gulp-tasks. We will use Jest for our unit-testing.  
-  
+##Prisma 2 Integration
+To use Prisma, create a schema.prisma file in the root of the app and add the following postgresSQL connection details
+```
+generator client {
+provider = "prisma-client-js"
+}
+
+generator typegraphql {
+provider           = "typegraphql-prisma"
+output             = "./src/prisma/generated/type-graphql"
+emitTranspiledCode = "true"
+}
+
+datasource db {
+provider = "postgresql"
+url      = "postgres://username:password@localhost:5432/databasename"
+}
+```
+
+Install all dependencies and then use the Prisma CLI to generate the schema and models and code.
+```
+npx prisma introspect --force
+
+npx prisma generate
+```
+
+###Finally
+
+Get the Prisma client and resolvers
+```
+import { resolvers } from "./src/prisma/generated/type-graphql";
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
+
+class Context {
+	prisma: any;
+	constructor(prisma: any) {
+		this.prisma = prisma;
+	}
+}
+```
+
+###Add them to buildSchema
+```
+let schema = await buildSchema({
+		resolvers: resolvers,
+		validate: { enableDebugMessages: false }
+	});
+```
+
+### and to graphqlHttp
+
+```
+let cxt = new Context(prisma);
+await graphqlHTTP({
+			schema: schema,
+			rootValue: rootValue,
+			graphiql: true,
+			context: { prisma: cxt.prisma }
+		})(req, res);
+```
+
 ## Getting Started  
 ### Prerequisites  
 Install [Node.js](http://nodejs.org)  
@@ -34,45 +105,15 @@ Please note that we use a `.env` file for defining our environment variables, do
 You will need the following values:
 
 ```
-FIREBASE_PROJECT_ID=
-FIREBASE_CREDENTIALS=
+AWS_ACCESS_KEY = ""
+AWS_SECRET_ACCESS_KEY = ""
+
+DB_PROD="postgres://username:password@host.com:5432/dbname"
+DB_DEV="postgres://username:password@host.com:5432/dbname"
 ```
 
-#### Firebase
 
 ##### Security
-
-Firebase's security is very permissive by default. Make sure you add the following permissons ("Rules") to it.
-
-Cloud Firestore:
-
-```
-service cloud.firestore {
-  match /databases/{database}/documents {
-    match /{document=**} {
-      allow read, write: if false;
-    }
-  }
-}
-```
-
-Real-time Database:
-
-```
-{
-  "rules": {
-    ".read": "false",
-    ".write": "false"
-  }
-}
-```
-
-##### Credentials
-
-Get the firebase credentials from one of the devs and place them into `src/config/points-pilot.json`.
-
-These credentials are initially generated from the "service accounts" settings screen of your project: <https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk?pli=1>
-  
 
 ## Scripts / Commands  
 
@@ -165,12 +206,6 @@ The main libraries used by the server side code are the following:
 
 Dotenv is a zero-dependency module that loads environment variables from a `.env` file into [`process.env`](https://nodejs.org/docs/latest/api/process.html#process_process_env). Storing configuration in the environment separate from code is based on [The Twelve-Factor App](http://12factor.net/config) methodology.
 
-
-### firebase 
-
-firebase client SDK for authentication api calls
-[https://firebase.google.com/]
-
 ### express-graphql
 
 [https://github.com/graphql/express-graphql]
@@ -192,9 +227,8 @@ A [Winston] transport for logging to [Splunk] with a [HTTP Event Collector].
 
 ### GraphQL
 
-* [GraphQL.js](http://graphql.org/) — The JavaScript reference implementation for GraphQL  
-
+* [GraphQL.js](http://graphql.org/) — The JavaScript reference implementation for GraphQL
 
 ---
 Made with ♥ by Mihir Rughani
-# new-tennisPlay-be
+# 

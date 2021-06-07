@@ -1,6 +1,5 @@
-import { Bars } from "../models/Bars";
-import { Restaurants } from "../models/Restaurants";
 import { Upload_file } from "../models/Upload_file";
+import { Venues } from "../models/Venues";
 export declare class Upload_file_morph {
     id: number;
     upload_file_id?: number | null;
@@ -9,6 +8,5 @@ export declare class Upload_file_morph {
     field?: string | null;
     order?: number | null;
     uploadFile?: Upload_file | null;
-    bars?: Bars | null;
-    restaurants?: Restaurants | null;
+    venues?: Venues | null;
 }

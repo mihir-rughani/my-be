@@ -31,12 +31,11 @@ var Upload_file_morphWhereInput_1;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Upload_file_morphWhereInput = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
-const BarsRelationFilter_1 = require("../inputs/BarsRelationFilter");
 const IntFilter_1 = require("../inputs/IntFilter");
 const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
-const RestaurantsRelationFilter_1 = require("../inputs/RestaurantsRelationFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const Upload_fileRelationFilter_1 = require("../inputs/Upload_fileRelationFilter");
+const VenuesRelationFilter_1 = require("../inputs/VenuesRelationFilter");
 let Upload_file_morphWhereInput = Upload_file_morphWhereInput_1 = class Upload_file_morphWhereInput {
 };
 __decorate([
@@ -100,17 +99,11 @@ __decorate([
     __metadata("design:type", Upload_fileRelationFilter_1.Upload_fileRelationFilter)
 ], Upload_file_morphWhereInput.prototype, "uploadFile", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => BarsRelationFilter_1.BarsRelationFilter, {
+    TypeGraphQL.Field(_type => VenuesRelationFilter_1.VenuesRelationFilter, {
         nullable: true
     }),
-    __metadata("design:type", BarsRelationFilter_1.BarsRelationFilter)
-], Upload_file_morphWhereInput.prototype, "bars", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => RestaurantsRelationFilter_1.RestaurantsRelationFilter, {
-        nullable: true
-    }),
-    __metadata("design:type", RestaurantsRelationFilter_1.RestaurantsRelationFilter)
-], Upload_file_morphWhereInput.prototype, "restaurants", void 0);
+    __metadata("design:type", VenuesRelationFilter_1.VenuesRelationFilter)
+], Upload_file_morphWhereInput.prototype, "venues", void 0);
 Upload_file_morphWhereInput = Upload_file_morphWhereInput_1 = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

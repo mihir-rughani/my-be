@@ -1,9 +1,8 @@
-import { BarsRelationFilter } from "../inputs/BarsRelationFilter";
 import { IntFilter } from "../inputs/IntFilter";
 import { IntNullableFilter } from "../inputs/IntNullableFilter";
-import { RestaurantsRelationFilter } from "../inputs/RestaurantsRelationFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
 import { Upload_fileRelationFilter } from "../inputs/Upload_fileRelationFilter";
+import { VenuesRelationFilter } from "../inputs/VenuesRelationFilter";
 export declare class Upload_file_morphWhereInput {
     AND?: Upload_file_morphWhereInput[] | undefined;
     OR?: Upload_file_morphWhereInput[] | undefined;
@@ -15,6 +14,5 @@ export declare class Upload_file_morphWhereInput {
     field?: StringNullableFilter | undefined;
     order?: IntNullableFilter | undefined;
     uploadFile?: Upload_fileRelationFilter | undefined;
-    bars?: BarsRelationFilter | undefined;
-    restaurants?: RestaurantsRelationFilter | undefined;
+    venues?: VenuesRelationFilter | undefined;
 }

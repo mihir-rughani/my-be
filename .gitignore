@@ -26,3 +26,4 @@ buildServer
 stdout.log
 package-lock.json
 *.log
+/prisma.config
