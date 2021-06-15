@@ -6,21 +6,22 @@ import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStri
 export declare class VenuesUpdateWithoutUploadFileMorphInput {
     title?: NullableStringFieldUpdateOperationsInput | undefined;
     description?: NullableStringFieldUpdateOperationsInput | undefined;
+    address?: NullableStringFieldUpdateOperationsInput | undefined;
     suburb?: NullableStringFieldUpdateOperationsInput | undefined;
     city?: NullableStringFieldUpdateOperationsInput | undefined;
     postCode?: NullableStringFieldUpdateOperationsInput | undefined;
     lat?: NullableFloatFieldUpdateOperationsInput | undefined;
     lon?: NullableFloatFieldUpdateOperationsInput | undefined;
+    website?: NullableStringFieldUpdateOperationsInput | undefined;
+    venue_type?: NullableIntFieldUpdateOperationsInput | undefined;
     breakfast?: NullableBoolFieldUpdateOperationsInput | undefined;
     lunch?: NullableBoolFieldUpdateOperationsInput | undefined;
     dinner?: NullableBoolFieldUpdateOperationsInput | undefined;
     bachelorParty?: NullableBoolFieldUpdateOperationsInput | undefined;
     henParty?: NullableBoolFieldUpdateOperationsInput | undefined;
     visible?: NullableBoolFieldUpdateOperationsInput | undefined;
-    published_at?: NullableDateTimeFieldUpdateOperationsInput | undefined;
     created_by?: NullableIntFieldUpdateOperationsInput | undefined;
     updated_by?: NullableIntFieldUpdateOperationsInput | undefined;
     created_at?: NullableDateTimeFieldUpdateOperationsInput | undefined;
     updated_at?: NullableDateTimeFieldUpdateOperationsInput | undefined;
-    venue_type?: NullableIntFieldUpdateOperationsInput | undefined;
 }

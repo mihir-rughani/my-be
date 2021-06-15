@@ -55,6 +55,12 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", Number)
+], VenuesAvgAggregate.prototype, "venue_type", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Float, {
+        nullable: true
+    }),
+    __metadata("design:type", Number)
 ], VenuesAvgAggregate.prototype, "created_by", void 0);
 __decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Float, {
@@ -62,12 +68,6 @@ __decorate([
     }),
     __metadata("design:type", Number)
 ], VenuesAvgAggregate.prototype, "updated_by", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Float, {
-        nullable: true
-    }),
-    __metadata("design:type", Number)
-], VenuesAvgAggregate.prototype, "venue_type", void 0);
 VenuesAvgAggregate = __decorate([
     TypeGraphQL.ObjectType({
         isAbstract: true

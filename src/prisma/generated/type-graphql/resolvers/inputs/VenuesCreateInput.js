@@ -50,6 +50,12 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", String)
+], VenuesCreateInput.prototype, "address", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
 ], VenuesCreateInput.prototype, "suburb", void 0);
 __decorate([
     TypeGraphQL.Field(_type => String, {
@@ -75,6 +81,18 @@ __decorate([
     }),
     __metadata("design:type", Number)
 ], VenuesCreateInput.prototype, "lon", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesCreateInput.prototype, "website", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    __metadata("design:type", Number)
+], VenuesCreateInput.prototype, "venue_type", void 0);
 __decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
@@ -112,12 +130,6 @@ __decorate([
     __metadata("design:type", Boolean)
 ], VenuesCreateInput.prototype, "visible", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => Date, {
-        nullable: true
-    }),
-    __metadata("design:type", Date)
-], VenuesCreateInput.prototype, "published_at", void 0);
-__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: true
     }),
@@ -141,12 +153,6 @@ __decorate([
     }),
     __metadata("design:type", Date)
 ], VenuesCreateInput.prototype, "updated_at", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    __metadata("design:type", Number)
-], VenuesCreateInput.prototype, "venue_type", void 0);
 __decorate([
     TypeGraphQL.Field(_type => Upload_file_morphCreateNestedManyWithoutVenuesInput_1.Upload_file_morphCreateNestedManyWithoutVenuesInput, {
         nullable: true

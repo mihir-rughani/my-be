@@ -11,21 +11,22 @@ export declare class VenuesScalarWhereWithAggregatesInput {
     id?: IntWithAggregatesFilter | undefined;
     title?: StringNullableWithAggregatesFilter | undefined;
     description?: StringNullableWithAggregatesFilter | undefined;
+    address?: StringNullableWithAggregatesFilter | undefined;
     suburb?: StringNullableWithAggregatesFilter | undefined;
     city?: StringNullableWithAggregatesFilter | undefined;
     postCode?: StringNullableWithAggregatesFilter | undefined;
     lat?: FloatNullableWithAggregatesFilter | undefined;
     lon?: FloatNullableWithAggregatesFilter | undefined;
+    website?: StringNullableWithAggregatesFilter | undefined;
+    venue_type?: IntNullableWithAggregatesFilter | undefined;
     breakfast?: BoolNullableWithAggregatesFilter | undefined;
     lunch?: BoolNullableWithAggregatesFilter | undefined;
     dinner?: BoolNullableWithAggregatesFilter | undefined;
     bachelorParty?: BoolNullableWithAggregatesFilter | undefined;
     henParty?: BoolNullableWithAggregatesFilter | undefined;
     visible?: BoolNullableWithAggregatesFilter | undefined;
-    published_at?: DateTimeNullableWithAggregatesFilter | undefined;
     created_by?: IntNullableWithAggregatesFilter | undefined;
     updated_by?: IntNullableWithAggregatesFilter | undefined;
     created_at?: DateTimeNullableWithAggregatesFilter | undefined;
     updated_at?: DateTimeNullableWithAggregatesFilter | undefined;
-    venue_type?: IntNullableWithAggregatesFilter | undefined;
 }

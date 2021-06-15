@@ -81,6 +81,12 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], VenuesWhereInput.prototype, "address", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], VenuesWhereInput.prototype, "suburb", void 0);
 __decorate([
     TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
@@ -106,6 +112,18 @@ __decorate([
     }),
     __metadata("design:type", FloatNullableFilter_1.FloatNullableFilter)
 ], VenuesWhereInput.prototype, "lon", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], VenuesWhereInput.prototype, "website", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => IntNullableFilter_1.IntNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", IntNullableFilter_1.IntNullableFilter)
+], VenuesWhereInput.prototype, "venue_type", void 0);
 __decorate([
     TypeGraphQL.Field(_type => BoolNullableFilter_1.BoolNullableFilter, {
         nullable: true
@@ -143,12 +161,6 @@ __decorate([
     __metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
 ], VenuesWhereInput.prototype, "visible", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => DateTimeNullableFilter_1.DateTimeNullableFilter, {
-        nullable: true
-    }),
-    __metadata("design:type", DateTimeNullableFilter_1.DateTimeNullableFilter)
-], VenuesWhereInput.prototype, "published_at", void 0);
-__decorate([
     TypeGraphQL.Field(_type => IntNullableFilter_1.IntNullableFilter, {
         nullable: true
     }),
@@ -172,12 +184,6 @@ __decorate([
     }),
     __metadata("design:type", DateTimeNullableFilter_1.DateTimeNullableFilter)
 ], VenuesWhereInput.prototype, "updated_at", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => IntNullableFilter_1.IntNullableFilter, {
-        nullable: true
-    }),
-    __metadata("design:type", IntNullableFilter_1.IntNullableFilter)
-], VenuesWhereInput.prototype, "venue_type", void 0);
 __decorate([
     TypeGraphQL.Field(_type => Upload_file_morphListRelationFilter_1.Upload_file_morphListRelationFilter, {
         nullable: true

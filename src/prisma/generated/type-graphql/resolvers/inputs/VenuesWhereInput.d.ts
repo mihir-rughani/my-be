@@ -12,22 +12,23 @@ export declare class VenuesWhereInput {
     id?: IntFilter | undefined;
     title?: StringNullableFilter | undefined;
     description?: StringNullableFilter | undefined;
+    address?: StringNullableFilter | undefined;
     suburb?: StringNullableFilter | undefined;
     city?: StringNullableFilter | undefined;
     postCode?: StringNullableFilter | undefined;
     lat?: FloatNullableFilter | undefined;
     lon?: FloatNullableFilter | undefined;
+    website?: StringNullableFilter | undefined;
+    venue_type?: IntNullableFilter | undefined;
     breakfast?: BoolNullableFilter | undefined;
     lunch?: BoolNullableFilter | undefined;
     dinner?: BoolNullableFilter | undefined;
     bachelorParty?: BoolNullableFilter | undefined;
     henParty?: BoolNullableFilter | undefined;
     visible?: BoolNullableFilter | undefined;
-    published_at?: DateTimeNullableFilter | undefined;
     created_by?: IntNullableFilter | undefined;
     updated_by?: IntNullableFilter | undefined;
     created_at?: DateTimeNullableFilter | undefined;
     updated_at?: DateTimeNullableFilter | undefined;
-    venue_type?: IntNullableFilter | undefined;
     uploadFileMorph?: Upload_file_morphListRelationFilter | undefined;
 }

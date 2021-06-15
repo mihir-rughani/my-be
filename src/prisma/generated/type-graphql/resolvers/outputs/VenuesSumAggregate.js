@@ -55,6 +55,12 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", Number)
+], VenuesSumAggregate.prototype, "venue_type", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    __metadata("design:type", Number)
 ], VenuesSumAggregate.prototype, "created_by", void 0);
 __decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
@@ -62,12 +68,6 @@ __decorate([
     }),
     __metadata("design:type", Number)
 ], VenuesSumAggregate.prototype, "updated_by", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    __metadata("design:type", Number)
-], VenuesSumAggregate.prototype, "venue_type", void 0);
 VenuesSumAggregate = __decorate([
     TypeGraphQL.ObjectType({
         isAbstract: true

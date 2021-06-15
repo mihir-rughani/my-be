@@ -60,6 +60,12 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", String)
+], VenuesGroupBy.prototype, "address", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
 ], VenuesGroupBy.prototype, "suburb", void 0);
 __decorate([
     TypeGraphQL.Field(_type => String, {
@@ -85,6 +91,18 @@ __decorate([
     }),
     __metadata("design:type", Number)
 ], VenuesGroupBy.prototype, "lon", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesGroupBy.prototype, "website", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    __metadata("design:type", Number)
+], VenuesGroupBy.prototype, "venue_type", void 0);
 __decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
@@ -122,12 +140,6 @@ __decorate([
     __metadata("design:type", Boolean)
 ], VenuesGroupBy.prototype, "visible", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => Date, {
-        nullable: true
-    }),
-    __metadata("design:type", Date)
-], VenuesGroupBy.prototype, "published_at", void 0);
-__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: true
     }),
@@ -151,12 +163,6 @@ __decorate([
     }),
     __metadata("design:type", Date)
 ], VenuesGroupBy.prototype, "updated_at", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    __metadata("design:type", Number)
-], VenuesGroupBy.prototype, "venue_type", void 0);
 __decorate([
     TypeGraphQL.Field(_type => VenuesCountAggregate_1.VenuesCountAggregate, {
         nullable: true

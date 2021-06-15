@@ -10,8 +10,31 @@ generator typegraphql {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgres://mihirrughani:@localhost:5432/MaseSays"
   //url      = "postgres://masesays_user:!Q0p9ou8y7@localhost:5432/MaseSays"
+  url      = "postgres://dvwejwifsynivr:7db155587a15c697fa22311e5654acfbca890f4c937796a09c400448d20d3db9@ec2-54-224-194-214.compute-1.amazonaws.com:5432/d8l8cuefb471rv"
+}
+
+model upload_file {
+  id                Int       @id @default(autoincrement())
+  name              String    @db.VarChar(255)
+  alternativeText   String?   @db.VarChar(255)
+  caption           String?   @db.VarChar(255)
+  width             Int?
+  height            Int?
+  formats           Json?
+  hash              String    @db.VarChar(255)
+  ext               String?   @db.VarChar(255)
+  mime              String    @db.VarChar(255)
+  size              Decimal   @db.Decimal(10, 2)
+  url               String    @db.VarChar(255)
+  previewUrl        String?   @db.VarChar(255)
+  provider          String    @db.VarChar(255)
+  provider_metadata Json?
+  created_by        Int?
+  updated_by        Int?
+  created_at        DateTime? @default(now()) @db.Timestamptz(6)
+  updated_at        DateTime? @default(now()) @db.Timestamptz(6)
+  uploadFileMorph   upload_file_morph[]
 }
 
 model upload_file_morph {
@@ -38,45 +61,24 @@ model venues {
   id            Int       @id @default(autoincrement())
   title         String?   @db.VarChar(255)
   description   String?
+  address       String?   @db.VarChar(255)
   suburb        String?   @db.VarChar(255)
   city          String?   @db.VarChar(255)
   postCode      String?   @db.VarChar(255)
   lat           Float?
   lon           Float?
+  website       String?   @db.VarChar(255)
+  venue_type    Int?
   breakfast     Boolean?
   lunch         Boolean?
   dinner        Boolean?
   bachelorParty Boolean?
   henParty      Boolean?
   visible       Boolean?
-  published_at  DateTime? @db.Timestamptz(6)
   created_by    Int?
   updated_by    Int?
   created_at    DateTime? @default(now()) @db.Timestamptz(6)
   updated_at    DateTime? @default(now()) @db.Timestamptz(6)
-  venue_type    Int?
   uploadFileMorph   upload_file_morph[]
 }
 
-model upload_file {
-  id                Int       @id @default(autoincrement())
-  name              String    @db.VarChar(255)
-  alternativeText   String?   @db.VarChar(255)
-  caption           String?   @db.VarChar(255)
-  width             Int?
-  height            Int?
-  formats           Json?
-  hash              String    @db.VarChar(255)
-  ext               String?   @db.VarChar(255)
-  mime              String    @db.VarChar(255)
-  size              Decimal   @db.Decimal(10, 2)
-  url               String    @db.VarChar(255)
-  previewUrl        String?   @db.VarChar(255)
-  provider          String    @db.VarChar(255)
-  provider_metadata Json?
-  created_by        Int?
-  updated_by        Int?
-  created_at        DateTime? @default(now()) @db.Timestamptz(6)
-  updated_at        DateTime? @default(now()) @db.Timestamptz(6)
-  uploadFileMorph   upload_file_morph[]
-}

@@ -56,6 +56,12 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", String)
+], VenuesOrderByInput.prototype, "address", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
 ], VenuesOrderByInput.prototype, "suburb", void 0);
 __decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
@@ -81,6 +87,18 @@ __decorate([
     }),
     __metadata("design:type", String)
 ], VenuesOrderByInput.prototype, "lon", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesOrderByInput.prototype, "website", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesOrderByInput.prototype, "venue_type", void 0);
 __decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
@@ -122,12 +140,6 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", String)
-], VenuesOrderByInput.prototype, "published_at", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    __metadata("design:type", String)
 ], VenuesOrderByInput.prototype, "created_by", void 0);
 __decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
@@ -147,12 +159,6 @@ __decorate([
     }),
     __metadata("design:type", String)
 ], VenuesOrderByInput.prototype, "updated_at", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    __metadata("design:type", String)
-], VenuesOrderByInput.prototype, "venue_type", void 0);
 VenuesOrderByInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

@@ -80,6 +80,12 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
+], VenuesScalarWhereWithAggregatesInput.prototype, "address", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
 ], VenuesScalarWhereWithAggregatesInput.prototype, "suburb", void 0);
 __decorate([
     TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
@@ -105,6 +111,18 @@ __decorate([
     }),
     __metadata("design:type", FloatNullableWithAggregatesFilter_1.FloatNullableWithAggregatesFilter)
 ], VenuesScalarWhereWithAggregatesInput.prototype, "lon", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
+], VenuesScalarWhereWithAggregatesInput.prototype, "website", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter)
+], VenuesScalarWhereWithAggregatesInput.prototype, "venue_type", void 0);
 __decorate([
     TypeGraphQL.Field(_type => BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter, {
         nullable: true
@@ -142,12 +160,6 @@ __decorate([
     __metadata("design:type", BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter)
 ], VenuesScalarWhereWithAggregatesInput.prototype, "visible", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => DateTimeNullableWithAggregatesFilter_1.DateTimeNullableWithAggregatesFilter, {
-        nullable: true
-    }),
-    __metadata("design:type", DateTimeNullableWithAggregatesFilter_1.DateTimeNullableWithAggregatesFilter)
-], VenuesScalarWhereWithAggregatesInput.prototype, "published_at", void 0);
-__decorate([
     TypeGraphQL.Field(_type => IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter, {
         nullable: true
     }),
@@ -171,12 +183,6 @@ __decorate([
     }),
     __metadata("design:type", DateTimeNullableWithAggregatesFilter_1.DateTimeNullableWithAggregatesFilter)
 ], VenuesScalarWhereWithAggregatesInput.prototype, "updated_at", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter, {
-        nullable: true
-    }),
-    __metadata("design:type", IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter)
-], VenuesScalarWhereWithAggregatesInput.prototype, "venue_type", void 0);
 VenuesScalarWhereWithAggregatesInput = VenuesScalarWhereWithAggregatesInput_1 = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true
