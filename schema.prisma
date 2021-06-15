@@ -2,17 +2,17 @@ generator client {
   provider = "prisma-client-js"
 }
 
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_PROD")
+}
+
 generator typegraphql {
   provider           = "typegraphql-prisma"
   output             = "./src/prisma/generated/type-graphql"
   emitTranspiledCode = "true"
 }
 
-datasource db {
-  provider = "postgresql"
-  //url      = "postgres://masesays_user:!Q0p9ou8y7@localhost:5432/MaseSays"
-  url      = "postgres://dvwejwifsynivr:7db155587a15c697fa22311e5654acfbca890f4c937796a09c400448d20d3db9@ec2-54-224-194-214.compute-1.amazonaws.com:5432/d8l8cuefb471rv"
-}
 
 model upload_file {
   id                Int       @id @default(autoincrement())
