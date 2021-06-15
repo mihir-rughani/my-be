@@ -13,7 +13,8 @@
 		"test:watch": "jest --watch --coverage",
 		"start:prod": "node build",
 		"start:dev": "ts-node ./index.ts",
-		"build": "tsc --outDir ./build",
+		"copy-files": "cp ./schema.prisma ./build",
+		"build": "tsc --outDir ./build && npm run copy-files",
 		"lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
 		"clear_jest": "jest --clearCache"
 	},
