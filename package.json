@@ -8,7 +8,7 @@
 	"description": "",
 	"main": "index.ts",
 	"scripts": {
-		"start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+		"start": "node build",
 		"test": "jest --coverage",
 		"test:watch": "jest --watch --coverage",
 		"start:prod": "node build",
