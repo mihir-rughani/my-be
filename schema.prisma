@@ -5,7 +5,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://postgres:5RkvX8DHZ7J3bPgkUybXpmmh2dRuAhMM@aal4f1cz2icpc6.cgnqtd2avkoh.ap-southeast-2.rds.amazonaws.com:5432/ebdb"
+  url      = "postgresql://postgres:5RkvX8DHZ7J3bPgkUybXpmmh2dRuAhMM@aaydv1gqp38iow.cgnqtd2avkoh.ap-southeast-2.rds.amazonaws.com:5432/ebdb"
 }
 
 generator typegraphql {
