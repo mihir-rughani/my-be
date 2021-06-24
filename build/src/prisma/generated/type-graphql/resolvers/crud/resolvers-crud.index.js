@@ -9,4 +9,3 @@ var VenueTypeCrudResolver_1 = require("./VenueType/VenueTypeCrudResolver");
 Object.defineProperty(exports, "VenueTypeCrudResolver", { enumerable: true, get: function () { return VenueTypeCrudResolver_1.VenueTypeCrudResolver; } });
 var VenuesCrudResolver_1 = require("./Venues/VenuesCrudResolver");
 Object.defineProperty(exports, "VenuesCrudResolver", { enumerable: true, get: function () { return VenuesCrudResolver_1.VenuesCrudResolver; } });
-//# sourceMappingURL=resolvers-crud.index.js.map

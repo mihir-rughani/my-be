@@ -1,0 +1,32 @@
+import { BoolNullableWithAggregatesFilter } from "../inputs/BoolNullableWithAggregatesFilter";
+import { DateTimeNullableWithAggregatesFilter } from "../inputs/DateTimeNullableWithAggregatesFilter";
+import { FloatNullableWithAggregatesFilter } from "../inputs/FloatNullableWithAggregatesFilter";
+import { IntNullableWithAggregatesFilter } from "../inputs/IntNullableWithAggregatesFilter";
+import { IntWithAggregatesFilter } from "../inputs/IntWithAggregatesFilter";
+import { StringNullableWithAggregatesFilter } from "../inputs/StringNullableWithAggregatesFilter";
+export declare class VenuesScalarWhereWithAggregatesInput {
+    AND?: VenuesScalarWhereWithAggregatesInput[] | undefined;
+    OR?: VenuesScalarWhereWithAggregatesInput[] | undefined;
+    NOT?: VenuesScalarWhereWithAggregatesInput[] | undefined;
+    id?: IntWithAggregatesFilter | undefined;
+    title?: StringNullableWithAggregatesFilter | undefined;
+    description?: StringNullableWithAggregatesFilter | undefined;
+    address?: StringNullableWithAggregatesFilter | undefined;
+    suburb?: StringNullableWithAggregatesFilter | undefined;
+    city?: StringNullableWithAggregatesFilter | undefined;
+    postCode?: StringNullableWithAggregatesFilter | undefined;
+    lat?: FloatNullableWithAggregatesFilter | undefined;
+    lon?: FloatNullableWithAggregatesFilter | undefined;
+    website?: StringNullableWithAggregatesFilter | undefined;
+    venue_type?: IntNullableWithAggregatesFilter | undefined;
+    breakfast?: BoolNullableWithAggregatesFilter | undefined;
+    lunch?: BoolNullableWithAggregatesFilter | undefined;
+    dinner?: BoolNullableWithAggregatesFilter | undefined;
+    bachelorParty?: BoolNullableWithAggregatesFilter | undefined;
+    henParty?: BoolNullableWithAggregatesFilter | undefined;
+    visible?: BoolNullableWithAggregatesFilter | undefined;
+    created_by?: IntNullableWithAggregatesFilter | undefined;
+    updated_by?: IntNullableWithAggregatesFilter | undefined;
+    created_at?: DateTimeNullableWithAggregatesFilter | undefined;
+    updated_at?: DateTimeNullableWithAggregatesFilter | undefined;
+}

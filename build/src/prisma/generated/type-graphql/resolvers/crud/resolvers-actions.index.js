@@ -97,4 +97,3 @@ var AggregateVenuesResolver_1 = require("./Venues/AggregateVenuesResolver");
 Object.defineProperty(exports, "AggregateVenuesResolver", { enumerable: true, get: function () { return AggregateVenuesResolver_1.AggregateVenuesResolver; } });
 var GroupByVenuesResolver_1 = require("./Venues/GroupByVenuesResolver");
 Object.defineProperty(exports, "GroupByVenuesResolver", { enumerable: true, get: function () { return GroupByVenuesResolver_1.GroupByVenuesResolver; } });
-//# sourceMappingURL=resolvers-actions.index.js.map

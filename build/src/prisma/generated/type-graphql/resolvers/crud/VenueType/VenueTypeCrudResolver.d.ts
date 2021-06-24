@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateVenueTypeArgs } from "./args/AggregateVenueTypeArgs";
+import { CreateManyVenueTypeArgs } from "./args/CreateManyVenueTypeArgs";
+import { CreateVenueTypeArgs } from "./args/CreateVenueTypeArgs";
+import { DeleteManyVenueTypeArgs } from "./args/DeleteManyVenueTypeArgs";
+import { DeleteVenueTypeArgs } from "./args/DeleteVenueTypeArgs";
+import { FindFirstVenueTypeArgs } from "./args/FindFirstVenueTypeArgs";
+import { FindManyVenueTypeArgs } from "./args/FindManyVenueTypeArgs";
+import { FindUniqueVenueTypeArgs } from "./args/FindUniqueVenueTypeArgs";
+import { GroupByVenueTypeArgs } from "./args/GroupByVenueTypeArgs";
+import { UpdateManyVenueTypeArgs } from "./args/UpdateManyVenueTypeArgs";
+import { UpdateVenueTypeArgs } from "./args/UpdateVenueTypeArgs";
+import { UpsertVenueTypeArgs } from "./args/UpsertVenueTypeArgs";
+import { VenueType } from "../../../models/VenueType";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateVenueType } from "../../outputs/AggregateVenueType";
+import { VenueTypeGroupBy } from "../../outputs/VenueTypeGroupBy";
+export declare class VenueTypeCrudResolver {
+    venueType(ctx: any, info: GraphQLResolveInfo, args: FindUniqueVenueTypeArgs): Promise<VenueType | null>;
+    findFirstVenueType(ctx: any, info: GraphQLResolveInfo, args: FindFirstVenueTypeArgs): Promise<VenueType | null>;
+    venueTypes(ctx: any, info: GraphQLResolveInfo, args: FindManyVenueTypeArgs): Promise<VenueType[]>;
+    createVenueType(ctx: any, info: GraphQLResolveInfo, args: CreateVenueTypeArgs): Promise<VenueType>;
+    createManyVenueType(ctx: any, info: GraphQLResolveInfo, args: CreateManyVenueTypeArgs): Promise<AffectedRowsOutput>;
+    deleteVenueType(ctx: any, info: GraphQLResolveInfo, args: DeleteVenueTypeArgs): Promise<VenueType | null>;
+    updateVenueType(ctx: any, info: GraphQLResolveInfo, args: UpdateVenueTypeArgs): Promise<VenueType | null>;
+    deleteManyVenueType(ctx: any, info: GraphQLResolveInfo, args: DeleteManyVenueTypeArgs): Promise<AffectedRowsOutput>;
+    updateManyVenueType(ctx: any, info: GraphQLResolveInfo, args: UpdateManyVenueTypeArgs): Promise<AffectedRowsOutput>;
+    upsertVenueType(ctx: any, info: GraphQLResolveInfo, args: UpsertVenueTypeArgs): Promise<VenueType>;
+    aggregateVenueType(ctx: any, info: GraphQLResolveInfo, args: AggregateVenueTypeArgs): Promise<AggregateVenueType>;
+    groupByVenueType(ctx: any, info: GraphQLResolveInfo, args: GroupByVenueTypeArgs): Promise<VenueTypeGroupBy[]>;
+}

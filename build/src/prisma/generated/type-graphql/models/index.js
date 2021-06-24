@@ -9,4 +9,3 @@ var VenueType_1 = require("./VenueType");
 Object.defineProperty(exports, "VenueType", { enumerable: true, get: function () { return VenueType_1.VenueType; } });
 var Venues_1 = require("./Venues");
 Object.defineProperty(exports, "Venues", { enumerable: true, get: function () { return Venues_1.Venues; } });
-//# sourceMappingURL=index.js.map

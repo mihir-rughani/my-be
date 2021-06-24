@@ -59,4 +59,3 @@ var VenuesMinAggregate_1 = require("./VenuesMinAggregate");
 Object.defineProperty(exports, "VenuesMinAggregate", { enumerable: true, get: function () { return VenuesMinAggregate_1.VenuesMinAggregate; } });
 var VenuesSumAggregate_1 = require("./VenuesSumAggregate");
 Object.defineProperty(exports, "VenuesSumAggregate", { enumerable: true, get: function () { return VenuesSumAggregate_1.VenuesSumAggregate; } });
-//# sourceMappingURL=index.js.map
