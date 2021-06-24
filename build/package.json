@@ -11,7 +11,7 @@
 		"start": "cd ./build and npm install && npm run start:prod",
 		"test": "jest --coverage",
 		"test:watch": "jest --watch --coverage",
-		"start:prod": "node build",
+		"start:prod": "node index.js",
 		"start:dev": "ts-node ./index.ts",
 		"copy-files": "cp ./schema.prisma ./build",
 		"copy-package": "cp ./package.json ./build",
