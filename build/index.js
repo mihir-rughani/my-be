@@ -65,12 +65,12 @@ app.use("/graphql", async (req, res) => {
         let rootValue = {
             user: user
         };
-        let cxt = new Context(prisma);
+        //let cxt = new Context(prisma);
         await express_graphql_1.graphqlHTTP({
             schema: schema,
             rootValue: rootValue,
             graphiql: true,
-            context: { prisma: cxt.prisma }
+            context: { prisma: prisma }
         })(req, res);
     }
     catch (e) {

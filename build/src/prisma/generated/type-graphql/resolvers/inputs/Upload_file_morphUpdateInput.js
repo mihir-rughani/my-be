@@ -41,11 +41,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Upload_file_morphUpdateInput = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
-const BarsUpdateOneWithoutUploadFileMorphInput_1 = require("../inputs/BarsUpdateOneWithoutUploadFileMorphInput");
 const NullableIntFieldUpdateOperationsInput_1 = require("../inputs/NullableIntFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
-const RestaurantsUpdateOneWithoutUploadFileMorphInput_1 = require("../inputs/RestaurantsUpdateOneWithoutUploadFileMorphInput");
 const Upload_fileUpdateOneWithoutUploadFileMorphInput_1 = require("../inputs/Upload_fileUpdateOneWithoutUploadFileMorphInput");
+const VenuesUpdateOneWithoutUploadFileMorphInput_1 = require("../inputs/VenuesUpdateOneWithoutUploadFileMorphInput");
 let Upload_file_morphUpdateInput = class Upload_file_morphUpdateInput {
 };
 __decorate([
@@ -73,17 +72,11 @@ __decorate([
     __metadata("design:type", Upload_fileUpdateOneWithoutUploadFileMorphInput_1.Upload_fileUpdateOneWithoutUploadFileMorphInput)
 ], Upload_file_morphUpdateInput.prototype, "uploadFile", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => BarsUpdateOneWithoutUploadFileMorphInput_1.BarsUpdateOneWithoutUploadFileMorphInput, {
+    TypeGraphQL.Field(_type => VenuesUpdateOneWithoutUploadFileMorphInput_1.VenuesUpdateOneWithoutUploadFileMorphInput, {
         nullable: true
     }),
-    __metadata("design:type", BarsUpdateOneWithoutUploadFileMorphInput_1.BarsUpdateOneWithoutUploadFileMorphInput)
-], Upload_file_morphUpdateInput.prototype, "bars", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => RestaurantsUpdateOneWithoutUploadFileMorphInput_1.RestaurantsUpdateOneWithoutUploadFileMorphInput, {
-        nullable: true
-    }),
-    __metadata("design:type", RestaurantsUpdateOneWithoutUploadFileMorphInput_1.RestaurantsUpdateOneWithoutUploadFileMorphInput)
-], Upload_file_morphUpdateInput.prototype, "restaurants", void 0);
+    __metadata("design:type", VenuesUpdateOneWithoutUploadFileMorphInput_1.VenuesUpdateOneWithoutUploadFileMorphInput)
+], Upload_file_morphUpdateInput.prototype, "venues", void 0);
 Upload_file_morphUpdateInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true
