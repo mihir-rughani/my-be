@@ -32,3 +32,4 @@ package-lock.json
 build/.elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+/node_modules/
