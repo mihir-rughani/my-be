@@ -14,7 +14,7 @@
 		"start:prod": "node build",
 		"start:dev": "ts-node ./index.ts",
 		"copy-files": "cp ./schema.prisma ./build",
-		"build": "tsc --outDir ./build && npm run copy-files",
+		"build": "tsc --outDir ./build",
 		"lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
 		"clear_jest": "jest --clearCache"
 	},
