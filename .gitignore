@@ -29,6 +29,6 @@ package-lock.json
 /prisma.config
 
 # Elastic Beanstalk Files
-.elasticbeanstalk/*
+build/.elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml

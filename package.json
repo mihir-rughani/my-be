@@ -8,14 +8,13 @@
 	"description": "",
 	"main": "index.ts",
 	"scripts": {
-		"start": "cd ./build and npm install && npm run start:prod",
+		"start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
 		"test": "jest --coverage",
 		"test:watch": "jest --watch --coverage",
 		"start:prod": "node build",
 		"start:dev": "ts-node ./index.ts",
 		"copy-files": "cp ./schema.prisma ./build",
-		"copy-package": "cp ./package.json ./build",
-		"build": "tsc --outDir ./build && npm run copy-files && npm run copy-package",
+		"build": "tsc --outDir ./build && npm run copy-files",
 		"lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
 		"clear_jest": "jest --clearCache"
 	},

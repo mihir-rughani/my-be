@@ -8,16 +8,7 @@
 	"description": "",
 	"main": "index.ts",
 	"scripts": {
-		"start": "cd ./build and npm install && npm run start:prod",
-		"test": "jest --coverage",
-		"test:watch": "jest --watch --coverage",
-		"start:prod": "node index.js",
-		"start:dev": "ts-node ./index.ts",
-		"copy-files": "cp ./schema.prisma ./build",
-		"copy-package": "cp ./package.json ./build",
-		"build": "tsc --outDir ./build && npm run copy-files && npm run copy-package",
-		"lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
-		"clear_jest": "jest --clearCache"
+		"start": "node index.js"
 	},
 	"author": "",
 	"license": "ISC",
