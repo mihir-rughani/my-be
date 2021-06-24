@@ -25,3 +25,4 @@ var UpdateVenueTypeArgs_1 = require("./UpdateVenueTypeArgs");
 Object.defineProperty(exports, "UpdateVenueTypeArgs", { enumerable: true, get: function () { return UpdateVenueTypeArgs_1.UpdateVenueTypeArgs; } });
 var UpsertVenueTypeArgs_1 = require("./UpsertVenueTypeArgs");
 Object.defineProperty(exports, "UpsertVenueTypeArgs", { enumerable: true, get: function () { return UpsertVenueTypeArgs_1.UpsertVenueTypeArgs; } });
+//# sourceMappingURL=index.js.map

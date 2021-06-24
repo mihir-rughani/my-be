@@ -19,3 +19,4 @@ exports.DecimalJSScalar = new graphql_1.GraphQLScalarType({
         return new client_1.Prisma.Decimal(value);
     },
 });
+//# sourceMappingURL=scalars.js.map

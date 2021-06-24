@@ -7,3 +7,4 @@ var Upload_file_morphRelationsResolver_1 = require("./Upload_file_morph/Upload_f
 Object.defineProperty(exports, "Upload_file_morphRelationsResolver", { enumerable: true, get: function () { return Upload_file_morphRelationsResolver_1.Upload_file_morphRelationsResolver; } });
 var VenuesRelationsResolver_1 = require("./Venues/VenuesRelationsResolver");
 Object.defineProperty(exports, "VenuesRelationsResolver", { enumerable: true, get: function () { return VenuesRelationsResolver_1.VenuesRelationsResolver; } });
+//# sourceMappingURL=resolvers.index.js.map
