@@ -13,11 +13,19 @@ export declare class VenuesMinAggregate {
     breakfast: boolean | null;
     lunch: boolean | null;
     dinner: boolean | null;
-    bachelorParty: boolean | null;
-    henParty: boolean | null;
     visible: boolean | null;
     created_by: number | null;
     updated_by: number | null;
     created_at: Date | null;
     updated_at: Date | null;
+    test: string | null;
+    cosy: boolean | null;
+    romantic: boolean | null;
+    weddings: boolean | null;
+    post_code: string | null;
+    bachelor_party: boolean | null;
+    hen_party: boolean | null;
+    outdoor_area: boolean | null;
+    outdoor_dinning: boolean | null;
+    outdoor_bar: boolean | null;
 }

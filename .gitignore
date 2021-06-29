@@ -27,3 +27,9 @@ stdout.log
 package-lock.json
 *.log
 /prisma.config
+
+# Elastic Beanstalk Files
+build/.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+/node_modules/

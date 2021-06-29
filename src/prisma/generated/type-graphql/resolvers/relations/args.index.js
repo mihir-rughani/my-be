@@ -11,4 +11,5 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./Upload_file/args"), exports);
+__exportStar(require("./VenueType/args"), exports);
 __exportStar(require("./Venues/args"), exports);

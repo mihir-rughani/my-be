@@ -38,6 +38,7 @@ const IntFilter_1 = require("../inputs/IntFilter");
 const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const Upload_file_morphListRelationFilter_1 = require("../inputs/Upload_file_morphListRelationFilter");
+const VenueTypeRelationFilter_1 = require("../inputs/VenueTypeRelationFilter");
 let VenuesWhereInput = VenuesWhereInput_1 = class VenuesWhereInput {
 };
 __decorate([
@@ -147,18 +148,6 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
-], VenuesWhereInput.prototype, "bachelorParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => BoolNullableFilter_1.BoolNullableFilter, {
-        nullable: true
-    }),
-    __metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
-], VenuesWhereInput.prototype, "henParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => BoolNullableFilter_1.BoolNullableFilter, {
-        nullable: true
-    }),
-    __metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
 ], VenuesWhereInput.prototype, "visible", void 0);
 __decorate([
     TypeGraphQL.Field(_type => IntNullableFilter_1.IntNullableFilter, {
@@ -184,6 +173,72 @@ __decorate([
     }),
     __metadata("design:type", DateTimeNullableFilter_1.DateTimeNullableFilter)
 ], VenuesWhereInput.prototype, "updated_at", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], VenuesWhereInput.prototype, "test", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => BoolNullableFilter_1.BoolNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
+], VenuesWhereInput.prototype, "cosy", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => BoolNullableFilter_1.BoolNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
+], VenuesWhereInput.prototype, "romantic", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => BoolNullableFilter_1.BoolNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
+], VenuesWhereInput.prototype, "weddings", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], VenuesWhereInput.prototype, "post_code", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => BoolNullableFilter_1.BoolNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
+], VenuesWhereInput.prototype, "bachelor_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => BoolNullableFilter_1.BoolNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
+], VenuesWhereInput.prototype, "hen_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => BoolNullableFilter_1.BoolNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
+], VenuesWhereInput.prototype, "outdoor_area", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => BoolNullableFilter_1.BoolNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
+], VenuesWhereInput.prototype, "outdoor_dinning", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => BoolNullableFilter_1.BoolNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
+], VenuesWhereInput.prototype, "outdoor_bar", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => VenueTypeRelationFilter_1.VenueTypeRelationFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", VenueTypeRelationFilter_1.VenueTypeRelationFilter)
+], VenuesWhereInput.prototype, "venueType", void 0);
 __decorate([
     TypeGraphQL.Field(_type => Upload_file_morphListRelationFilter_1.Upload_file_morphListRelationFilter, {
         nullable: true

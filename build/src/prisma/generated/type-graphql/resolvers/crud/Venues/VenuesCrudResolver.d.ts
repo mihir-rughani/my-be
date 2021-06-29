@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateVenuesArgs } from "./args/AggregateVenuesArgs";
+import { CreateManyVenuesArgs } from "./args/CreateManyVenuesArgs";
+import { CreateVenuesArgs } from "./args/CreateVenuesArgs";
+import { DeleteManyVenuesArgs } from "./args/DeleteManyVenuesArgs";
+import { DeleteVenuesArgs } from "./args/DeleteVenuesArgs";
+import { FindFirstVenuesArgs } from "./args/FindFirstVenuesArgs";
+import { FindManyVenuesArgs } from "./args/FindManyVenuesArgs";
+import { FindUniqueVenuesArgs } from "./args/FindUniqueVenuesArgs";
+import { GroupByVenuesArgs } from "./args/GroupByVenuesArgs";
+import { UpdateManyVenuesArgs } from "./args/UpdateManyVenuesArgs";
+import { UpdateVenuesArgs } from "./args/UpdateVenuesArgs";
+import { UpsertVenuesArgs } from "./args/UpsertVenuesArgs";
+import { Venues } from "../../../models/Venues";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateVenues } from "../../outputs/AggregateVenues";
+import { VenuesGroupBy } from "../../outputs/VenuesGroupBy";
+export declare class VenuesCrudResolver {
+    findUniqueVenues(ctx: any, info: GraphQLResolveInfo, args: FindUniqueVenuesArgs): Promise<Venues | null>;
+    findFirstVenues(ctx: any, info: GraphQLResolveInfo, args: FindFirstVenuesArgs): Promise<Venues | null>;
+    findManyVenues(ctx: any, info: GraphQLResolveInfo, args: FindManyVenuesArgs): Promise<Venues[]>;
+    createVenues(ctx: any, info: GraphQLResolveInfo, args: CreateVenuesArgs): Promise<Venues>;
+    createManyVenues(ctx: any, info: GraphQLResolveInfo, args: CreateManyVenuesArgs): Promise<AffectedRowsOutput>;
+    deleteVenues(ctx: any, info: GraphQLResolveInfo, args: DeleteVenuesArgs): Promise<Venues | null>;
+    updateVenues(ctx: any, info: GraphQLResolveInfo, args: UpdateVenuesArgs): Promise<Venues | null>;
+    deleteManyVenues(ctx: any, info: GraphQLResolveInfo, args: DeleteManyVenuesArgs): Promise<AffectedRowsOutput>;
+    updateManyVenues(ctx: any, info: GraphQLResolveInfo, args: UpdateManyVenuesArgs): Promise<AffectedRowsOutput>;
+    upsertVenues(ctx: any, info: GraphQLResolveInfo, args: UpsertVenuesArgs): Promise<Venues>;
+    aggregateVenues(ctx: any, info: GraphQLResolveInfo, args: AggregateVenuesArgs): Promise<AggregateVenues>;
+    groupByVenues(ctx: any, info: GraphQLResolveInfo, args: GroupByVenuesArgs): Promise<VenuesGroupBy[]>;
+}

@@ -13,12 +13,20 @@ export declare class VenuesCountAggregate {
     breakfast: number;
     lunch: number;
     dinner: number;
-    bachelorParty: number;
-    henParty: number;
     visible: number;
     created_by: number;
     updated_by: number;
     created_at: number;
     updated_at: number;
+    test: number;
+    cosy: number;
+    romantic: number;
+    weddings: number;
+    post_code: number;
+    bachelor_party: number;
+    hen_party: number;
+    outdoor_area: number;
+    outdoor_dinning: number;
+    outdoor_bar: number;
     _all: number;
 }

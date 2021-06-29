@@ -2,6 +2,7 @@ import { DateTimeNullableFilter } from "../inputs/DateTimeNullableFilter";
 import { IntFilter } from "../inputs/IntFilter";
 import { IntNullableFilter } from "../inputs/IntNullableFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
+import { VenuesListRelationFilter } from "../inputs/VenuesListRelationFilter";
 export declare class VenueTypeWhereInput {
     AND?: VenueTypeWhereInput[] | undefined;
     OR?: VenueTypeWhereInput[] | undefined;
@@ -12,4 +13,5 @@ export declare class VenueTypeWhereInput {
     created_at?: DateTimeNullableFilter | undefined;
     updated_at?: DateTimeNullableFilter | undefined;
     name?: StringNullableFilter | undefined;
+    venues?: VenuesListRelationFilter | undefined;
 }

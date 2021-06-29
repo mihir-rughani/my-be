@@ -3,6 +3,7 @@ import { NullableDateTimeFieldUpdateOperationsInput } from "../inputs/NullableDa
 import { NullableFloatFieldUpdateOperationsInput } from "../inputs/NullableFloatFieldUpdateOperationsInput";
 import { NullableIntFieldUpdateOperationsInput } from "../inputs/NullableIntFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
+import { VenueTypeUpdateOneWithoutVenuesInput } from "../inputs/VenueTypeUpdateOneWithoutVenuesInput";
 export declare class VenuesUpdateWithoutUploadFileMorphInput {
     title?: NullableStringFieldUpdateOperationsInput | undefined;
     description?: NullableStringFieldUpdateOperationsInput | undefined;
@@ -13,15 +14,23 @@ export declare class VenuesUpdateWithoutUploadFileMorphInput {
     lat?: NullableFloatFieldUpdateOperationsInput | undefined;
     lon?: NullableFloatFieldUpdateOperationsInput | undefined;
     website?: NullableStringFieldUpdateOperationsInput | undefined;
-    venue_type?: NullableIntFieldUpdateOperationsInput | undefined;
     breakfast?: NullableBoolFieldUpdateOperationsInput | undefined;
     lunch?: NullableBoolFieldUpdateOperationsInput | undefined;
     dinner?: NullableBoolFieldUpdateOperationsInput | undefined;
-    bachelorParty?: NullableBoolFieldUpdateOperationsInput | undefined;
-    henParty?: NullableBoolFieldUpdateOperationsInput | undefined;
     visible?: NullableBoolFieldUpdateOperationsInput | undefined;
     created_by?: NullableIntFieldUpdateOperationsInput | undefined;
     updated_by?: NullableIntFieldUpdateOperationsInput | undefined;
     created_at?: NullableDateTimeFieldUpdateOperationsInput | undefined;
     updated_at?: NullableDateTimeFieldUpdateOperationsInput | undefined;
+    test?: NullableStringFieldUpdateOperationsInput | undefined;
+    cosy?: NullableBoolFieldUpdateOperationsInput | undefined;
+    romantic?: NullableBoolFieldUpdateOperationsInput | undefined;
+    weddings?: NullableBoolFieldUpdateOperationsInput | undefined;
+    post_code?: NullableStringFieldUpdateOperationsInput | undefined;
+    bachelor_party?: NullableBoolFieldUpdateOperationsInput | undefined;
+    hen_party?: NullableBoolFieldUpdateOperationsInput | undefined;
+    outdoor_area?: NullableBoolFieldUpdateOperationsInput | undefined;
+    outdoor_dinning?: NullableBoolFieldUpdateOperationsInput | undefined;
+    outdoor_bar?: NullableBoolFieldUpdateOperationsInput | undefined;
+    venueType?: VenueTypeUpdateOneWithoutVenuesInput | undefined;
 }

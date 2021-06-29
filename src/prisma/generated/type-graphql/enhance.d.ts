@@ -13,6 +13,7 @@ declare const crudResolversMap: {
 declare const relationResolversMap: {
     Upload_file: typeof relationResolvers.Upload_fileRelationsResolver;
     Upload_file_morph: typeof relationResolvers.Upload_file_morphRelationsResolver;
+    VenueType: typeof relationResolvers.VenueTypeRelationsResolver;
     Venues: typeof relationResolvers.VenuesRelationsResolver;
 };
 declare type ResolverModelNames = keyof typeof crudResolversMap;

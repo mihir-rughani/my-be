@@ -1,0 +1,23 @@
+export declare enum VenuesScalarFieldEnum {
+    id = "id",
+    title = "title",
+    description = "description",
+    address = "address",
+    suburb = "suburb",
+    city = "city",
+    postCode = "postCode",
+    lat = "lat",
+    lon = "lon",
+    website = "website",
+    venue_type = "venue_type",
+    breakfast = "breakfast",
+    lunch = "lunch",
+    dinner = "dinner",
+    bachelorParty = "bachelorParty",
+    henParty = "henParty",
+    visible = "visible",
+    created_by = "created_by",
+    updated_by = "updated_by",
+    created_at = "created_at",
+    updated_at = "updated_at"
+}

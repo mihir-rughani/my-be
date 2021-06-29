@@ -22,11 +22,19 @@ export declare class VenuesScalarWhereWithAggregatesInput {
     breakfast?: BoolNullableWithAggregatesFilter | undefined;
     lunch?: BoolNullableWithAggregatesFilter | undefined;
     dinner?: BoolNullableWithAggregatesFilter | undefined;
-    bachelorParty?: BoolNullableWithAggregatesFilter | undefined;
-    henParty?: BoolNullableWithAggregatesFilter | undefined;
     visible?: BoolNullableWithAggregatesFilter | undefined;
     created_by?: IntNullableWithAggregatesFilter | undefined;
     updated_by?: IntNullableWithAggregatesFilter | undefined;
     created_at?: DateTimeNullableWithAggregatesFilter | undefined;
     updated_at?: DateTimeNullableWithAggregatesFilter | undefined;
+    test?: StringNullableWithAggregatesFilter | undefined;
+    cosy?: BoolNullableWithAggregatesFilter | undefined;
+    romantic?: BoolNullableWithAggregatesFilter | undefined;
+    weddings?: BoolNullableWithAggregatesFilter | undefined;
+    post_code?: StringNullableWithAggregatesFilter | undefined;
+    bachelor_party?: BoolNullableWithAggregatesFilter | undefined;
+    hen_party?: BoolNullableWithAggregatesFilter | undefined;
+    outdoor_area?: BoolNullableWithAggregatesFilter | undefined;
+    outdoor_dinning?: BoolNullableWithAggregatesFilter | undefined;
+    outdoor_bar?: BoolNullableWithAggregatesFilter | undefined;
 }
