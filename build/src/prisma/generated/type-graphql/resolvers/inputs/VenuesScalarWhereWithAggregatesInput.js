@@ -157,18 +157,6 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter)
-], VenuesScalarWhereWithAggregatesInput.prototype, "bachelorParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter, {
-        nullable: true
-    }),
-    __metadata("design:type", BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter)
-], VenuesScalarWhereWithAggregatesInput.prototype, "henParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter, {
-        nullable: true
-    }),
-    __metadata("design:type", BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter)
 ], VenuesScalarWhereWithAggregatesInput.prototype, "visible", void 0);
 __decorate([
     TypeGraphQL.Field(_type => IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter, {
@@ -194,6 +182,66 @@ __decorate([
     }),
     __metadata("design:type", DateTimeNullableWithAggregatesFilter_1.DateTimeNullableWithAggregatesFilter)
 ], VenuesScalarWhereWithAggregatesInput.prototype, "updated_at", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
+], VenuesScalarWhereWithAggregatesInput.prototype, "test", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter)
+], VenuesScalarWhereWithAggregatesInput.prototype, "cosy", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter)
+], VenuesScalarWhereWithAggregatesInput.prototype, "romantic", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter)
+], VenuesScalarWhereWithAggregatesInput.prototype, "weddings", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
+], VenuesScalarWhereWithAggregatesInput.prototype, "post_code", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter)
+], VenuesScalarWhereWithAggregatesInput.prototype, "bachelor_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter)
+], VenuesScalarWhereWithAggregatesInput.prototype, "hen_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter)
+], VenuesScalarWhereWithAggregatesInput.prototype, "outdoor_area", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter)
+], VenuesScalarWhereWithAggregatesInput.prototype, "outdoor_dinning", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter)
+], VenuesScalarWhereWithAggregatesInput.prototype, "outdoor_bar", void 0);
 VenuesScalarWhereWithAggregatesInput = VenuesScalarWhereWithAggregatesInput_1 = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

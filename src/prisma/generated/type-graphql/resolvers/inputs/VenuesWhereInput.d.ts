@@ -5,6 +5,7 @@ import { IntFilter } from "../inputs/IntFilter";
 import { IntNullableFilter } from "../inputs/IntNullableFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
 import { Upload_file_morphListRelationFilter } from "../inputs/Upload_file_morphListRelationFilter";
+import { VenueTypeRelationFilter } from "../inputs/VenueTypeRelationFilter";
 export declare class VenuesWhereInput {
     AND?: VenuesWhereInput[] | undefined;
     OR?: VenuesWhereInput[] | undefined;
@@ -23,12 +24,21 @@ export declare class VenuesWhereInput {
     breakfast?: BoolNullableFilter | undefined;
     lunch?: BoolNullableFilter | undefined;
     dinner?: BoolNullableFilter | undefined;
-    bachelorParty?: BoolNullableFilter | undefined;
-    henParty?: BoolNullableFilter | undefined;
     visible?: BoolNullableFilter | undefined;
     created_by?: IntNullableFilter | undefined;
     updated_by?: IntNullableFilter | undefined;
     created_at?: DateTimeNullableFilter | undefined;
     updated_at?: DateTimeNullableFilter | undefined;
+    test?: StringNullableFilter | undefined;
+    cosy?: BoolNullableFilter | undefined;
+    romantic?: BoolNullableFilter | undefined;
+    weddings?: BoolNullableFilter | undefined;
+    post_code?: StringNullableFilter | undefined;
+    bachelor_party?: BoolNullableFilter | undefined;
+    hen_party?: BoolNullableFilter | undefined;
+    outdoor_area?: BoolNullableFilter | undefined;
+    outdoor_dinning?: BoolNullableFilter | undefined;
+    outdoor_bar?: BoolNullableFilter | undefined;
+    venueType?: VenueTypeRelationFilter | undefined;
     uploadFileMorph?: Upload_file_morphListRelationFilter | undefined;
 }

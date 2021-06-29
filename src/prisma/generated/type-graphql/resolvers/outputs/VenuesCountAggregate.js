@@ -121,18 +121,6 @@ __decorate([
         nullable: false
     }),
     __metadata("design:type", Number)
-], VenuesCountAggregate.prototype, "bachelorParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    __metadata("design:type", Number)
-], VenuesCountAggregate.prototype, "henParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    __metadata("design:type", Number)
 ], VenuesCountAggregate.prototype, "visible", void 0);
 __decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
@@ -158,6 +146,66 @@ __decorate([
     }),
     __metadata("design:type", Number)
 ], VenuesCountAggregate.prototype, "updated_at", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    __metadata("design:type", Number)
+], VenuesCountAggregate.prototype, "test", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    __metadata("design:type", Number)
+], VenuesCountAggregate.prototype, "cosy", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    __metadata("design:type", Number)
+], VenuesCountAggregate.prototype, "romantic", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    __metadata("design:type", Number)
+], VenuesCountAggregate.prototype, "weddings", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    __metadata("design:type", Number)
+], VenuesCountAggregate.prototype, "post_code", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    __metadata("design:type", Number)
+], VenuesCountAggregate.prototype, "bachelor_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    __metadata("design:type", Number)
+], VenuesCountAggregate.prototype, "hen_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    __metadata("design:type", Number)
+], VenuesCountAggregate.prototype, "outdoor_area", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    __metadata("design:type", Number)
+], VenuesCountAggregate.prototype, "outdoor_dinning", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    __metadata("design:type", Number)
+], VenuesCountAggregate.prototype, "outdoor_bar", void 0);
 __decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false

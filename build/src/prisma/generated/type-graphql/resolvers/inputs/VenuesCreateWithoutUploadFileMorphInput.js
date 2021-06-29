@@ -41,6 +41,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.VenuesCreateWithoutUploadFileMorphInput = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
+const VenueTypeCreateNestedOneWithoutVenuesInput_1 = require("../inputs/VenueTypeCreateNestedOneWithoutVenuesInput");
 let VenuesCreateWithoutUploadFileMorphInput = class VenuesCreateWithoutUploadFileMorphInput {
 };
 __decorate([
@@ -98,12 +99,6 @@ __decorate([
     __metadata("design:type", String)
 ], VenuesCreateWithoutUploadFileMorphInput.prototype, "website", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    __metadata("design:type", Number)
-], VenuesCreateWithoutUploadFileMorphInput.prototype, "venue_type", void 0);
-__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
     }),
@@ -121,18 +116,6 @@ __decorate([
     }),
     __metadata("design:type", Boolean)
 ], VenuesCreateWithoutUploadFileMorphInput.prototype, "dinner", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => Boolean, {
-        nullable: true
-    }),
-    __metadata("design:type", Boolean)
-], VenuesCreateWithoutUploadFileMorphInput.prototype, "bachelorParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => Boolean, {
-        nullable: true
-    }),
-    __metadata("design:type", Boolean)
-], VenuesCreateWithoutUploadFileMorphInput.prototype, "henParty", void 0);
 __decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
@@ -163,6 +146,72 @@ __decorate([
     }),
     __metadata("design:type", Date)
 ], VenuesCreateWithoutUploadFileMorphInput.prototype, "updated_at", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesCreateWithoutUploadFileMorphInput.prototype, "test", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateWithoutUploadFileMorphInput.prototype, "cosy", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateWithoutUploadFileMorphInput.prototype, "romantic", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateWithoutUploadFileMorphInput.prototype, "weddings", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesCreateWithoutUploadFileMorphInput.prototype, "post_code", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateWithoutUploadFileMorphInput.prototype, "bachelor_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateWithoutUploadFileMorphInput.prototype, "hen_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateWithoutUploadFileMorphInput.prototype, "outdoor_area", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateWithoutUploadFileMorphInput.prototype, "outdoor_dinning", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateWithoutUploadFileMorphInput.prototype, "outdoor_bar", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => VenueTypeCreateNestedOneWithoutVenuesInput_1.VenueTypeCreateNestedOneWithoutVenuesInput, {
+        nullable: true
+    }),
+    __metadata("design:type", VenueTypeCreateNestedOneWithoutVenuesInput_1.VenueTypeCreateNestedOneWithoutVenuesInput)
+], VenuesCreateWithoutUploadFileMorphInput.prototype, "venueType", void 0);
 VenuesCreateWithoutUploadFileMorphInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

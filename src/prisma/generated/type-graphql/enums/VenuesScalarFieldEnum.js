@@ -37,13 +37,21 @@ var VenuesScalarFieldEnum;
     VenuesScalarFieldEnum["breakfast"] = "breakfast";
     VenuesScalarFieldEnum["lunch"] = "lunch";
     VenuesScalarFieldEnum["dinner"] = "dinner";
-    VenuesScalarFieldEnum["bachelorParty"] = "bachelorParty";
-    VenuesScalarFieldEnum["henParty"] = "henParty";
     VenuesScalarFieldEnum["visible"] = "visible";
     VenuesScalarFieldEnum["created_by"] = "created_by";
     VenuesScalarFieldEnum["updated_by"] = "updated_by";
     VenuesScalarFieldEnum["created_at"] = "created_at";
     VenuesScalarFieldEnum["updated_at"] = "updated_at";
+    VenuesScalarFieldEnum["test"] = "test";
+    VenuesScalarFieldEnum["cosy"] = "cosy";
+    VenuesScalarFieldEnum["romantic"] = "romantic";
+    VenuesScalarFieldEnum["weddings"] = "weddings";
+    VenuesScalarFieldEnum["post_code"] = "post_code";
+    VenuesScalarFieldEnum["bachelor_party"] = "bachelor_party";
+    VenuesScalarFieldEnum["hen_party"] = "hen_party";
+    VenuesScalarFieldEnum["outdoor_area"] = "outdoor_area";
+    VenuesScalarFieldEnum["outdoor_dinning"] = "outdoor_dinning";
+    VenuesScalarFieldEnum["outdoor_bar"] = "outdoor_bar";
 })(VenuesScalarFieldEnum = exports.VenuesScalarFieldEnum || (exports.VenuesScalarFieldEnum = {}));
 TypeGraphQL.registerEnumType(VenuesScalarFieldEnum, {
     name: "VenuesScalarFieldEnum",

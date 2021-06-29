@@ -133,18 +133,6 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", String)
-], VenuesOrderByInput.prototype, "bachelorParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    __metadata("design:type", String)
-], VenuesOrderByInput.prototype, "henParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    __metadata("design:type", String)
 ], VenuesOrderByInput.prototype, "visible", void 0);
 __decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
@@ -170,6 +158,66 @@ __decorate([
     }),
     __metadata("design:type", String)
 ], VenuesOrderByInput.prototype, "updated_at", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesOrderByInput.prototype, "test", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesOrderByInput.prototype, "cosy", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesOrderByInput.prototype, "romantic", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesOrderByInput.prototype, "weddings", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesOrderByInput.prototype, "post_code", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesOrderByInput.prototype, "bachelor_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesOrderByInput.prototype, "hen_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesOrderByInput.prototype, "outdoor_area", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesOrderByInput.prototype, "outdoor_dinning", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesOrderByInput.prototype, "outdoor_bar", void 0);
 VenuesOrderByInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

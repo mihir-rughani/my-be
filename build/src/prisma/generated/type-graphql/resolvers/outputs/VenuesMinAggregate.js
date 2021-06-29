@@ -132,18 +132,6 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", Boolean)
-], VenuesMinAggregate.prototype, "bachelorParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => Boolean, {
-        nullable: true
-    }),
-    __metadata("design:type", Boolean)
-], VenuesMinAggregate.prototype, "henParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => Boolean, {
-        nullable: true
-    }),
-    __metadata("design:type", Boolean)
 ], VenuesMinAggregate.prototype, "visible", void 0);
 __decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
@@ -169,6 +157,66 @@ __decorate([
     }),
     __metadata("design:type", Date)
 ], VenuesMinAggregate.prototype, "updated_at", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesMinAggregate.prototype, "test", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesMinAggregate.prototype, "cosy", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesMinAggregate.prototype, "romantic", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesMinAggregate.prototype, "weddings", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesMinAggregate.prototype, "post_code", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesMinAggregate.prototype, "bachelor_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesMinAggregate.prototype, "hen_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesMinAggregate.prototype, "outdoor_area", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesMinAggregate.prototype, "outdoor_dinning", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesMinAggregate.prototype, "outdoor_bar", void 0);
 VenuesMinAggregate = __decorate([
     TypeGraphQL.ObjectType({
         isAbstract: true

@@ -35,6 +35,7 @@ const DateTimeNullableFilter_1 = require("../inputs/DateTimeNullableFilter");
 const IntFilter_1 = require("../inputs/IntFilter");
 const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
+const VenuesListRelationFilter_1 = require("../inputs/VenuesListRelationFilter");
 let VenueTypeWhereInput = VenueTypeWhereInput_1 = class VenueTypeWhereInput {
 };
 __decorate([
@@ -91,6 +92,12 @@ __decorate([
     }),
     __metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], VenueTypeWhereInput.prototype, "name", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => VenuesListRelationFilter_1.VenuesListRelationFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", VenuesListRelationFilter_1.VenuesListRelationFilter)
+], VenueTypeWhereInput.prototype, "venues", void 0);
 VenueTypeWhereInput = VenueTypeWhereInput_1 = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

@@ -45,10 +45,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.VenuesRelationsResolver = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
 const Upload_file_morph_1 = require("../../../models/Upload_file_morph");
+const VenueType_1 = require("../../../models/VenueType");
 const Venues_1 = require("../../../models/Venues");
 const VenuesUploadFileMorphArgs_1 = require("./args/VenuesUploadFileMorphArgs");
 const helpers_1 = require("../../../helpers");
 let VenuesRelationsResolver = class VenuesRelationsResolver {
+    async venueType(venues, ctx) {
+        return helpers_1.getPrismaFromContext(ctx).venues.findUnique({
+            where: {
+                id: venues.id,
+            },
+        }).venueType({});
+    }
     async uploadFileMorph(venues, ctx, args) {
         return helpers_1.getPrismaFromContext(ctx).venues.findUnique({
             where: {
@@ -57,6 +65,15 @@ let VenuesRelationsResolver = class VenuesRelationsResolver {
         }).uploadFileMorph(args);
     }
 };
+__decorate([
+    TypeGraphQL.FieldResolver(_type => VenueType_1.VenueType, {
+        nullable: true
+    }),
+    __param(0, TypeGraphQL.Root()), __param(1, TypeGraphQL.Ctx()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Venues_1.Venues, Object]),
+    __metadata("design:returntype", Promise)
+], VenuesRelationsResolver.prototype, "venueType", null);
 __decorate([
     TypeGraphQL.FieldResolver(_type => [Upload_file_morph_1.Upload_file_morph], {
         nullable: false

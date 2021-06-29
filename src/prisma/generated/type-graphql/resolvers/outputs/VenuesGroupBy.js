@@ -126,18 +126,6 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", Boolean)
-], VenuesGroupBy.prototype, "bachelorParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => Boolean, {
-        nullable: true
-    }),
-    __metadata("design:type", Boolean)
-], VenuesGroupBy.prototype, "henParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => Boolean, {
-        nullable: true
-    }),
-    __metadata("design:type", Boolean)
 ], VenuesGroupBy.prototype, "visible", void 0);
 __decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
@@ -163,6 +151,66 @@ __decorate([
     }),
     __metadata("design:type", Date)
 ], VenuesGroupBy.prototype, "updated_at", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesGroupBy.prototype, "test", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesGroupBy.prototype, "cosy", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesGroupBy.prototype, "romantic", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesGroupBy.prototype, "weddings", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesGroupBy.prototype, "post_code", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesGroupBy.prototype, "bachelor_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesGroupBy.prototype, "hen_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesGroupBy.prototype, "outdoor_area", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesGroupBy.prototype, "outdoor_dinning", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesGroupBy.prototype, "outdoor_bar", void 0);
 __decorate([
     TypeGraphQL.Field(_type => VenuesCountAggregate_1.VenuesCountAggregate, {
         nullable: true

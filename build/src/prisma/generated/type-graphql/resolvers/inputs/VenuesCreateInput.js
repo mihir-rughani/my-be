@@ -42,6 +42,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.VenuesCreateInput = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
 const Upload_file_morphCreateNestedManyWithoutVenuesInput_1 = require("../inputs/Upload_file_morphCreateNestedManyWithoutVenuesInput");
+const VenueTypeCreateNestedOneWithoutVenuesInput_1 = require("../inputs/VenueTypeCreateNestedOneWithoutVenuesInput");
 let VenuesCreateInput = class VenuesCreateInput {
 };
 __decorate([
@@ -99,12 +100,6 @@ __decorate([
     __metadata("design:type", String)
 ], VenuesCreateInput.prototype, "website", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    __metadata("design:type", Number)
-], VenuesCreateInput.prototype, "venue_type", void 0);
-__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
     }),
@@ -122,18 +117,6 @@ __decorate([
     }),
     __metadata("design:type", Boolean)
 ], VenuesCreateInput.prototype, "dinner", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => Boolean, {
-        nullable: true
-    }),
-    __metadata("design:type", Boolean)
-], VenuesCreateInput.prototype, "bachelorParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => Boolean, {
-        nullable: true
-    }),
-    __metadata("design:type", Boolean)
-], VenuesCreateInput.prototype, "henParty", void 0);
 __decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
@@ -164,6 +147,72 @@ __decorate([
     }),
     __metadata("design:type", Date)
 ], VenuesCreateInput.prototype, "updated_at", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesCreateInput.prototype, "test", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateInput.prototype, "cosy", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateInput.prototype, "romantic", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateInput.prototype, "weddings", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesCreateInput.prototype, "post_code", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateInput.prototype, "bachelor_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateInput.prototype, "hen_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateInput.prototype, "outdoor_area", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateInput.prototype, "outdoor_dinning", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateInput.prototype, "outdoor_bar", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => VenueTypeCreateNestedOneWithoutVenuesInput_1.VenueTypeCreateNestedOneWithoutVenuesInput, {
+        nullable: true
+    }),
+    __metadata("design:type", VenueTypeCreateNestedOneWithoutVenuesInput_1.VenueTypeCreateNestedOneWithoutVenuesInput)
+], VenuesCreateInput.prototype, "venueType", void 0);
 __decorate([
     TypeGraphQL.Field(_type => Upload_file_morphCreateNestedManyWithoutVenuesInput_1.Upload_file_morphCreateNestedManyWithoutVenuesInput, {
         nullable: true

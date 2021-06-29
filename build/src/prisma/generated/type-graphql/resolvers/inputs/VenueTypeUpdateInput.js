@@ -44,6 +44,7 @@ const TypeGraphQL = __importStar(require("type-graphql"));
 const NullableDateTimeFieldUpdateOperationsInput_1 = require("../inputs/NullableDateTimeFieldUpdateOperationsInput");
 const NullableIntFieldUpdateOperationsInput_1 = require("../inputs/NullableIntFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
+const VenuesUpdateManyWithoutVenueTypeInput_1 = require("../inputs/VenuesUpdateManyWithoutVenueTypeInput");
 let VenueTypeUpdateInput = class VenueTypeUpdateInput {
 };
 __decorate([
@@ -76,6 +77,12 @@ __decorate([
     }),
     __metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
 ], VenueTypeUpdateInput.prototype, "name", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => VenuesUpdateManyWithoutVenueTypeInput_1.VenuesUpdateManyWithoutVenueTypeInput, {
+        nullable: true
+    }),
+    __metadata("design:type", VenuesUpdateManyWithoutVenueTypeInput_1.VenuesUpdateManyWithoutVenueTypeInput)
+], VenueTypeUpdateInput.prototype, "venues", void 0);
 VenueTypeUpdateInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

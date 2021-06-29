@@ -30,6 +30,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.VenueTypeCreateInput = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
+const VenuesCreateNestedManyWithoutVenueTypeInput_1 = require("../inputs/VenuesCreateNestedManyWithoutVenueTypeInput");
 let VenueTypeCreateInput = class VenueTypeCreateInput {
 };
 __decorate([
@@ -62,6 +63,12 @@ __decorate([
     }),
     __metadata("design:type", String)
 ], VenueTypeCreateInput.prototype, "name", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => VenuesCreateNestedManyWithoutVenueTypeInput_1.VenuesCreateNestedManyWithoutVenueTypeInput, {
+        nullable: true
+    }),
+    __metadata("design:type", VenuesCreateNestedManyWithoutVenueTypeInput_1.VenuesCreateNestedManyWithoutVenueTypeInput)
+], VenueTypeCreateInput.prototype, "venues", void 0);
 VenueTypeCreateInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

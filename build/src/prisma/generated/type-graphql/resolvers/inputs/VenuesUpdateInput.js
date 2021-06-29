@@ -47,6 +47,7 @@ const NullableFloatFieldUpdateOperationsInput_1 = require("../inputs/NullableFlo
 const NullableIntFieldUpdateOperationsInput_1 = require("../inputs/NullableIntFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const Upload_file_morphUpdateManyWithoutVenuesInput_1 = require("../inputs/Upload_file_morphUpdateManyWithoutVenuesInput");
+const VenueTypeUpdateOneWithoutVenuesInput_1 = require("../inputs/VenueTypeUpdateOneWithoutVenuesInput");
 let VenuesUpdateInput = class VenuesUpdateInput {
 };
 __decorate([
@@ -104,12 +105,6 @@ __decorate([
     __metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
 ], VenuesUpdateInput.prototype, "website", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput, {
-        nullable: true
-    }),
-    __metadata("design:type", NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput)
-], VenuesUpdateInput.prototype, "venue_type", void 0);
-__decorate([
     TypeGraphQL.Field(_type => NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput, {
         nullable: true
     }),
@@ -127,18 +122,6 @@ __decorate([
     }),
     __metadata("design:type", NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput)
 ], VenuesUpdateInput.prototype, "dinner", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput, {
-        nullable: true
-    }),
-    __metadata("design:type", NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput)
-], VenuesUpdateInput.prototype, "bachelorParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput, {
-        nullable: true
-    }),
-    __metadata("design:type", NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput)
-], VenuesUpdateInput.prototype, "henParty", void 0);
 __decorate([
     TypeGraphQL.Field(_type => NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput, {
         nullable: true
@@ -169,6 +152,72 @@ __decorate([
     }),
     __metadata("design:type", NullableDateTimeFieldUpdateOperationsInput_1.NullableDateTimeFieldUpdateOperationsInput)
 ], VenuesUpdateInput.prototype, "updated_at", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
+], VenuesUpdateInput.prototype, "test", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput)
+], VenuesUpdateInput.prototype, "cosy", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput)
+], VenuesUpdateInput.prototype, "romantic", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput)
+], VenuesUpdateInput.prototype, "weddings", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
+], VenuesUpdateInput.prototype, "post_code", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput)
+], VenuesUpdateInput.prototype, "bachelor_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput)
+], VenuesUpdateInput.prototype, "hen_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput)
+], VenuesUpdateInput.prototype, "outdoor_area", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput)
+], VenuesUpdateInput.prototype, "outdoor_dinning", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput)
+], VenuesUpdateInput.prototype, "outdoor_bar", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => VenueTypeUpdateOneWithoutVenuesInput_1.VenueTypeUpdateOneWithoutVenuesInput, {
+        nullable: true
+    }),
+    __metadata("design:type", VenueTypeUpdateOneWithoutVenuesInput_1.VenueTypeUpdateOneWithoutVenuesInput)
+], VenuesUpdateInput.prototype, "venueType", void 0);
 __decorate([
     TypeGraphQL.Field(_type => Upload_file_morphUpdateManyWithoutVenuesInput_1.Upload_file_morphUpdateManyWithoutVenuesInput, {
         nullable: true

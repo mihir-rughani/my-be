@@ -121,18 +121,6 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", Boolean)
-], VenuesCreateManyInput.prototype, "bachelorParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => Boolean, {
-        nullable: true
-    }),
-    __metadata("design:type", Boolean)
-], VenuesCreateManyInput.prototype, "henParty", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => Boolean, {
-        nullable: true
-    }),
-    __metadata("design:type", Boolean)
 ], VenuesCreateManyInput.prototype, "visible", void 0);
 __decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
@@ -158,6 +146,66 @@ __decorate([
     }),
     __metadata("design:type", Date)
 ], VenuesCreateManyInput.prototype, "updated_at", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesCreateManyInput.prototype, "test", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateManyInput.prototype, "cosy", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateManyInput.prototype, "romantic", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateManyInput.prototype, "weddings", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], VenuesCreateManyInput.prototype, "post_code", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateManyInput.prototype, "bachelor_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateManyInput.prototype, "hen_party", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateManyInput.prototype, "outdoor_area", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateManyInput.prototype, "outdoor_dinning", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    __metadata("design:type", Boolean)
+], VenuesCreateManyInput.prototype, "outdoor_bar", void 0);
 VenuesCreateManyInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true
