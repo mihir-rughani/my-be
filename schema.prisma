@@ -11,7 +11,7 @@ generator typegraphql {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://masesays:54llyB4mb4ch@aaydv1gqp38iow.cgnqtd2avkoh.ap-southeast-2.rds.amazonaws.com:5432/ebdb"
+  url      = "postgresql://masesays:54llyB4mb4ch@aa1wjr87z9k504q.cgnqtd2avkoh.ap-southeast-2.rds.amazonaws.com:5432/ebdb"
 }
 
 model upload_file {
