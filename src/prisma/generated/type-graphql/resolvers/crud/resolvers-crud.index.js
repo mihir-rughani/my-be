@@ -1,6 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.VenuesCrudResolver = exports.VenueTypeCrudResolver = exports.Upload_file_morphCrudResolver = exports.Upload_fileCrudResolver = void 0;
+exports.VenuesCrudResolver = exports.VenueTypeCrudResolver = exports.Upload_file_morphCrudResolver = exports.Upload_fileCrudResolver = exports.Itinerary_itemsCrudResolver = exports.ItineraryCrudResolver = void 0;
+var ItineraryCrudResolver_1 = require("./Itinerary/ItineraryCrudResolver");
+Object.defineProperty(exports, "ItineraryCrudResolver", { enumerable: true, get: function () { return ItineraryCrudResolver_1.ItineraryCrudResolver; } });
+var Itinerary_itemsCrudResolver_1 = require("./Itinerary_items/Itinerary_itemsCrudResolver");
+Object.defineProperty(exports, "Itinerary_itemsCrudResolver", { enumerable: true, get: function () { return Itinerary_itemsCrudResolver_1.Itinerary_itemsCrudResolver; } });
 var Upload_fileCrudResolver_1 = require("./Upload_file/Upload_fileCrudResolver");
 Object.defineProperty(exports, "Upload_fileCrudResolver", { enumerable: true, get: function () { return Upload_fileCrudResolver_1.Upload_fileCrudResolver; } });
 var Upload_file_morphCrudResolver_1 = require("./Upload_file_morph/Upload_file_morphCrudResolver");

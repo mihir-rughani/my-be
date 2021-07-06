@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateItineraryArgs } from "./args/AggregateItineraryArgs";
+import { CreateItineraryArgs } from "./args/CreateItineraryArgs";
+import { CreateManyItineraryArgs } from "./args/CreateManyItineraryArgs";
+import { DeleteItineraryArgs } from "./args/DeleteItineraryArgs";
+import { DeleteManyItineraryArgs } from "./args/DeleteManyItineraryArgs";
+import { FindFirstItineraryArgs } from "./args/FindFirstItineraryArgs";
+import { FindManyItineraryArgs } from "./args/FindManyItineraryArgs";
+import { FindUniqueItineraryArgs } from "./args/FindUniqueItineraryArgs";
+import { GroupByItineraryArgs } from "./args/GroupByItineraryArgs";
+import { UpdateItineraryArgs } from "./args/UpdateItineraryArgs";
+import { UpdateManyItineraryArgs } from "./args/UpdateManyItineraryArgs";
+import { UpsertItineraryArgs } from "./args/UpsertItineraryArgs";
+import { Itinerary } from "../../../models/Itinerary";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateItinerary } from "../../outputs/AggregateItinerary";
+import { ItineraryGroupBy } from "../../outputs/ItineraryGroupBy";
+export declare class ItineraryCrudResolver {
+    itinerary(ctx: any, info: GraphQLResolveInfo, args: FindUniqueItineraryArgs): Promise<Itinerary | null>;
+    findFirstItinerary(ctx: any, info: GraphQLResolveInfo, args: FindFirstItineraryArgs): Promise<Itinerary | null>;
+    itineraries(ctx: any, info: GraphQLResolveInfo, args: FindManyItineraryArgs): Promise<Itinerary[]>;
+    createItinerary(ctx: any, info: GraphQLResolveInfo, args: CreateItineraryArgs): Promise<Itinerary>;
+    createManyItinerary(ctx: any, info: GraphQLResolveInfo, args: CreateManyItineraryArgs): Promise<AffectedRowsOutput>;
+    deleteItinerary(ctx: any, info: GraphQLResolveInfo, args: DeleteItineraryArgs): Promise<Itinerary | null>;
+    updateItinerary(ctx: any, info: GraphQLResolveInfo, args: UpdateItineraryArgs): Promise<Itinerary | null>;
+    deleteManyItinerary(ctx: any, info: GraphQLResolveInfo, args: DeleteManyItineraryArgs): Promise<AffectedRowsOutput>;
+    updateManyItinerary(ctx: any, info: GraphQLResolveInfo, args: UpdateManyItineraryArgs): Promise<AffectedRowsOutput>;
+    upsertItinerary(ctx: any, info: GraphQLResolveInfo, args: UpsertItineraryArgs): Promise<Itinerary>;
+    aggregateItinerary(ctx: any, info: GraphQLResolveInfo, args: AggregateItineraryArgs): Promise<AggregateItinerary>;
+    groupByItinerary(ctx: any, info: GraphQLResolveInfo, args: GroupByItineraryArgs): Promise<ItineraryGroupBy[]>;
+}

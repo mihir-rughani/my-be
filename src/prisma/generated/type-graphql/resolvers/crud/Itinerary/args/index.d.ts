@@ -1,0 +1,12 @@
+export { AggregateItineraryArgs } from "./AggregateItineraryArgs";
+export { CreateItineraryArgs } from "./CreateItineraryArgs";
+export { CreateManyItineraryArgs } from "./CreateManyItineraryArgs";
+export { DeleteItineraryArgs } from "./DeleteItineraryArgs";
+export { DeleteManyItineraryArgs } from "./DeleteManyItineraryArgs";
+export { FindFirstItineraryArgs } from "./FindFirstItineraryArgs";
+export { FindManyItineraryArgs } from "./FindManyItineraryArgs";
+export { FindUniqueItineraryArgs } from "./FindUniqueItineraryArgs";
+export { GroupByItineraryArgs } from "./GroupByItineraryArgs";
+export { UpdateItineraryArgs } from "./UpdateItineraryArgs";
+export { UpdateManyItineraryArgs } from "./UpdateManyItineraryArgs";
+export { UpsertItineraryArgs } from "./UpsertItineraryArgs";

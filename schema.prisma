@@ -45,7 +45,7 @@ model upload_file_morph {
   field          String?
   order          Int?
   uploadFile upload_file? @relation(fields: [upload_file_id], references: [id])
-  venues venues? @relation(fields: [related_id], references: [id])
+    venues venues? @relation(fields: [related_id], references: [id])
 }
 
 model venueType {
@@ -89,5 +89,29 @@ model venues {
   outdoor_dinning Boolean?
   outdoor_bar     Boolean?
   venueType       venueType? @relation(fields: [venue_type], references: [id])
-  uploadFileMorph   upload_file_morph[]
+  uploadFileMorph upload_file_morph[]
+}
+
+model itinerary {
+  id           Int       @id @default(dbgenerated("nextval('itinerary_id_seq'::regclass)"))
+  user_id      String?   @unique @db.VarChar(255)
+  published_at DateTime? @db.Timestamptz(6)
+  created_by   Int?
+  updated_by   Int?
+  created_at   DateTime? @default(now()) @db.Timestamptz(6)
+  updated_at   DateTime? @default(now()) @db.Timestamptz(6)
+  itinerary_items itinerary_items[]
+}
+
+model itinerary_items {
+  id           Int       @id @default(dbgenerated("nextval('itinerary_items_id_seq'::regclass)"))
+  itinerary_id Int?
+  user_id      String?   @unique @db.VarChar(255)
+  published_at DateTime? @db.Timestamptz(6)
+  created_by   Int?
+  updated_by   Int?
+  created_at   DateTime? @default(now()) @db.Timestamptz(6)
+  updated_at   DateTime? @default(now()) @db.Timestamptz(6)
+  venue_data   Json?
+  itinerary itinerary? @relation(fields: [itinerary_id], references: [id])
 }
