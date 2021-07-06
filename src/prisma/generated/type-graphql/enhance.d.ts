@@ -9,12 +9,16 @@ declare const crudResolversMap: {
     Upload_file_morph: typeof crudResolvers.Upload_file_morphCrudResolver;
     VenueType: typeof crudResolvers.VenueTypeCrudResolver;
     Venues: typeof crudResolvers.VenuesCrudResolver;
+    Itinerary: typeof crudResolvers.ItineraryCrudResolver;
+    Itinerary_places: typeof crudResolvers.Itinerary_placesCrudResolver;
 };
 declare const relationResolversMap: {
     Upload_file: typeof relationResolvers.Upload_fileRelationsResolver;
     Upload_file_morph: typeof relationResolvers.Upload_file_morphRelationsResolver;
     VenueType: typeof relationResolvers.VenueTypeRelationsResolver;
     Venues: typeof relationResolvers.VenuesRelationsResolver;
+    Itinerary: typeof relationResolvers.ItineraryRelationsResolver;
+    Itinerary_places: typeof relationResolvers.Itinerary_placesRelationsResolver;
 };
 declare type ResolverModelNames = keyof typeof crudResolversMap;
 declare type ModelResolverActionNames<TModel extends ResolverModelNames> = keyof typeof crudResolversMap[TModel]["prototype"];

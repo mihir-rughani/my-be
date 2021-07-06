@@ -1,0 +1,12 @@
+export { AggregateItinerary_placesArgs } from "./AggregateItinerary_placesArgs";
+export { CreateItinerary_placesArgs } from "./CreateItinerary_placesArgs";
+export { CreateManyItinerary_placesArgs } from "./CreateManyItinerary_placesArgs";
+export { DeleteItinerary_placesArgs } from "./DeleteItinerary_placesArgs";
+export { DeleteManyItinerary_placesArgs } from "./DeleteManyItinerary_placesArgs";
+export { FindFirstItinerary_placesArgs } from "./FindFirstItinerary_placesArgs";
+export { FindManyItinerary_placesArgs } from "./FindManyItinerary_placesArgs";
+export { FindUniqueItinerary_placesArgs } from "./FindUniqueItinerary_placesArgs";
+export { GroupByItinerary_placesArgs } from "./GroupByItinerary_placesArgs";
+export { UpdateItinerary_placesArgs } from "./UpdateItinerary_placesArgs";
+export { UpdateManyItinerary_placesArgs } from "./UpdateManyItinerary_placesArgs";
+export { UpsertItinerary_placesArgs } from "./UpsertItinerary_placesArgs";

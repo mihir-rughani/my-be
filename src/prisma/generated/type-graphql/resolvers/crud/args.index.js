@@ -10,6 +10,8 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+__exportStar(require("./Itinerary/args"), exports);
+__exportStar(require("./Itinerary_places/args"), exports);
 __exportStar(require("./Upload_file/args"), exports);
 __exportStar(require("./Upload_file_morph/args"), exports);
 __exportStar(require("./VenueType/args"), exports);
