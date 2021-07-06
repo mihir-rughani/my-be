@@ -30,7 +30,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ItineraryUpdateInput = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
-const Itinerary_itemsUpdateManyWithoutItineraryInput_1 = require("../inputs/Itinerary_itemsUpdateManyWithoutItineraryInput");
+const Itinerary_placesUpdateManyWithoutItineraryInput_1 = require("../inputs/Itinerary_placesUpdateManyWithoutItineraryInput");
 const NullableDateTimeFieldUpdateOperationsInput_1 = require("../inputs/NullableDateTimeFieldUpdateOperationsInput");
 const NullableIntFieldUpdateOperationsInput_1 = require("../inputs/NullableIntFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
@@ -47,7 +47,7 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", NullableDateTimeFieldUpdateOperationsInput_1.NullableDateTimeFieldUpdateOperationsInput)
-], ItineraryUpdateInput.prototype, "published_at", void 0);
+], ItineraryUpdateInput.prototype, "itinerary_date", void 0);
 __decorate([
     TypeGraphQL.Field(_type => NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput, {
         nullable: true
@@ -73,11 +73,11 @@ __decorate([
     __metadata("design:type", NullableDateTimeFieldUpdateOperationsInput_1.NullableDateTimeFieldUpdateOperationsInput)
 ], ItineraryUpdateInput.prototype, "updated_at", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => Itinerary_itemsUpdateManyWithoutItineraryInput_1.Itinerary_itemsUpdateManyWithoutItineraryInput, {
+    TypeGraphQL.Field(_type => Itinerary_placesUpdateManyWithoutItineraryInput_1.Itinerary_placesUpdateManyWithoutItineraryInput, {
         nullable: true
     }),
-    __metadata("design:type", Itinerary_itemsUpdateManyWithoutItineraryInput_1.Itinerary_itemsUpdateManyWithoutItineraryInput)
-], ItineraryUpdateInput.prototype, "itinerary_items", void 0);
+    __metadata("design:type", Itinerary_placesUpdateManyWithoutItineraryInput_1.Itinerary_placesUpdateManyWithoutItineraryInput)
+], ItineraryUpdateInput.prototype, "places", void 0);
 ItineraryUpdateInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

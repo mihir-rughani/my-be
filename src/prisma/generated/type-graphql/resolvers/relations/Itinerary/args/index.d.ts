@@ -1,1 +1,1 @@
-export { ItineraryItinerary_itemsArgs } from "./ItineraryItinerary_itemsArgs";
+export { ItineraryPlacesArgs } from "./ItineraryPlacesArgs";

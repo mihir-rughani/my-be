@@ -1,5 +1,5 @@
 export { ItineraryScalarFieldEnum } from "./ItineraryScalarFieldEnum";
-export { Itinerary_itemsScalarFieldEnum } from "./Itinerary_itemsScalarFieldEnum";
+export { Itinerary_placesScalarFieldEnum } from "./Itinerary_placesScalarFieldEnum";
 export { QueryMode } from "./QueryMode";
 export { SortOrder } from "./SortOrder";
 export { Upload_fileScalarFieldEnum } from "./Upload_fileScalarFieldEnum";

@@ -72,7 +72,7 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", DateTimeNullableWithAggregatesFilter_1.DateTimeNullableWithAggregatesFilter)
-], ItineraryScalarWhereWithAggregatesInput.prototype, "published_at", void 0);
+], ItineraryScalarWhereWithAggregatesInput.prototype, "itinerary_date", void 0);
 __decorate([
     TypeGraphQL.Field(_type => IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter, {
         nullable: true

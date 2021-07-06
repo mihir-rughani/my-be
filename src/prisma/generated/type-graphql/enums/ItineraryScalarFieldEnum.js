@@ -25,7 +25,7 @@ var ItineraryScalarFieldEnum;
 (function (ItineraryScalarFieldEnum) {
     ItineraryScalarFieldEnum["id"] = "id";
     ItineraryScalarFieldEnum["user_id"] = "user_id";
-    ItineraryScalarFieldEnum["published_at"] = "published_at";
+    ItineraryScalarFieldEnum["itinerary_date"] = "itinerary_date";
     ItineraryScalarFieldEnum["created_by"] = "created_by";
     ItineraryScalarFieldEnum["updated_by"] = "updated_by";
     ItineraryScalarFieldEnum["created_at"] = "created_at";

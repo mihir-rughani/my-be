@@ -1,7 +1,7 @@
 export declare class ItineraryMinAggregate {
     id: number | null;
     user_id: string | null;
-    published_at: Date | null;
+    itinerary_date: Date | null;
     created_by: number | null;
     updated_by: number | null;
     created_at: Date | null;

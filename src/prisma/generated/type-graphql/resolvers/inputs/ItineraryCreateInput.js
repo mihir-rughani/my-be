@@ -30,7 +30,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ItineraryCreateInput = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
-const Itinerary_itemsCreateNestedManyWithoutItineraryInput_1 = require("../inputs/Itinerary_itemsCreateNestedManyWithoutItineraryInput");
+const Itinerary_placesCreateNestedManyWithoutItineraryInput_1 = require("../inputs/Itinerary_placesCreateNestedManyWithoutItineraryInput");
 let ItineraryCreateInput = class ItineraryCreateInput {
 };
 __decorate([
@@ -44,7 +44,7 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", Date)
-], ItineraryCreateInput.prototype, "published_at", void 0);
+], ItineraryCreateInput.prototype, "itinerary_date", void 0);
 __decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: true
@@ -70,11 +70,11 @@ __decorate([
     __metadata("design:type", Date)
 ], ItineraryCreateInput.prototype, "updated_at", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => Itinerary_itemsCreateNestedManyWithoutItineraryInput_1.Itinerary_itemsCreateNestedManyWithoutItineraryInput, {
+    TypeGraphQL.Field(_type => Itinerary_placesCreateNestedManyWithoutItineraryInput_1.Itinerary_placesCreateNestedManyWithoutItineraryInput, {
         nullable: true
     }),
-    __metadata("design:type", Itinerary_itemsCreateNestedManyWithoutItineraryInput_1.Itinerary_itemsCreateNestedManyWithoutItineraryInput)
-], ItineraryCreateInput.prototype, "itinerary_items", void 0);
+    __metadata("design:type", Itinerary_placesCreateNestedManyWithoutItineraryInput_1.Itinerary_placesCreateNestedManyWithoutItineraryInput)
+], ItineraryCreateInput.prototype, "places", void 0);
 ItineraryCreateInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

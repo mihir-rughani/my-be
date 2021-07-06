@@ -3,7 +3,7 @@ import { NullableIntFieldUpdateOperationsInput } from "../inputs/NullableIntFiel
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 export declare class ItineraryUpdateManyMutationInput {
     user_id?: NullableStringFieldUpdateOperationsInput | undefined;
-    published_at?: NullableDateTimeFieldUpdateOperationsInput | undefined;
+    itinerary_date?: NullableDateTimeFieldUpdateOperationsInput | undefined;
     created_by?: NullableIntFieldUpdateOperationsInput | undefined;
     updated_by?: NullableIntFieldUpdateOperationsInput | undefined;
     created_at?: NullableDateTimeFieldUpdateOperationsInput | undefined;

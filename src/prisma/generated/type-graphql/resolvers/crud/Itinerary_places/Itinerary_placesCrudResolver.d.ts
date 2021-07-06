@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateItinerary_placesArgs } from "./args/AggregateItinerary_placesArgs";
+import { CreateItinerary_placesArgs } from "./args/CreateItinerary_placesArgs";
+import { CreateManyItinerary_placesArgs } from "./args/CreateManyItinerary_placesArgs";
+import { DeleteItinerary_placesArgs } from "./args/DeleteItinerary_placesArgs";
+import { DeleteManyItinerary_placesArgs } from "./args/DeleteManyItinerary_placesArgs";
+import { FindFirstItinerary_placesArgs } from "./args/FindFirstItinerary_placesArgs";
+import { FindManyItinerary_placesArgs } from "./args/FindManyItinerary_placesArgs";
+import { FindUniqueItinerary_placesArgs } from "./args/FindUniqueItinerary_placesArgs";
+import { GroupByItinerary_placesArgs } from "./args/GroupByItinerary_placesArgs";
+import { UpdateItinerary_placesArgs } from "./args/UpdateItinerary_placesArgs";
+import { UpdateManyItinerary_placesArgs } from "./args/UpdateManyItinerary_placesArgs";
+import { UpsertItinerary_placesArgs } from "./args/UpsertItinerary_placesArgs";
+import { Itinerary_places } from "../../../models/Itinerary_places";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateItinerary_places } from "../../outputs/AggregateItinerary_places";
+import { Itinerary_placesGroupBy } from "../../outputs/Itinerary_placesGroupBy";
+export declare class Itinerary_placesCrudResolver {
+    findUniqueItinerary_places(ctx: any, info: GraphQLResolveInfo, args: FindUniqueItinerary_placesArgs): Promise<Itinerary_places | null>;
+    findFirstItinerary_places(ctx: any, info: GraphQLResolveInfo, args: FindFirstItinerary_placesArgs): Promise<Itinerary_places | null>;
+    findManyItinerary_places(ctx: any, info: GraphQLResolveInfo, args: FindManyItinerary_placesArgs): Promise<Itinerary_places[]>;
+    createItinerary_places(ctx: any, info: GraphQLResolveInfo, args: CreateItinerary_placesArgs): Promise<Itinerary_places>;
+    createManyItinerary_places(ctx: any, info: GraphQLResolveInfo, args: CreateManyItinerary_placesArgs): Promise<AffectedRowsOutput>;
+    deleteItinerary_places(ctx: any, info: GraphQLResolveInfo, args: DeleteItinerary_placesArgs): Promise<Itinerary_places | null>;
+    updateItinerary_places(ctx: any, info: GraphQLResolveInfo, args: UpdateItinerary_placesArgs): Promise<Itinerary_places | null>;
+    deleteManyItinerary_places(ctx: any, info: GraphQLResolveInfo, args: DeleteManyItinerary_placesArgs): Promise<AffectedRowsOutput>;
+    updateManyItinerary_places(ctx: any, info: GraphQLResolveInfo, args: UpdateManyItinerary_placesArgs): Promise<AffectedRowsOutput>;
+    upsertItinerary_places(ctx: any, info: GraphQLResolveInfo, args: UpsertItinerary_placesArgs): Promise<Itinerary_places>;
+    aggregateItinerary_places(ctx: any, info: GraphQLResolveInfo, args: AggregateItinerary_placesArgs): Promise<AggregateItinerary_places>;
+    groupByItinerary_places(ctx: any, info: GraphQLResolveInfo, args: GroupByItinerary_placesArgs): Promise<Itinerary_placesGroupBy[]>;
+}

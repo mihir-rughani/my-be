@@ -8,7 +8,7 @@ export declare class ItineraryScalarWhereWithAggregatesInput {
     NOT?: ItineraryScalarWhereWithAggregatesInput[] | undefined;
     id?: IntWithAggregatesFilter | undefined;
     user_id?: StringNullableWithAggregatesFilter | undefined;
-    published_at?: DateTimeNullableWithAggregatesFilter | undefined;
+    itinerary_date?: DateTimeNullableWithAggregatesFilter | undefined;
     created_by?: IntNullableWithAggregatesFilter | undefined;
     updated_by?: IntNullableWithAggregatesFilter | undefined;
     created_at?: DateTimeNullableWithAggregatesFilter | undefined;

@@ -38,12 +38,6 @@ __decorate([
     }),
     __metadata("design:type", Number)
 ], ItineraryWhereUniqueInput.prototype, "id", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    __metadata("design:type", String)
-], ItineraryWhereUniqueInput.prototype, "user_id", void 0);
 ItineraryWhereUniqueInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

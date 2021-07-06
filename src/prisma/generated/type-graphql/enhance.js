@@ -33,7 +33,7 @@ const crudResolversMap = {
     VenueType: crudResolvers.VenueTypeCrudResolver,
     Venues: crudResolvers.VenuesCrudResolver,
     Itinerary: crudResolvers.ItineraryCrudResolver,
-    Itinerary_items: crudResolvers.Itinerary_itemsCrudResolver
+    Itinerary_places: crudResolvers.Itinerary_placesCrudResolver
 };
 const relationResolversMap = {
     Upload_file: relationResolvers.Upload_fileRelationsResolver,
@@ -41,7 +41,7 @@ const relationResolversMap = {
     VenueType: relationResolvers.VenueTypeRelationsResolver,
     Venues: relationResolvers.VenuesRelationsResolver,
     Itinerary: relationResolvers.ItineraryRelationsResolver,
-    Itinerary_items: relationResolvers.Itinerary_itemsRelationsResolver
+    Itinerary_places: relationResolvers.Itinerary_placesRelationsResolver
 };
 const actionResolversMap = {
     Upload_file: {
@@ -114,19 +114,19 @@ const actionResolversMap = {
         aggregateItinerary: actionResolvers.AggregateItineraryResolver,
         groupByItinerary: actionResolvers.GroupByItineraryResolver
     },
-    Itinerary_items: {
-        findUniqueItinerary_items: actionResolvers.FindUniqueItinerary_itemsResolver,
-        findFirstItinerary_items: actionResolvers.FindFirstItinerary_itemsResolver,
-        findManyItinerary_items: actionResolvers.FindManyItinerary_itemsResolver,
-        createItinerary_items: actionResolvers.CreateItinerary_itemsResolver,
-        createManyItinerary_items: actionResolvers.CreateManyItinerary_itemsResolver,
-        deleteItinerary_items: actionResolvers.DeleteItinerary_itemsResolver,
-        updateItinerary_items: actionResolvers.UpdateItinerary_itemsResolver,
-        deleteManyItinerary_items: actionResolvers.DeleteManyItinerary_itemsResolver,
-        updateManyItinerary_items: actionResolvers.UpdateManyItinerary_itemsResolver,
-        upsertItinerary_items: actionResolvers.UpsertItinerary_itemsResolver,
-        aggregateItinerary_items: actionResolvers.AggregateItinerary_itemsResolver,
-        groupByItinerary_items: actionResolvers.GroupByItinerary_itemsResolver
+    Itinerary_places: {
+        findUniqueItinerary_places: actionResolvers.FindUniqueItinerary_placesResolver,
+        findFirstItinerary_places: actionResolvers.FindFirstItinerary_placesResolver,
+        findManyItinerary_places: actionResolvers.FindManyItinerary_placesResolver,
+        createItinerary_places: actionResolvers.CreateItinerary_placesResolver,
+        createManyItinerary_places: actionResolvers.CreateManyItinerary_placesResolver,
+        deleteItinerary_places: actionResolvers.DeleteItinerary_placesResolver,
+        updateItinerary_places: actionResolvers.UpdateItinerary_placesResolver,
+        deleteManyItinerary_places: actionResolvers.DeleteManyItinerary_placesResolver,
+        updateManyItinerary_places: actionResolvers.UpdateManyItinerary_placesResolver,
+        upsertItinerary_places: actionResolvers.UpsertItinerary_placesResolver,
+        aggregateItinerary_places: actionResolvers.AggregateItinerary_placesResolver,
+        groupByItinerary_places: actionResolvers.GroupByItinerary_placesResolver
     }
 };
 const resolversInfo = {
@@ -135,23 +135,23 @@ const resolversInfo = {
     VenueType: ["venueType", "findFirstVenueType", "venueTypes", "createVenueType", "createManyVenueType", "deleteVenueType", "updateVenueType", "deleteManyVenueType", "updateManyVenueType", "upsertVenueType", "aggregateVenueType", "groupByVenueType"],
     Venues: ["findUniqueVenues", "findFirstVenues", "findManyVenues", "createVenues", "createManyVenues", "deleteVenues", "updateVenues", "deleteManyVenues", "updateManyVenues", "upsertVenues", "aggregateVenues", "groupByVenues"],
     Itinerary: ["itinerary", "findFirstItinerary", "itineraries", "createItinerary", "createManyItinerary", "deleteItinerary", "updateItinerary", "deleteManyItinerary", "updateManyItinerary", "upsertItinerary", "aggregateItinerary", "groupByItinerary"],
-    Itinerary_items: ["findUniqueItinerary_items", "findFirstItinerary_items", "findManyItinerary_items", "createItinerary_items", "createManyItinerary_items", "deleteItinerary_items", "updateItinerary_items", "deleteManyItinerary_items", "updateManyItinerary_items", "upsertItinerary_items", "aggregateItinerary_items", "groupByItinerary_items"]
+    Itinerary_places: ["findUniqueItinerary_places", "findFirstItinerary_places", "findManyItinerary_places", "createItinerary_places", "createManyItinerary_places", "deleteItinerary_places", "updateItinerary_places", "deleteManyItinerary_places", "updateManyItinerary_places", "upsertItinerary_places", "aggregateItinerary_places", "groupByItinerary_places"]
 };
 const relationResolversInfo = {
     Upload_file: ["uploadFileMorph"],
     Upload_file_morph: ["uploadFile", "venues"],
     VenueType: ["venues"],
     Venues: ["venueType", "uploadFileMorph"],
-    Itinerary: ["itinerary_items"],
-    Itinerary_items: ["itinerary"]
+    Itinerary: ["places"],
+    Itinerary_places: ["itinerary"]
 };
 const modelsInfo = {
     Upload_file: ["id", "name", "alternativeText", "caption", "width", "height", "formats", "hash", "ext", "mime", "size", "url", "previewUrl", "provider", "provider_metadata", "created_by", "updated_by", "created_at", "updated_at"],
     Upload_file_morph: ["id", "upload_file_id", "related_id", "related_type", "field", "order"],
     VenueType: ["id", "created_by", "updated_by", "created_at", "updated_at", "name"],
     Venues: ["id", "title", "description", "address", "suburb", "city", "postCode", "lat", "lon", "website", "venue_type", "breakfast", "lunch", "dinner", "visible", "created_by", "updated_by", "created_at", "updated_at", "test", "cosy", "romantic", "weddings", "post_code", "bachelor_party", "hen_party", "outdoor_area", "outdoor_dinning", "outdoor_bar"],
-    Itinerary: ["id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at"],
-    Itinerary_items: ["id", "itinerary_id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "venue_data"]
+    Itinerary: ["id", "user_id", "itinerary_date", "created_by", "updated_by", "created_at", "updated_at"],
+    Itinerary_places: ["id", "user_id", "itinerary_id", "venue_data", "created_by", "updated_by", "created_at", "updated_at"]
 };
 const inputsInfo = {
     Upload_fileWhereInput: ["AND", "OR", "NOT", "id", "name", "alternativeText", "caption", "width", "height", "formats", "hash", "ext", "mime", "size", "url", "previewUrl", "provider", "provider_metadata", "created_by", "updated_by", "created_at", "updated_at", "uploadFileMorph"],
@@ -170,14 +170,14 @@ const inputsInfo = {
     VenuesOrderByInput: ["id", "title", "description", "address", "suburb", "city", "postCode", "lat", "lon", "website", "venue_type", "breakfast", "lunch", "dinner", "visible", "created_by", "updated_by", "created_at", "updated_at", "test", "cosy", "romantic", "weddings", "post_code", "bachelor_party", "hen_party", "outdoor_area", "outdoor_dinning", "outdoor_bar"],
     VenuesWhereUniqueInput: ["id"],
     VenuesScalarWhereWithAggregatesInput: ["AND", "OR", "NOT", "id", "title", "description", "address", "suburb", "city", "postCode", "lat", "lon", "website", "venue_type", "breakfast", "lunch", "dinner", "visible", "created_by", "updated_by", "created_at", "updated_at", "test", "cosy", "romantic", "weddings", "post_code", "bachelor_party", "hen_party", "outdoor_area", "outdoor_dinning", "outdoor_bar"],
-    ItineraryWhereInput: ["AND", "OR", "NOT", "id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "itinerary_items"],
-    ItineraryOrderByInput: ["id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at"],
-    ItineraryWhereUniqueInput: ["id", "user_id"],
-    ItineraryScalarWhereWithAggregatesInput: ["AND", "OR", "NOT", "id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at"],
-    Itinerary_itemsWhereInput: ["AND", "OR", "NOT", "id", "itinerary_id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "venue_data", "itinerary"],
-    Itinerary_itemsOrderByInput: ["id", "itinerary_id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "venue_data"],
-    Itinerary_itemsWhereUniqueInput: ["id", "user_id"],
-    Itinerary_itemsScalarWhereWithAggregatesInput: ["AND", "OR", "NOT", "id", "itinerary_id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "venue_data"],
+    ItineraryWhereInput: ["AND", "OR", "NOT", "id", "user_id", "itinerary_date", "created_by", "updated_by", "created_at", "updated_at", "places"],
+    ItineraryOrderByInput: ["id", "user_id", "itinerary_date", "created_by", "updated_by", "created_at", "updated_at"],
+    ItineraryWhereUniqueInput: ["id"],
+    ItineraryScalarWhereWithAggregatesInput: ["AND", "OR", "NOT", "id", "user_id", "itinerary_date", "created_by", "updated_by", "created_at", "updated_at"],
+    Itinerary_placesWhereInput: ["AND", "OR", "NOT", "id", "user_id", "itinerary_id", "venue_data", "created_by", "updated_by", "created_at", "updated_at", "itinerary"],
+    Itinerary_placesOrderByInput: ["id", "user_id", "itinerary_id", "venue_data", "created_by", "updated_by", "created_at", "updated_at"],
+    Itinerary_placesWhereUniqueInput: ["id"],
+    Itinerary_placesScalarWhereWithAggregatesInput: ["AND", "OR", "NOT", "id", "user_id", "itinerary_id", "venue_data", "created_by", "updated_by", "created_at", "updated_at"],
     Upload_fileCreateInput: ["name", "alternativeText", "caption", "width", "height", "formats", "hash", "ext", "mime", "size", "url", "previewUrl", "provider", "provider_metadata", "created_by", "updated_by", "created_at", "updated_at", "uploadFileMorph"],
     Upload_fileUpdateInput: ["name", "alternativeText", "caption", "width", "height", "formats", "hash", "ext", "mime", "size", "url", "previewUrl", "provider", "provider_metadata", "created_by", "updated_by", "created_at", "updated_at", "uploadFileMorph"],
     Upload_fileCreateManyInput: ["id", "name", "alternativeText", "caption", "width", "height", "formats", "hash", "ext", "mime", "size", "url", "previewUrl", "provider", "provider_metadata", "created_by", "updated_by", "created_at", "updated_at"],
@@ -194,14 +194,14 @@ const inputsInfo = {
     VenuesUpdateInput: ["title", "description", "address", "suburb", "city", "postCode", "lat", "lon", "website", "breakfast", "lunch", "dinner", "visible", "created_by", "updated_by", "created_at", "updated_at", "test", "cosy", "romantic", "weddings", "post_code", "bachelor_party", "hen_party", "outdoor_area", "outdoor_dinning", "outdoor_bar", "venueType", "uploadFileMorph"],
     VenuesCreateManyInput: ["id", "title", "description", "address", "suburb", "city", "postCode", "lat", "lon", "website", "venue_type", "breakfast", "lunch", "dinner", "visible", "created_by", "updated_by", "created_at", "updated_at", "test", "cosy", "romantic", "weddings", "post_code", "bachelor_party", "hen_party", "outdoor_area", "outdoor_dinning", "outdoor_bar"],
     VenuesUpdateManyMutationInput: ["title", "description", "address", "suburb", "city", "postCode", "lat", "lon", "website", "breakfast", "lunch", "dinner", "visible", "created_by", "updated_by", "created_at", "updated_at", "test", "cosy", "romantic", "weddings", "post_code", "bachelor_party", "hen_party", "outdoor_area", "outdoor_dinning", "outdoor_bar"],
-    ItineraryCreateInput: ["user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "itinerary_items"],
-    ItineraryUpdateInput: ["user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "itinerary_items"],
-    ItineraryCreateManyInput: ["id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at"],
-    ItineraryUpdateManyMutationInput: ["user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at"],
-    Itinerary_itemsCreateInput: ["user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "venue_data", "itinerary"],
-    Itinerary_itemsUpdateInput: ["user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "venue_data", "itinerary"],
-    Itinerary_itemsCreateManyInput: ["id", "itinerary_id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "venue_data"],
-    Itinerary_itemsUpdateManyMutationInput: ["user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "venue_data"],
+    ItineraryCreateInput: ["user_id", "itinerary_date", "created_by", "updated_by", "created_at", "updated_at", "places"],
+    ItineraryUpdateInput: ["user_id", "itinerary_date", "created_by", "updated_by", "created_at", "updated_at", "places"],
+    ItineraryCreateManyInput: ["id", "user_id", "itinerary_date", "created_by", "updated_by", "created_at", "updated_at"],
+    ItineraryUpdateManyMutationInput: ["user_id", "itinerary_date", "created_by", "updated_by", "created_at", "updated_at"],
+    Itinerary_placesCreateInput: ["user_id", "venue_data", "created_by", "updated_by", "created_at", "updated_at", "itinerary"],
+    Itinerary_placesUpdateInput: ["user_id", "venue_data", "created_by", "updated_by", "created_at", "updated_at", "itinerary"],
+    Itinerary_placesCreateManyInput: ["id", "user_id", "itinerary_id", "venue_data", "created_by", "updated_by", "created_at", "updated_at"],
+    Itinerary_placesUpdateManyMutationInput: ["user_id", "venue_data", "created_by", "updated_by", "created_at", "updated_at"],
     IntFilter: ["equals", "in", "notIn", "lt", "lte", "gt", "gte", "not"],
     StringFilter: ["equals", "in", "notIn", "lt", "lte", "gt", "gte", "contains", "startsWith", "endsWith", "mode", "not"],
     StringNullableFilter: ["equals", "in", "notIn", "lt", "lte", "gt", "gte", "contains", "startsWith", "endsWith", "mode", "not"],
@@ -225,7 +225,7 @@ const inputsInfo = {
     VenueTypeRelationFilter: ["is", "isNot"],
     FloatNullableWithAggregatesFilter: ["equals", "in", "notIn", "lt", "lte", "gt", "gte", "not", "_count", "_avg", "_sum", "_min", "_max"],
     BoolNullableWithAggregatesFilter: ["equals", "not", "_count", "_min", "_max"],
-    Itinerary_itemsListRelationFilter: ["every", "some", "none"],
+    Itinerary_placesListRelationFilter: ["every", "some", "none"],
     ItineraryRelationFilter: ["is", "isNot"],
     Upload_file_morphCreateNestedManyWithoutUploadFileInput: ["create", "connectOrCreate", "createMany", "connect"],
     StringFieldUpdateOperationsInput: ["set"],
@@ -247,10 +247,10 @@ const inputsInfo = {
     NullableBoolFieldUpdateOperationsInput: ["set"],
     VenueTypeUpdateOneWithoutVenuesInput: ["create", "connectOrCreate", "upsert", "connect", "disconnect", "delete", "update"],
     Upload_file_morphUpdateManyWithoutVenuesInput: ["create", "connectOrCreate", "upsert", "createMany", "connect", "set", "disconnect", "delete", "update", "updateMany", "deleteMany"],
-    Itinerary_itemsCreateNestedManyWithoutItineraryInput: ["create", "connectOrCreate", "createMany", "connect"],
-    Itinerary_itemsUpdateManyWithoutItineraryInput: ["create", "connectOrCreate", "upsert", "createMany", "connect", "set", "disconnect", "delete", "update", "updateMany", "deleteMany"],
-    ItineraryCreateNestedOneWithoutItinerary_itemsInput: ["create", "connectOrCreate", "connect"],
-    ItineraryUpdateOneWithoutItinerary_itemsInput: ["create", "connectOrCreate", "upsert", "connect", "disconnect", "delete", "update"],
+    Itinerary_placesCreateNestedManyWithoutItineraryInput: ["create", "connectOrCreate", "createMany", "connect"],
+    Itinerary_placesUpdateManyWithoutItineraryInput: ["create", "connectOrCreate", "upsert", "createMany", "connect", "set", "disconnect", "delete", "update", "updateMany", "deleteMany"],
+    ItineraryCreateNestedOneWithoutPlacesInput: ["create", "connectOrCreate", "connect"],
+    ItineraryUpdateOneWithoutPlacesInput: ["create", "connectOrCreate", "upsert", "connect", "disconnect", "delete", "update"],
     NestedIntFilter: ["equals", "in", "notIn", "lt", "lte", "gt", "gte", "not"],
     NestedStringFilter: ["equals", "in", "notIn", "lt", "lte", "gt", "gte", "contains", "startsWith", "endsWith", "not"],
     NestedStringNullableFilter: ["equals", "in", "notIn", "lt", "lte", "gt", "gte", "contains", "startsWith", "endsWith", "not"],
@@ -301,25 +301,25 @@ const inputsInfo = {
     Upload_file_morphUpsertWithWhereUniqueWithoutVenuesInput: ["where", "update", "create"],
     Upload_file_morphUpdateWithWhereUniqueWithoutVenuesInput: ["where", "data"],
     Upload_file_morphUpdateManyWithWhereWithoutVenuesInput: ["where", "data"],
-    Itinerary_itemsCreateWithoutItineraryInput: ["user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "venue_data"],
-    Itinerary_itemsCreateOrConnectWithoutItineraryInput: ["where", "create"],
-    Itinerary_itemsCreateManyItineraryInputEnvelope: ["data", "skipDuplicates"],
-    Itinerary_itemsUpsertWithWhereUniqueWithoutItineraryInput: ["where", "update", "create"],
-    Itinerary_itemsUpdateWithWhereUniqueWithoutItineraryInput: ["where", "data"],
-    Itinerary_itemsUpdateManyWithWhereWithoutItineraryInput: ["where", "data"],
-    Itinerary_itemsScalarWhereInput: ["AND", "OR", "NOT", "id", "itinerary_id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "venue_data"],
-    ItineraryCreateWithoutItinerary_itemsInput: ["user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at"],
-    ItineraryCreateOrConnectWithoutItinerary_itemsInput: ["where", "create"],
-    ItineraryUpsertWithoutItinerary_itemsInput: ["update", "create"],
-    ItineraryUpdateWithoutItinerary_itemsInput: ["user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at"],
+    Itinerary_placesCreateWithoutItineraryInput: ["user_id", "venue_data", "created_by", "updated_by", "created_at", "updated_at"],
+    Itinerary_placesCreateOrConnectWithoutItineraryInput: ["where", "create"],
+    Itinerary_placesCreateManyItineraryInputEnvelope: ["data", "skipDuplicates"],
+    Itinerary_placesUpsertWithWhereUniqueWithoutItineraryInput: ["where", "update", "create"],
+    Itinerary_placesUpdateWithWhereUniqueWithoutItineraryInput: ["where", "data"],
+    Itinerary_placesUpdateManyWithWhereWithoutItineraryInput: ["where", "data"],
+    Itinerary_placesScalarWhereInput: ["AND", "OR", "NOT", "id", "user_id", "itinerary_id", "venue_data", "created_by", "updated_by", "created_at", "updated_at"],
+    ItineraryCreateWithoutPlacesInput: ["user_id", "itinerary_date", "created_by", "updated_by", "created_at", "updated_at"],
+    ItineraryCreateOrConnectWithoutPlacesInput: ["where", "create"],
+    ItineraryUpsertWithoutPlacesInput: ["update", "create"],
+    ItineraryUpdateWithoutPlacesInput: ["user_id", "itinerary_date", "created_by", "updated_by", "created_at", "updated_at"],
     Upload_file_morphCreateManyUploadFileInput: ["id", "related_id", "related_type", "field", "order"],
     Upload_file_morphUpdateWithoutUploadFileInput: ["related_type", "field", "order", "venues"],
     VenuesCreateManyVenueTypeInput: ["id", "title", "description", "address", "suburb", "city", "postCode", "lat", "lon", "website", "breakfast", "lunch", "dinner", "visible", "created_by", "updated_by", "created_at", "updated_at", "test", "cosy", "romantic", "weddings", "post_code", "bachelor_party", "hen_party", "outdoor_area", "outdoor_dinning", "outdoor_bar"],
     VenuesUpdateWithoutVenueTypeInput: ["title", "description", "address", "suburb", "city", "postCode", "lat", "lon", "website", "breakfast", "lunch", "dinner", "visible", "created_by", "updated_by", "created_at", "updated_at", "test", "cosy", "romantic", "weddings", "post_code", "bachelor_party", "hen_party", "outdoor_area", "outdoor_dinning", "outdoor_bar", "uploadFileMorph"],
     Upload_file_morphCreateManyVenuesInput: ["id", "upload_file_id", "related_type", "field", "order"],
     Upload_file_morphUpdateWithoutVenuesInput: ["related_type", "field", "order", "uploadFile"],
-    Itinerary_itemsCreateManyItineraryInput: ["id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "venue_data"],
-    Itinerary_itemsUpdateWithoutItineraryInput: ["user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "venue_data"]
+    Itinerary_placesCreateManyItineraryInput: ["id", "user_id", "venue_data", "created_by", "updated_by", "created_at", "updated_at"],
+    Itinerary_placesUpdateWithoutItineraryInput: ["user_id", "venue_data", "created_by", "updated_by", "created_at", "updated_at"]
 };
 const outputsInfo = {
     AggregateUpload_file: ["_count", "_avg", "_sum", "_min", "_max"],
@@ -331,9 +331,9 @@ const outputsInfo = {
     AggregateVenues: ["_count", "_avg", "_sum", "_min", "_max"],
     VenuesGroupBy: ["id", "title", "description", "address", "suburb", "city", "postCode", "lat", "lon", "website", "venue_type", "breakfast", "lunch", "dinner", "visible", "created_by", "updated_by", "created_at", "updated_at", "test", "cosy", "romantic", "weddings", "post_code", "bachelor_party", "hen_party", "outdoor_area", "outdoor_dinning", "outdoor_bar", "_count", "_avg", "_sum", "_min", "_max"],
     AggregateItinerary: ["_count", "_avg", "_sum", "_min", "_max"],
-    ItineraryGroupBy: ["id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "_count", "_avg", "_sum", "_min", "_max"],
-    AggregateItinerary_items: ["_count", "_avg", "_sum", "_min", "_max"],
-    Itinerary_itemsGroupBy: ["id", "itinerary_id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "venue_data", "_count", "_avg", "_sum", "_min", "_max"],
+    ItineraryGroupBy: ["id", "user_id", "itinerary_date", "created_by", "updated_by", "created_at", "updated_at", "_count", "_avg", "_sum", "_min", "_max"],
+    AggregateItinerary_places: ["_count", "_avg", "_sum", "_min", "_max"],
+    Itinerary_placesGroupBy: ["id", "user_id", "itinerary_id", "venue_data", "created_by", "updated_by", "created_at", "updated_at", "_count", "_avg", "_sum", "_min", "_max"],
     AffectedRowsOutput: ["count"],
     Upload_fileCountAggregate: ["id", "name", "alternativeText", "caption", "width", "height", "formats", "hash", "ext", "mime", "size", "url", "previewUrl", "provider", "provider_metadata", "created_by", "updated_by", "created_at", "updated_at", "_all"],
     Upload_fileAvgAggregate: ["id", "width", "height", "size", "created_by", "updated_by"],
@@ -355,16 +355,16 @@ const outputsInfo = {
     VenuesSumAggregate: ["id", "lat", "lon", "venue_type", "created_by", "updated_by"],
     VenuesMinAggregate: ["id", "title", "description", "address", "suburb", "city", "postCode", "lat", "lon", "website", "venue_type", "breakfast", "lunch", "dinner", "visible", "created_by", "updated_by", "created_at", "updated_at", "test", "cosy", "romantic", "weddings", "post_code", "bachelor_party", "hen_party", "outdoor_area", "outdoor_dinning", "outdoor_bar"],
     VenuesMaxAggregate: ["id", "title", "description", "address", "suburb", "city", "postCode", "lat", "lon", "website", "venue_type", "breakfast", "lunch", "dinner", "visible", "created_by", "updated_by", "created_at", "updated_at", "test", "cosy", "romantic", "weddings", "post_code", "bachelor_party", "hen_party", "outdoor_area", "outdoor_dinning", "outdoor_bar"],
-    ItineraryCountAggregate: ["id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "_all"],
+    ItineraryCountAggregate: ["id", "user_id", "itinerary_date", "created_by", "updated_by", "created_at", "updated_at", "_all"],
     ItineraryAvgAggregate: ["id", "created_by", "updated_by"],
     ItinerarySumAggregate: ["id", "created_by", "updated_by"],
-    ItineraryMinAggregate: ["id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at"],
-    ItineraryMaxAggregate: ["id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at"],
-    Itinerary_itemsCountAggregate: ["id", "itinerary_id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at", "venue_data", "_all"],
-    Itinerary_itemsAvgAggregate: ["id", "itinerary_id", "created_by", "updated_by"],
-    Itinerary_itemsSumAggregate: ["id", "itinerary_id", "created_by", "updated_by"],
-    Itinerary_itemsMinAggregate: ["id", "itinerary_id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at"],
-    Itinerary_itemsMaxAggregate: ["id", "itinerary_id", "user_id", "published_at", "created_by", "updated_by", "created_at", "updated_at"]
+    ItineraryMinAggregate: ["id", "user_id", "itinerary_date", "created_by", "updated_by", "created_at", "updated_at"],
+    ItineraryMaxAggregate: ["id", "user_id", "itinerary_date", "created_by", "updated_by", "created_at", "updated_at"],
+    Itinerary_placesCountAggregate: ["id", "user_id", "itinerary_id", "venue_data", "created_by", "updated_by", "created_at", "updated_at", "_all"],
+    Itinerary_placesAvgAggregate: ["id", "itinerary_id", "created_by", "updated_by"],
+    Itinerary_placesSumAggregate: ["id", "itinerary_id", "created_by", "updated_by"],
+    Itinerary_placesMinAggregate: ["id", "user_id", "itinerary_id", "created_by", "updated_by", "created_at", "updated_at"],
+    Itinerary_placesMaxAggregate: ["id", "user_id", "itinerary_id", "created_by", "updated_by", "created_at", "updated_at"]
 };
 const argsInfo = {
     FindUniqueUpload_fileArgs: ["where"],
@@ -427,18 +427,18 @@ const argsInfo = {
     UpsertItineraryArgs: ["where", "create", "update"],
     AggregateItineraryArgs: ["where", "orderBy", "cursor", "take", "skip"],
     GroupByItineraryArgs: ["where", "orderBy", "by", "having", "take", "skip"],
-    FindUniqueItinerary_itemsArgs: ["where"],
-    FindFirstItinerary_itemsArgs: ["where", "orderBy", "cursor", "take", "skip", "distinct"],
-    FindManyItinerary_itemsArgs: ["where", "orderBy", "cursor", "take", "skip", "distinct"],
-    CreateItinerary_itemsArgs: ["data"],
-    CreateManyItinerary_itemsArgs: ["data", "skipDuplicates"],
-    DeleteItinerary_itemsArgs: ["where"],
-    UpdateItinerary_itemsArgs: ["data", "where"],
-    DeleteManyItinerary_itemsArgs: ["where"],
-    UpdateManyItinerary_itemsArgs: ["data", "where"],
-    UpsertItinerary_itemsArgs: ["where", "create", "update"],
-    AggregateItinerary_itemsArgs: ["where", "orderBy", "cursor", "take", "skip"],
-    GroupByItinerary_itemsArgs: ["where", "orderBy", "by", "having", "take", "skip"]
+    FindUniqueItinerary_placesArgs: ["where"],
+    FindFirstItinerary_placesArgs: ["where", "orderBy", "cursor", "take", "skip", "distinct"],
+    FindManyItinerary_placesArgs: ["where", "orderBy", "cursor", "take", "skip", "distinct"],
+    CreateItinerary_placesArgs: ["data"],
+    CreateManyItinerary_placesArgs: ["data", "skipDuplicates"],
+    DeleteItinerary_placesArgs: ["where"],
+    UpdateItinerary_placesArgs: ["data", "where"],
+    DeleteManyItinerary_placesArgs: ["where"],
+    UpdateManyItinerary_placesArgs: ["data", "where"],
+    UpsertItinerary_placesArgs: ["where", "create", "update"],
+    AggregateItinerary_placesArgs: ["where", "orderBy", "cursor", "take", "skip"],
+    GroupByItinerary_placesArgs: ["where", "orderBy", "by", "having", "take", "skip"]
 };
 function applyResolversEnhanceMap(resolversEnhanceMap) {
     for (const resolversEnhanceMapKey of Object.keys(resolversEnhanceMap)) {

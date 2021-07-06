@@ -49,7 +49,7 @@ __decorate([
         nullable: false
     }),
     __metadata("design:type", Number)
-], ItineraryCountAggregate.prototype, "published_at", void 0);
+], ItineraryCountAggregate.prototype, "itinerary_date", void 0);
 __decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false

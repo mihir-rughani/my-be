@@ -34,7 +34,7 @@ const TypeGraphQL = __importStar(require("type-graphql"));
 const DateTimeNullableFilter_1 = require("../inputs/DateTimeNullableFilter");
 const IntFilter_1 = require("../inputs/IntFilter");
 const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
-const Itinerary_itemsListRelationFilter_1 = require("../inputs/Itinerary_itemsListRelationFilter");
+const Itinerary_placesListRelationFilter_1 = require("../inputs/Itinerary_placesListRelationFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 let ItineraryWhereInput = ItineraryWhereInput_1 = class ItineraryWhereInput {
 };
@@ -73,7 +73,7 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", DateTimeNullableFilter_1.DateTimeNullableFilter)
-], ItineraryWhereInput.prototype, "published_at", void 0);
+], ItineraryWhereInput.prototype, "itinerary_date", void 0);
 __decorate([
     TypeGraphQL.Field(_type => IntNullableFilter_1.IntNullableFilter, {
         nullable: true
@@ -99,11 +99,11 @@ __decorate([
     __metadata("design:type", DateTimeNullableFilter_1.DateTimeNullableFilter)
 ], ItineraryWhereInput.prototype, "updated_at", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => Itinerary_itemsListRelationFilter_1.Itinerary_itemsListRelationFilter, {
+    TypeGraphQL.Field(_type => Itinerary_placesListRelationFilter_1.Itinerary_placesListRelationFilter, {
         nullable: true
     }),
-    __metadata("design:type", Itinerary_itemsListRelationFilter_1.Itinerary_itemsListRelationFilter)
-], ItineraryWhereInput.prototype, "itinerary_items", void 0);
+    __metadata("design:type", Itinerary_placesListRelationFilter_1.Itinerary_placesListRelationFilter)
+], ItineraryWhereInput.prototype, "places", void 0);
 ItineraryWhereInput = ItineraryWhereInput_1 = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

@@ -50,7 +50,7 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", String)
-], ItineraryOrderByInput.prototype, "published_at", void 0);
+], ItineraryOrderByInput.prototype, "itinerary_date", void 0);
 __decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
