@@ -1,0 +1,28 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.UpsertItineraryArgs = exports.UpdateManyItineraryArgs = exports.UpdateItineraryArgs = exports.GroupByItineraryArgs = exports.FindUniqueItineraryArgs = exports.FindManyItineraryArgs = exports.FindFirstItineraryArgs = exports.DeleteManyItineraryArgs = exports.DeleteItineraryArgs = exports.CreateManyItineraryArgs = exports.CreateItineraryArgs = exports.AggregateItineraryArgs = void 0;
+var AggregateItineraryArgs_1 = require("./AggregateItineraryArgs");
+Object.defineProperty(exports, "AggregateItineraryArgs", { enumerable: true, get: function () { return AggregateItineraryArgs_1.AggregateItineraryArgs; } });
+var CreateItineraryArgs_1 = require("./CreateItineraryArgs");
+Object.defineProperty(exports, "CreateItineraryArgs", { enumerable: true, get: function () { return CreateItineraryArgs_1.CreateItineraryArgs; } });
+var CreateManyItineraryArgs_1 = require("./CreateManyItineraryArgs");
+Object.defineProperty(exports, "CreateManyItineraryArgs", { enumerable: true, get: function () { return CreateManyItineraryArgs_1.CreateManyItineraryArgs; } });
+var DeleteItineraryArgs_1 = require("./DeleteItineraryArgs");
+Object.defineProperty(exports, "DeleteItineraryArgs", { enumerable: true, get: function () { return DeleteItineraryArgs_1.DeleteItineraryArgs; } });
+var DeleteManyItineraryArgs_1 = require("./DeleteManyItineraryArgs");
+Object.defineProperty(exports, "DeleteManyItineraryArgs", { enumerable: true, get: function () { return DeleteManyItineraryArgs_1.DeleteManyItineraryArgs; } });
+var FindFirstItineraryArgs_1 = require("./FindFirstItineraryArgs");
+Object.defineProperty(exports, "FindFirstItineraryArgs", { enumerable: true, get: function () { return FindFirstItineraryArgs_1.FindFirstItineraryArgs; } });
+var FindManyItineraryArgs_1 = require("./FindManyItineraryArgs");
+Object.defineProperty(exports, "FindManyItineraryArgs", { enumerable: true, get: function () { return FindManyItineraryArgs_1.FindManyItineraryArgs; } });
+var FindUniqueItineraryArgs_1 = require("./FindUniqueItineraryArgs");
+Object.defineProperty(exports, "FindUniqueItineraryArgs", { enumerable: true, get: function () { return FindUniqueItineraryArgs_1.FindUniqueItineraryArgs; } });
+var GroupByItineraryArgs_1 = require("./GroupByItineraryArgs");
+Object.defineProperty(exports, "GroupByItineraryArgs", { enumerable: true, get: function () { return GroupByItineraryArgs_1.GroupByItineraryArgs; } });
+var UpdateItineraryArgs_1 = require("./UpdateItineraryArgs");
+Object.defineProperty(exports, "UpdateItineraryArgs", { enumerable: true, get: function () { return UpdateItineraryArgs_1.UpdateItineraryArgs; } });
+var UpdateManyItineraryArgs_1 = require("./UpdateManyItineraryArgs");
+Object.defineProperty(exports, "UpdateManyItineraryArgs", { enumerable: true, get: function () { return UpdateManyItineraryArgs_1.UpdateManyItineraryArgs; } });
+var UpsertItineraryArgs_1 = require("./UpsertItineraryArgs");
+Object.defineProperty(exports, "UpsertItineraryArgs", { enumerable: true, get: function () { return UpsertItineraryArgs_1.UpsertItineraryArgs; } });
+//# sourceMappingURL=index.js.map
