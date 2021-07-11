@@ -7,5 +7,5 @@ export declare class FindManyItinerary_placesArgs {
     cursor?: Itinerary_placesWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "user_id" | "itinerary_id" | "venue_data" | "created_by" | "updated_by" | "created_at" | "updated_at"> | undefined;
+    distinct?: Array<"id" | "user_id" | "itinerary_id" | "venue_data" | "date" | "time" | "created_by" | "updated_by" | "created_at" | "updated_at"> | undefined;
 }

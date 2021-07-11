@@ -33,6 +33,8 @@ var Itinerary_placesScalarFieldEnum;
     Itinerary_placesScalarFieldEnum["user_id"] = "user_id";
     Itinerary_placesScalarFieldEnum["itinerary_id"] = "itinerary_id";
     Itinerary_placesScalarFieldEnum["venue_data"] = "venue_data";
+    Itinerary_placesScalarFieldEnum["date"] = "date";
+    Itinerary_placesScalarFieldEnum["time"] = "time";
     Itinerary_placesScalarFieldEnum["created_by"] = "created_by";
     Itinerary_placesScalarFieldEnum["updated_by"] = "updated_by";
     Itinerary_placesScalarFieldEnum["created_at"] = "created_at";

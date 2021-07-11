@@ -11,6 +11,8 @@ export declare class Itinerary_placesScalarWhereWithAggregatesInput {
     user_id?: StringNullableWithAggregatesFilter | undefined;
     itinerary_id?: IntNullableWithAggregatesFilter | undefined;
     venue_data?: JsonNullableWithAggregatesFilter | undefined;
+    date?: DateTimeNullableWithAggregatesFilter | undefined;
+    time?: DateTimeNullableWithAggregatesFilter | undefined;
     created_by?: IntNullableWithAggregatesFilter | undefined;
     updated_by?: IntNullableWithAggregatesFilter | undefined;
     created_at?: DateTimeNullableWithAggregatesFilter | undefined;

@@ -72,6 +72,18 @@ __decorate([
         nullable: false
     }),
     __metadata("design:type", Number)
+], Itinerary_placesCountAggregate.prototype, "date", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    __metadata("design:type", Number)
+], Itinerary_placesCountAggregate.prototype, "time", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    __metadata("design:type", Number)
 ], Itinerary_placesCountAggregate.prototype, "created_by", void 0);
 __decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {

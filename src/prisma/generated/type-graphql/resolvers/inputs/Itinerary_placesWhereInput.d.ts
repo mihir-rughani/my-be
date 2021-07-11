@@ -12,6 +12,8 @@ export declare class Itinerary_placesWhereInput {
     user_id?: StringNullableFilter | undefined;
     itinerary_id?: IntNullableFilter | undefined;
     venue_data?: JsonNullableFilter | undefined;
+    date?: DateTimeNullableFilter | undefined;
+    time?: DateTimeNullableFilter | undefined;
     created_by?: IntNullableFilter | undefined;
     updated_by?: IntNullableFilter | undefined;
     created_at?: DateTimeNullableFilter | undefined;

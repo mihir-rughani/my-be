@@ -51,6 +51,18 @@ __decorate([
     __metadata("design:type", Object)
 ], Itinerary_placesUpdateInput.prototype, "venue_data", void 0);
 __decorate([
+    TypeGraphQL.Field(_type => NullableDateTimeFieldUpdateOperationsInput_1.NullableDateTimeFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", NullableDateTimeFieldUpdateOperationsInput_1.NullableDateTimeFieldUpdateOperationsInput)
+], Itinerary_placesUpdateInput.prototype, "date", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => NullableDateTimeFieldUpdateOperationsInput_1.NullableDateTimeFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", NullableDateTimeFieldUpdateOperationsInput_1.NullableDateTimeFieldUpdateOperationsInput)
+], Itinerary_placesUpdateInput.prototype, "time", void 0);
+__decorate([
     TypeGraphQL.Field(_type => NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput, {
         nullable: true
     }),

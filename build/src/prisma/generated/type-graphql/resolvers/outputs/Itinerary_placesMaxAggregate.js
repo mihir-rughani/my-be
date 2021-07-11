@@ -62,6 +62,18 @@ __decorate([
     __metadata("design:type", Number)
 ], Itinerary_placesMaxAggregate.prototype, "itinerary_id", void 0);
 __decorate([
+    TypeGraphQL.Field(_type => Date, {
+        nullable: true
+    }),
+    __metadata("design:type", Date)
+], Itinerary_placesMaxAggregate.prototype, "date", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Date, {
+        nullable: true
+    }),
+    __metadata("design:type", Date)
+], Itinerary_placesMaxAggregate.prototype, "time", void 0);
+__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: true
     }),

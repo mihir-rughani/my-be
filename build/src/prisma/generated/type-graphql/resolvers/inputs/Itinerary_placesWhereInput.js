@@ -93,6 +93,18 @@ __decorate([
     __metadata("design:type", JsonNullableFilter_1.JsonNullableFilter)
 ], Itinerary_placesWhereInput.prototype, "venue_data", void 0);
 __decorate([
+    TypeGraphQL.Field(_type => DateTimeNullableFilter_1.DateTimeNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", DateTimeNullableFilter_1.DateTimeNullableFilter)
+], Itinerary_placesWhereInput.prototype, "date", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => DateTimeNullableFilter_1.DateTimeNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", DateTimeNullableFilter_1.DateTimeNullableFilter)
+], Itinerary_placesWhereInput.prototype, "time", void 0);
+__decorate([
     TypeGraphQL.Field(_type => IntNullableFilter_1.IntNullableFilter, {
         nullable: true
     }),

@@ -58,6 +58,18 @@ __decorate([
     __metadata("design:type", Object)
 ], Itinerary_placesCreateWithoutItineraryInput.prototype, "venue_data", void 0);
 __decorate([
+    TypeGraphQL.Field(_type => Date, {
+        nullable: true
+    }),
+    __metadata("design:type", Date)
+], Itinerary_placesCreateWithoutItineraryInput.prototype, "date", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Date, {
+        nullable: true
+    }),
+    __metadata("design:type", Date)
+], Itinerary_placesCreateWithoutItineraryInput.prototype, "time", void 0);
+__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: true
     }),

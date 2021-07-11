@@ -6,15 +6,13 @@ import { graphqlHTTP } from "express-graphql";
 import * as dotenv from "dotenv";
 import { resolvers } from "./src/prisma/generated/type-graphql";
 import { PrismaClient } from "@prisma/client";
+import { CustomItineraryPlacesResolver } from "./src/resolvers/CustomItineraryPlacesResolver";
 
 const PORT = process.env.PORT || 3500;
 const prisma = new PrismaClient();
 
-class Context {
+export interface Context {
 	prisma: any;
-	constructor(prisma: any) {
-		this.prisma = prisma;
-	}
 }
 dotenv.config();
 // (async () => {
@@ -74,7 +72,7 @@ app.post("/api/media-convert-status-update", (req, res) => {
 app.use("/graphql", async (req, res) => {
 
 	let schema = await buildSchema({
-		resolvers: resolvers,
+		resolvers: [...resolvers],
 		validate: { enableDebugMessages: false }
 	});
 
@@ -91,7 +89,7 @@ app.use("/graphql", async (req, res) => {
 			schema: schema,
 			rootValue: rootValue,
 			graphiql: true,
-			context: { prisma: prisma }
+			context: {prisma:prisma}
 		})(req, res);
 
 	} catch (e) {

@@ -3,6 +3,8 @@ export declare class Itinerary_placesCountAggregate {
     user_id: number;
     itinerary_id: number;
     venue_data: number;
+    date: number;
+    time: number;
     created_by: number;
     updated_by: number;
     created_at: number;

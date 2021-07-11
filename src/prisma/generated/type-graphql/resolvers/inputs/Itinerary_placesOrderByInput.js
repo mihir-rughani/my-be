@@ -62,6 +62,18 @@ __decorate([
         nullable: true
     }),
     __metadata("design:type", String)
+], Itinerary_placesOrderByInput.prototype, "date", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
+], Itinerary_placesOrderByInput.prototype, "time", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    __metadata("design:type", String)
 ], Itinerary_placesOrderByInput.prototype, "created_by", void 0);
 __decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {

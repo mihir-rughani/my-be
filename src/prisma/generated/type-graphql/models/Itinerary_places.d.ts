@@ -5,6 +5,8 @@ export declare class Itinerary_places {
     user_id?: string | null;
     itinerary_id?: number | null;
     venue_data?: Prisma.JsonValue | null;
+    date?: Date | null;
+    time?: Date | null;
     created_by?: number | null;
     updated_by?: number | null;
     created_at?: Date | null;
