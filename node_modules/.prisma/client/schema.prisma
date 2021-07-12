@@ -15,37 +15,37 @@ datasource db {
 }
 
 model upload_file {
-  id                Int       @id @default(autoincrement())
-  name              String    @db.VarChar(255)
-  alternativeText   String?   @db.VarChar(255)
-  caption           String?   @db.VarChar(255)
+  id                Int                 @id @default(autoincrement())
+  name              String              @db.VarChar(255)
+  alternativeText   String?             @db.VarChar(255)
+  caption           String?             @db.VarChar(255)
   width             Int?
   height            Int?
   formats           Json?
-  hash              String    @db.VarChar(255)
-  ext               String?   @db.VarChar(255)
-  mime              String    @db.VarChar(255)
-  size              Decimal   @db.Decimal(10, 2)
-  url               String    @db.VarChar(255)
-  previewUrl        String?   @db.VarChar(255)
-  provider          String    @db.VarChar(255)
+  hash              String              @db.VarChar(255)
+  ext               String?             @db.VarChar(255)
+  mime              String              @db.VarChar(255)
+  size              Decimal             @db.Decimal(10, 2)
+  url               String              @db.VarChar(255)
+  previewUrl        String?             @db.VarChar(255)
+  provider          String              @db.VarChar(255)
   provider_metadata Json?
   created_by        Int?
   updated_by        Int?
-  created_at        DateTime? @default(now()) @db.Timestamptz(6)
-  updated_at        DateTime? @default(now()) @db.Timestamptz(6)
+  created_at        DateTime?           @default(now()) @db.Timestamptz(6)
+  updated_at        DateTime?           @default(now()) @db.Timestamptz(6)
   uploadFileMorph   upload_file_morph[]
 }
 
 model upload_file_morph {
-  id             Int     @id @default(autoincrement())
+  id             Int          @id @default(autoincrement())
   upload_file_id Int?
   related_id     Int?
   related_type   String?
   field          String?
   order          Int?
-  uploadFile upload_file? @relation(fields: [upload_file_id], references: [id])
-  venues venues? @relation(fields: [related_id], references: [id])
+  uploadFile     upload_file? @relation(fields: [upload_file_id], references: [id])
+  venues         venues?      @relation(fields: [related_id], references: [id])
 }
 
 model venueType {
@@ -59,60 +59,77 @@ model venueType {
 }
 
 model venues {
-  id              Int        @id @default(autoincrement())
-  title           String?    @db.VarChar(255)
-  description     String?
-  address         String?    @db.VarChar(255)
-  suburb          String?    @db.VarChar(255)
-  city            String?    @db.VarChar(255)
-  postCode        String?    @db.VarChar(255)
-  lat             Float?
-  lon             Float?
-  website         String?    @db.VarChar(255)
-  venue_type      Int?
-  breakfast       Boolean?
-  lunch           Boolean?
-  dinner          Boolean?
-  visible         Boolean?
-  created_by      Int?
-  updated_by      Int?
-  created_at      DateTime?  @default(now()) @db.Timestamptz(6)
-  updated_at      DateTime?  @default(now()) @db.Timestamptz(6)
-  test            String?    @db.VarChar(255)
-  cosy            Boolean?
-  romantic        Boolean?
-  weddings        Boolean?
-  post_code       String?    @db.VarChar(255)
-  bachelor_party  Boolean?
-  hen_party       Boolean?
-  outdoor_area    Boolean?
-  outdoor_dinning Boolean?
-  outdoor_bar     Boolean?
-  venueType       venueType? @relation(fields: [venue_type], references: [id])
-  uploadFileMorph upload_file_morph[]
+  id               Int                 @id @default(autoincrement())
+  title            String?             @db.VarChar(255)
+  description      String?
+  address          String?             @db.VarChar(255)
+  suburb           String?             @db.VarChar(255)
+  city             String?             @db.VarChar(255)
+  postCode         String?             @db.VarChar(255)
+  lat              Float?
+  lon              Float?
+  website          String?             @db.VarChar(255)
+  venue_type       Int?
+  breakfast        Boolean?
+  lunch            Boolean?
+  dinner           Boolean?
+  visible          Boolean?
+  created_by       Int?
+  updated_by       Int?
+  created_at       DateTime?           @default(now()) @db.Timestamptz(6)
+  updated_at       DateTime?           @default(now()) @db.Timestamptz(6)
+  test             String?             @db.VarChar(255)
+  cosy             Boolean?
+  romantic         Boolean?
+  weddings         Boolean?
+  post_code        String?             @db.VarChar(255)
+  bachelor_party   Boolean?
+  hen_party        Boolean?
+  outdoor_area     Boolean?
+  outdoor_dinning  Boolean?
+  outdoor_bar      Boolean?
+  venueType        venueType?          @relation(fields: [venue_type], references: [id])
+  uploadFileMorph  upload_file_morph[]
+  favourite        favourites?
+  itinerary_places itinerary_places?
 }
 
 model itinerary {
-  id         Int       @id @default(autoincrement())
-  user_id    String?   @db.VarChar(255)
+  id             Int                @id @default(autoincrement())
+  user_id        String?            @db.VarChar(255)
   itinerary_date DateTime?
-  created_by Int?
-  updated_by Int?
-  created_at DateTime? @default(now()) @db.Timestamptz(6)
-  updated_at DateTime? @default(now()) @db.Timestamptz(6)
-  places itinerary_places[]
+  created_by     Int?
+  updated_by     Int?
+  created_at     DateTime?          @default(now()) @db.Timestamptz(6)
+  updated_at     DateTime?          @default(now()) @db.Timestamptz(6)
+  places         itinerary_places[]
 }
 
 model itinerary_places {
   id           Int       @id @default(autoincrement())
-  user_id      String?   @db.VarChar(255)
-  itinerary_id Int?
-  venue_data   Json?
-  date         DateTime?
-  time         DateTime?
+  itinerary_id Int
+  user_id      String?    @db.VarChar(255)
+  venue_data   Json
+  bestFor      Json?
   created_by   Int?
   updated_by   Int?
   created_at   DateTime? @default(now()) @db.Timestamptz(6)
   updated_at   DateTime? @default(now()) @db.Timestamptz(6)
-  itinerary    itinerary? @relation(fields: [itinerary_id], references: [id])
+  date         DateTime? @db.Date
+  time         DateTime? @db.Timestamptz(6)
+  venue_id     Int?
+  venue       venues?   @relation(fields: [venue_id], references: [id])
+  itinerary   itinerary? @relation(fields: [itinerary_id], references: [id])
+}
+
+model favourites {
+  id         Int       @id @default(autoincrement())
+  user_id    String?   @db.VarChar(255)
+  bestFor    Json?
+  venue_id   Int?
+  created_by Int?
+  updated_by Int?
+  created_at DateTime? @default(now()) @db.Timestamptz(6)
+  updated_at DateTime? @default(now()) @db.Timestamptz(6)
+  venue     venues?   @relation(fields: [venue_id], references: [id])
 }

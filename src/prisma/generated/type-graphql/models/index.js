@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Venues = exports.VenueType = exports.Upload_file_morph = exports.Upload_file = exports.Itinerary_places = exports.Itinerary = void 0;
+exports.Venues = exports.VenueType = exports.Upload_file_morph = exports.Upload_file = exports.Itinerary_places = exports.Itinerary = exports.Favourites = void 0;
+var Favourites_1 = require("./Favourites");
+Object.defineProperty(exports, "Favourites", { enumerable: true, get: function () { return Favourites_1.Favourites; } });
 var Itinerary_1 = require("./Itinerary");
 Object.defineProperty(exports, "Itinerary", { enumerable: true, get: function () { return Itinerary_1.Itinerary; } });
 var Itinerary_places_1 = require("./Itinerary_places");

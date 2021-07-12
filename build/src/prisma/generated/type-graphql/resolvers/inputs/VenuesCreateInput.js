@@ -41,6 +41,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.VenuesCreateInput = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
+const FavouritesCreateNestedOneWithoutVenueInput_1 = require("../inputs/FavouritesCreateNestedOneWithoutVenueInput");
+const Itinerary_placesCreateNestedOneWithoutVenueInput_1 = require("../inputs/Itinerary_placesCreateNestedOneWithoutVenueInput");
 const Upload_file_morphCreateNestedManyWithoutVenuesInput_1 = require("../inputs/Upload_file_morphCreateNestedManyWithoutVenuesInput");
 const VenueTypeCreateNestedOneWithoutVenuesInput_1 = require("../inputs/VenueTypeCreateNestedOneWithoutVenuesInput");
 let VenuesCreateInput = class VenuesCreateInput {
@@ -219,6 +221,18 @@ __decorate([
     }),
     __metadata("design:type", Upload_file_morphCreateNestedManyWithoutVenuesInput_1.Upload_file_morphCreateNestedManyWithoutVenuesInput)
 ], VenuesCreateInput.prototype, "uploadFileMorph", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => FavouritesCreateNestedOneWithoutVenueInput_1.FavouritesCreateNestedOneWithoutVenueInput, {
+        nullable: true
+    }),
+    __metadata("design:type", FavouritesCreateNestedOneWithoutVenueInput_1.FavouritesCreateNestedOneWithoutVenueInput)
+], VenuesCreateInput.prototype, "favourite", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Itinerary_placesCreateNestedOneWithoutVenueInput_1.Itinerary_placesCreateNestedOneWithoutVenueInput, {
+        nullable: true
+    }),
+    __metadata("design:type", Itinerary_placesCreateNestedOneWithoutVenueInput_1.Itinerary_placesCreateNestedOneWithoutVenueInput)
+], VenuesCreateInput.prototype, "itinerary_places", void 0);
 VenuesCreateInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

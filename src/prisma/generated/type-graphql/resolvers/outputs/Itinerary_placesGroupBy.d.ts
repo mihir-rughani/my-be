@@ -6,15 +6,17 @@ import { Itinerary_placesMinAggregate } from "../outputs/Itinerary_placesMinAggr
 import { Itinerary_placesSumAggregate } from "../outputs/Itinerary_placesSumAggregate";
 export declare class Itinerary_placesGroupBy {
     id: number;
+    itinerary_id: number;
     user_id: string | null;
-    itinerary_id: number | null;
-    venue_data: Prisma.JsonValue | null;
-    date: Date | null;
-    time: Date | null;
+    venue_data: Prisma.JsonValue;
+    bestFor: Prisma.JsonValue | null;
     created_by: number | null;
     updated_by: number | null;
     created_at: Date | null;
     updated_at: Date | null;
+    date: Date | null;
+    time: Date | null;
+    venue_id: number | null;
     _count: Itinerary_placesCountAggregate | null;
     _avg: Itinerary_placesAvgAggregate | null;
     _sum: Itinerary_placesSumAggregate | null;

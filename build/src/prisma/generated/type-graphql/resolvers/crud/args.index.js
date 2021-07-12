@@ -14,6 +14,7 @@ var __exportStar = (this && this.__exportStar) || function (m, exports) {
             __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+__exportStar(require("./Favourites/args"), exports);
 __exportStar(require("./Itinerary/args"), exports);
 __exportStar(require("./Itinerary_places/args"), exports);
 __exportStar(require("./Upload_file/args"), exports);

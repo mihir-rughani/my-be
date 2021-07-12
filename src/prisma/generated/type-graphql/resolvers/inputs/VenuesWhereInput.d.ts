@@ -1,8 +1,10 @@
 import { BoolNullableFilter } from "../inputs/BoolNullableFilter";
 import { DateTimeNullableFilter } from "../inputs/DateTimeNullableFilter";
+import { FavouritesRelationFilter } from "../inputs/FavouritesRelationFilter";
 import { FloatNullableFilter } from "../inputs/FloatNullableFilter";
 import { IntFilter } from "../inputs/IntFilter";
 import { IntNullableFilter } from "../inputs/IntNullableFilter";
+import { Itinerary_placesRelationFilter } from "../inputs/Itinerary_placesRelationFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
 import { Upload_file_morphListRelationFilter } from "../inputs/Upload_file_morphListRelationFilter";
 import { VenueTypeRelationFilter } from "../inputs/VenueTypeRelationFilter";
@@ -41,4 +43,6 @@ export declare class VenuesWhereInput {
     outdoor_bar?: BoolNullableFilter | undefined;
     venueType?: VenueTypeRelationFilter | undefined;
     uploadFileMorph?: Upload_file_morphListRelationFilter | undefined;
+    favourite?: FavouritesRelationFilter | undefined;
+    itinerary_places?: Itinerary_placesRelationFilter | undefined;
 }

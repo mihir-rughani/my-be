@@ -35,8 +35,16 @@ exports.Itinerary_placesRelationsResolver = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
 const Itinerary_1 = require("../../../models/Itinerary");
 const Itinerary_places_1 = require("../../../models/Itinerary_places");
+const Venues_1 = require("../../../models/Venues");
 const helpers_1 = require("../../../helpers");
 let Itinerary_placesRelationsResolver = class Itinerary_placesRelationsResolver {
+    async venue(itinerary_places, ctx) {
+        return helpers_1.getPrismaFromContext(ctx).itinerary_places.findUnique({
+            where: {
+                id: itinerary_places.id,
+            },
+        }).venue({});
+    }
     async itinerary(itinerary_places, ctx) {
         return helpers_1.getPrismaFromContext(ctx).itinerary_places.findUnique({
             where: {
@@ -45,6 +53,15 @@ let Itinerary_placesRelationsResolver = class Itinerary_placesRelationsResolver 
         }).itinerary({});
     }
 };
+__decorate([
+    TypeGraphQL.FieldResolver(_type => Venues_1.Venues, {
+        nullable: true
+    }),
+    __param(0, TypeGraphQL.Root()), __param(1, TypeGraphQL.Ctx()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Itinerary_places_1.Itinerary_places, Object]),
+    __metadata("design:returntype", Promise)
+], Itinerary_placesRelationsResolver.prototype, "venue", null);
 __decorate([
     TypeGraphQL.FieldResolver(_type => Itinerary_1.Itinerary, {
         nullable: true

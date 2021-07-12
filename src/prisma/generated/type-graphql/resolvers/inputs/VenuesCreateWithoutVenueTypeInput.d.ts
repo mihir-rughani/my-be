@@ -1,3 +1,5 @@
+import { FavouritesCreateNestedOneWithoutVenueInput } from "../inputs/FavouritesCreateNestedOneWithoutVenueInput";
+import { Itinerary_placesCreateNestedOneWithoutVenueInput } from "../inputs/Itinerary_placesCreateNestedOneWithoutVenueInput";
 import { Upload_file_morphCreateNestedManyWithoutVenuesInput } from "../inputs/Upload_file_morphCreateNestedManyWithoutVenuesInput";
 export declare class VenuesCreateWithoutVenueTypeInput {
     title?: string | undefined;
@@ -28,4 +30,6 @@ export declare class VenuesCreateWithoutVenueTypeInput {
     outdoor_dinning?: boolean | undefined;
     outdoor_bar?: boolean | undefined;
     uploadFileMorph?: Upload_file_morphCreateNestedManyWithoutVenuesInput | undefined;
+    favourite?: FavouritesCreateNestedOneWithoutVenueInput | undefined;
+    itinerary_places?: Itinerary_placesCreateNestedOneWithoutVenueInput | undefined;
 }

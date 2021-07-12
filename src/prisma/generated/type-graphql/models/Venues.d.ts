@@ -1,3 +1,5 @@
+import { Favourites } from "../models/Favourites";
+import { Itinerary_places } from "../models/Itinerary_places";
 import { Upload_file_morph } from "../models/Upload_file_morph";
 import { VenueType } from "../models/VenueType";
 export declare class Venues {
@@ -32,4 +34,6 @@ export declare class Venues {
     outdoor_bar?: boolean | null;
     venueType?: VenueType | null;
     uploadFileMorph?: Upload_file_morph[];
+    favourite?: Favourites | null;
+    itinerary_places?: Itinerary_places | null;
 }

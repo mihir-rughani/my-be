@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.VenuesCrudResolver = exports.VenueTypeCrudResolver = exports.Upload_file_morphCrudResolver = exports.Upload_fileCrudResolver = exports.Itinerary_placesCrudResolver = exports.ItineraryCrudResolver = void 0;
+exports.VenuesCrudResolver = exports.VenueTypeCrudResolver = exports.Upload_file_morphCrudResolver = exports.Upload_fileCrudResolver = exports.Itinerary_placesCrudResolver = exports.ItineraryCrudResolver = exports.FavouritesCrudResolver = void 0;
+var FavouritesCrudResolver_1 = require("./Favourites/FavouritesCrudResolver");
+Object.defineProperty(exports, "FavouritesCrudResolver", { enumerable: true, get: function () { return FavouritesCrudResolver_1.FavouritesCrudResolver; } });
 var ItineraryCrudResolver_1 = require("./Itinerary/ItineraryCrudResolver");
 Object.defineProperty(exports, "ItineraryCrudResolver", { enumerable: true, get: function () { return ItineraryCrudResolver_1.ItineraryCrudResolver; } });
 var Itinerary_placesCrudResolver_1 = require("./Itinerary_places/Itinerary_placesCrudResolver");

@@ -1,0 +1,12 @@
+export { AggregateFavouritesArgs } from "./AggregateFavouritesArgs";
+export { CreateFavouritesArgs } from "./CreateFavouritesArgs";
+export { CreateManyFavouritesArgs } from "./CreateManyFavouritesArgs";
+export { DeleteFavouritesArgs } from "./DeleteFavouritesArgs";
+export { DeleteManyFavouritesArgs } from "./DeleteManyFavouritesArgs";
+export { FindFirstFavouritesArgs } from "./FindFirstFavouritesArgs";
+export { FindManyFavouritesArgs } from "./FindManyFavouritesArgs";
+export { FindUniqueFavouritesArgs } from "./FindUniqueFavouritesArgs";
+export { GroupByFavouritesArgs } from "./GroupByFavouritesArgs";
+export { UpdateFavouritesArgs } from "./UpdateFavouritesArgs";
+export { UpdateManyFavouritesArgs } from "./UpdateManyFavouritesArgs";
+export { UpsertFavouritesArgs } from "./UpsertFavouritesArgs";

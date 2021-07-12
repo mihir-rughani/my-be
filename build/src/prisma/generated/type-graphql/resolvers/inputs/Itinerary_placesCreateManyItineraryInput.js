@@ -59,22 +59,16 @@ __decorate([
 ], Itinerary_placesCreateManyItineraryInput.prototype, "user_id", void 0);
 __decorate([
     TypeGraphQL.Field(_type => GraphQLScalars.JSONResolver, {
-        nullable: true
+        nullable: false
     }),
     __metadata("design:type", Object)
 ], Itinerary_placesCreateManyItineraryInput.prototype, "venue_data", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => Date, {
+    TypeGraphQL.Field(_type => GraphQLScalars.JSONResolver, {
         nullable: true
     }),
-    __metadata("design:type", Date)
-], Itinerary_placesCreateManyItineraryInput.prototype, "date", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => Date, {
-        nullable: true
-    }),
-    __metadata("design:type", Date)
-], Itinerary_placesCreateManyItineraryInput.prototype, "time", void 0);
+    __metadata("design:type", Object)
+], Itinerary_placesCreateManyItineraryInput.prototype, "bestFor", void 0);
 __decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: true
@@ -99,6 +93,24 @@ __decorate([
     }),
     __metadata("design:type", Date)
 ], Itinerary_placesCreateManyItineraryInput.prototype, "updated_at", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Date, {
+        nullable: true
+    }),
+    __metadata("design:type", Date)
+], Itinerary_placesCreateManyItineraryInput.prototype, "date", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Date, {
+        nullable: true
+    }),
+    __metadata("design:type", Date)
+], Itinerary_placesCreateManyItineraryInput.prototype, "time", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    __metadata("design:type", Number)
+], Itinerary_placesCreateManyItineraryInput.prototype, "venue_id", void 0);
 Itinerary_placesCreateManyItineraryInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

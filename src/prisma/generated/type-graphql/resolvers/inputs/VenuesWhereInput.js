@@ -33,9 +33,11 @@ exports.VenuesWhereInput = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
 const BoolNullableFilter_1 = require("../inputs/BoolNullableFilter");
 const DateTimeNullableFilter_1 = require("../inputs/DateTimeNullableFilter");
+const FavouritesRelationFilter_1 = require("../inputs/FavouritesRelationFilter");
 const FloatNullableFilter_1 = require("../inputs/FloatNullableFilter");
 const IntFilter_1 = require("../inputs/IntFilter");
 const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
+const Itinerary_placesRelationFilter_1 = require("../inputs/Itinerary_placesRelationFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const Upload_file_morphListRelationFilter_1 = require("../inputs/Upload_file_morphListRelationFilter");
 const VenueTypeRelationFilter_1 = require("../inputs/VenueTypeRelationFilter");
@@ -245,6 +247,18 @@ __decorate([
     }),
     __metadata("design:type", Upload_file_morphListRelationFilter_1.Upload_file_morphListRelationFilter)
 ], VenuesWhereInput.prototype, "uploadFileMorph", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => FavouritesRelationFilter_1.FavouritesRelationFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", FavouritesRelationFilter_1.FavouritesRelationFilter)
+], VenuesWhereInput.prototype, "favourite", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Itinerary_placesRelationFilter_1.Itinerary_placesRelationFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", Itinerary_placesRelationFilter_1.Itinerary_placesRelationFilter)
+], VenuesWhereInput.prototype, "itinerary_places", void 0);
 VenuesWhereInput = VenuesWhereInput_1 = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

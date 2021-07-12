@@ -44,6 +44,8 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.VenuesRelationsResolver = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
+const Favourites_1 = require("../../../models/Favourites");
+const Itinerary_places_1 = require("../../../models/Itinerary_places");
 const Upload_file_morph_1 = require("../../../models/Upload_file_morph");
 const VenueType_1 = require("../../../models/VenueType");
 const Venues_1 = require("../../../models/Venues");
@@ -64,6 +66,20 @@ let VenuesRelationsResolver = class VenuesRelationsResolver {
             },
         }).uploadFileMorph(args);
     }
+    async favourite(venues, ctx) {
+        return helpers_1.getPrismaFromContext(ctx).venues.findUnique({
+            where: {
+                id: venues.id,
+            },
+        }).favourite({});
+    }
+    async itinerary_places(venues, ctx) {
+        return helpers_1.getPrismaFromContext(ctx).venues.findUnique({
+            where: {
+                id: venues.id,
+            },
+        }).itinerary_places({});
+    }
 };
 __decorate([
     TypeGraphQL.FieldResolver(_type => VenueType_1.VenueType, {
@@ -83,6 +99,24 @@ __decorate([
     __metadata("design:paramtypes", [Venues_1.Venues, Object, VenuesUploadFileMorphArgs_1.VenuesUploadFileMorphArgs]),
     __metadata("design:returntype", Promise)
 ], VenuesRelationsResolver.prototype, "uploadFileMorph", null);
+__decorate([
+    TypeGraphQL.FieldResolver(_type => Favourites_1.Favourites, {
+        nullable: true
+    }),
+    __param(0, TypeGraphQL.Root()), __param(1, TypeGraphQL.Ctx()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Venues_1.Venues, Object]),
+    __metadata("design:returntype", Promise)
+], VenuesRelationsResolver.prototype, "favourite", null);
+__decorate([
+    TypeGraphQL.FieldResolver(_type => Itinerary_places_1.Itinerary_places, {
+        nullable: true
+    }),
+    __param(0, TypeGraphQL.Root()), __param(1, TypeGraphQL.Ctx()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Venues_1.Venues, Object]),
+    __metadata("design:returntype", Promise)
+], VenuesRelationsResolver.prototype, "itinerary_places", null);
 VenuesRelationsResolver = __decorate([
     TypeGraphQL.Resolver(_of => Venues_1.Venues)
 ], VenuesRelationsResolver);

@@ -1,3 +1,5 @@
+import { FavouritesUpdateOneWithoutVenueInput } from "../inputs/FavouritesUpdateOneWithoutVenueInput";
+import { Itinerary_placesUpdateOneWithoutVenueInput } from "../inputs/Itinerary_placesUpdateOneWithoutVenueInput";
 import { NullableBoolFieldUpdateOperationsInput } from "../inputs/NullableBoolFieldUpdateOperationsInput";
 import { NullableDateTimeFieldUpdateOperationsInput } from "../inputs/NullableDateTimeFieldUpdateOperationsInput";
 import { NullableFloatFieldUpdateOperationsInput } from "../inputs/NullableFloatFieldUpdateOperationsInput";
@@ -33,4 +35,6 @@ export declare class VenuesUpdateWithoutUploadFileMorphInput {
     outdoor_dinning?: NullableBoolFieldUpdateOperationsInput | undefined;
     outdoor_bar?: NullableBoolFieldUpdateOperationsInput | undefined;
     venueType?: VenueTypeUpdateOneWithoutVenuesInput | undefined;
+    favourite?: FavouritesUpdateOneWithoutVenueInput | undefined;
+    itinerary_places?: Itinerary_placesUpdateOneWithoutVenueInput | undefined;
 }

@@ -39,29 +39,17 @@ __decorate([
     __metadata("design:type", Number)
 ], Itinerary_placesMaxAggregate.prototype, "id", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    __metadata("design:type", String)
-], Itinerary_placesMaxAggregate.prototype, "user_id", void 0);
-__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: true
     }),
     __metadata("design:type", Number)
 ], Itinerary_placesMaxAggregate.prototype, "itinerary_id", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => Date, {
+    TypeGraphQL.Field(_type => String, {
         nullable: true
     }),
-    __metadata("design:type", Date)
-], Itinerary_placesMaxAggregate.prototype, "date", void 0);
-__decorate([
-    TypeGraphQL.Field(_type => Date, {
-        nullable: true
-    }),
-    __metadata("design:type", Date)
-], Itinerary_placesMaxAggregate.prototype, "time", void 0);
+    __metadata("design:type", String)
+], Itinerary_placesMaxAggregate.prototype, "user_id", void 0);
 __decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: true
@@ -86,6 +74,24 @@ __decorate([
     }),
     __metadata("design:type", Date)
 ], Itinerary_placesMaxAggregate.prototype, "updated_at", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Date, {
+        nullable: true
+    }),
+    __metadata("design:type", Date)
+], Itinerary_placesMaxAggregate.prototype, "date", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Date, {
+        nullable: true
+    }),
+    __metadata("design:type", Date)
+], Itinerary_placesMaxAggregate.prototype, "time", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    __metadata("design:type", Number)
+], Itinerary_placesMaxAggregate.prototype, "venue_id", void 0);
 Itinerary_placesMaxAggregate = __decorate([
     TypeGraphQL.ObjectType({
         isAbstract: true
