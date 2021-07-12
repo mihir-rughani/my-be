@@ -6,7 +6,6 @@ import { graphqlHTTP } from "express-graphql";
 import * as dotenv from "dotenv";
 import { resolvers } from "./src/prisma/generated/type-graphql";
 import { PrismaClient } from "@prisma/client";
-import { CustomItineraryPlacesResolver } from "./src/resolvers/CustomItineraryPlacesResolver";
 
 const PORT = process.env.PORT || 3500;
 const prisma = new PrismaClient();
