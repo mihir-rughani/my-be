@@ -1,3 +1,4 @@
+export { FavouritesCrudResolver } from "./Favourites/FavouritesCrudResolver";
 export { ItineraryCrudResolver } from "./Itinerary/ItineraryCrudResolver";
 export { Itinerary_placesCrudResolver } from "./Itinerary_places/Itinerary_placesCrudResolver";
 export { Upload_fileCrudResolver } from "./Upload_file/Upload_fileCrudResolver";

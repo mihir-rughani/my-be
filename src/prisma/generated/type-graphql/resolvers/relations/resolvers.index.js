@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.VenuesRelationsResolver = exports.VenueTypeRelationsResolver = exports.Upload_file_morphRelationsResolver = exports.Upload_fileRelationsResolver = exports.Itinerary_placesRelationsResolver = exports.ItineraryRelationsResolver = void 0;
+exports.VenuesRelationsResolver = exports.VenueTypeRelationsResolver = exports.Upload_file_morphRelationsResolver = exports.Upload_fileRelationsResolver = exports.Itinerary_placesRelationsResolver = exports.ItineraryRelationsResolver = exports.FavouritesRelationsResolver = void 0;
+var FavouritesRelationsResolver_1 = require("./Favourites/FavouritesRelationsResolver");
+Object.defineProperty(exports, "FavouritesRelationsResolver", { enumerable: true, get: function () { return FavouritesRelationsResolver_1.FavouritesRelationsResolver; } });
 var ItineraryRelationsResolver_1 = require("./Itinerary/ItineraryRelationsResolver");
 Object.defineProperty(exports, "ItineraryRelationsResolver", { enumerable: true, get: function () { return ItineraryRelationsResolver_1.ItineraryRelationsResolver; } });
 var Itinerary_placesRelationsResolver_1 = require("./Itinerary_places/Itinerary_placesRelationsResolver");

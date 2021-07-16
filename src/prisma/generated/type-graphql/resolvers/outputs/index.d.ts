@@ -1,10 +1,17 @@
 export { AffectedRowsOutput } from "./AffectedRowsOutput";
+export { AggregateFavourites } from "./AggregateFavourites";
 export { AggregateItinerary } from "./AggregateItinerary";
 export { AggregateItinerary_places } from "./AggregateItinerary_places";
 export { AggregateUpload_file } from "./AggregateUpload_file";
 export { AggregateUpload_file_morph } from "./AggregateUpload_file_morph";
 export { AggregateVenueType } from "./AggregateVenueType";
 export { AggregateVenues } from "./AggregateVenues";
+export { FavouritesAvgAggregate } from "./FavouritesAvgAggregate";
+export { FavouritesCountAggregate } from "./FavouritesCountAggregate";
+export { FavouritesGroupBy } from "./FavouritesGroupBy";
+export { FavouritesMaxAggregate } from "./FavouritesMaxAggregate";
+export { FavouritesMinAggregate } from "./FavouritesMinAggregate";
+export { FavouritesSumAggregate } from "./FavouritesSumAggregate";
 export { ItineraryAvgAggregate } from "./ItineraryAvgAggregate";
 export { ItineraryCountAggregate } from "./ItineraryCountAggregate";
 export { ItineraryGroupBy } from "./ItineraryGroupBy";

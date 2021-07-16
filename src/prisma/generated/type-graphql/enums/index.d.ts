@@ -1,3 +1,4 @@
+export { FavouritesScalarFieldEnum } from "./FavouritesScalarFieldEnum";
 export { ItineraryScalarFieldEnum } from "./ItineraryScalarFieldEnum";
 export { Itinerary_placesScalarFieldEnum } from "./Itinerary_placesScalarFieldEnum";
 export { QueryMode } from "./QueryMode";

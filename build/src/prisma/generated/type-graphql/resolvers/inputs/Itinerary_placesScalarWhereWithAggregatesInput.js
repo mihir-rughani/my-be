@@ -46,6 +46,7 @@ const DateTimeNullableWithAggregatesFilter_1 = require("../inputs/DateTimeNullab
 const IntNullableWithAggregatesFilter_1 = require("../inputs/IntNullableWithAggregatesFilter");
 const IntWithAggregatesFilter_1 = require("../inputs/IntWithAggregatesFilter");
 const JsonNullableWithAggregatesFilter_1 = require("../inputs/JsonNullableWithAggregatesFilter");
+const JsonWithAggregatesFilter_1 = require("../inputs/JsonWithAggregatesFilter");
 const StringNullableWithAggregatesFilter_1 = require("../inputs/StringNullableWithAggregatesFilter");
 let Itinerary_placesScalarWhereWithAggregatesInput = Itinerary_placesScalarWhereWithAggregatesInput_1 = class Itinerary_placesScalarWhereWithAggregatesInput {
 };
@@ -74,23 +75,29 @@ __decorate([
     __metadata("design:type", IntWithAggregatesFilter_1.IntWithAggregatesFilter)
 ], Itinerary_placesScalarWhereWithAggregatesInput.prototype, "id", void 0);
 __decorate([
+    TypeGraphQL.Field(_type => IntWithAggregatesFilter_1.IntWithAggregatesFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", IntWithAggregatesFilter_1.IntWithAggregatesFilter)
+], Itinerary_placesScalarWhereWithAggregatesInput.prototype, "itinerary_id", void 0);
+__decorate([
     TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
         nullable: true
     }),
     __metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
 ], Itinerary_placesScalarWhereWithAggregatesInput.prototype, "user_id", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter, {
+    TypeGraphQL.Field(_type => JsonWithAggregatesFilter_1.JsonWithAggregatesFilter, {
         nullable: true
     }),
-    __metadata("design:type", IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter)
-], Itinerary_placesScalarWhereWithAggregatesInput.prototype, "itinerary_id", void 0);
+    __metadata("design:type", JsonWithAggregatesFilter_1.JsonWithAggregatesFilter)
+], Itinerary_placesScalarWhereWithAggregatesInput.prototype, "venue_data", void 0);
 __decorate([
     TypeGraphQL.Field(_type => JsonNullableWithAggregatesFilter_1.JsonNullableWithAggregatesFilter, {
         nullable: true
     }),
     __metadata("design:type", JsonNullableWithAggregatesFilter_1.JsonNullableWithAggregatesFilter)
-], Itinerary_placesScalarWhereWithAggregatesInput.prototype, "venue_data", void 0);
+], Itinerary_placesScalarWhereWithAggregatesInput.prototype, "bestFor", void 0);
 __decorate([
     TypeGraphQL.Field(_type => IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter, {
         nullable: true
@@ -115,6 +122,24 @@ __decorate([
     }),
     __metadata("design:type", DateTimeNullableWithAggregatesFilter_1.DateTimeNullableWithAggregatesFilter)
 ], Itinerary_placesScalarWhereWithAggregatesInput.prototype, "updated_at", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => DateTimeNullableWithAggregatesFilter_1.DateTimeNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", DateTimeNullableWithAggregatesFilter_1.DateTimeNullableWithAggregatesFilter)
+], Itinerary_placesScalarWhereWithAggregatesInput.prototype, "date", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => DateTimeNullableWithAggregatesFilter_1.DateTimeNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", DateTimeNullableWithAggregatesFilter_1.DateTimeNullableWithAggregatesFilter)
+], Itinerary_placesScalarWhereWithAggregatesInput.prototype, "time", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter)
+], Itinerary_placesScalarWhereWithAggregatesInput.prototype, "venue_id", void 0);
 Itinerary_placesScalarWhereWithAggregatesInput = Itinerary_placesScalarWhereWithAggregatesInput_1 = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

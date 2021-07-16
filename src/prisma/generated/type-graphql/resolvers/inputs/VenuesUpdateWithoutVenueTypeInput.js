@@ -30,6 +30,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.VenuesUpdateWithoutVenueTypeInput = void 0;
 const TypeGraphQL = __importStar(require("type-graphql"));
+const FavouritesUpdateOneWithoutVenueInput_1 = require("../inputs/FavouritesUpdateOneWithoutVenueInput");
+const Itinerary_placesUpdateOneWithoutVenueInput_1 = require("../inputs/Itinerary_placesUpdateOneWithoutVenueInput");
 const NullableBoolFieldUpdateOperationsInput_1 = require("../inputs/NullableBoolFieldUpdateOperationsInput");
 const NullableDateTimeFieldUpdateOperationsInput_1 = require("../inputs/NullableDateTimeFieldUpdateOperationsInput");
 const NullableFloatFieldUpdateOperationsInput_1 = require("../inputs/NullableFloatFieldUpdateOperationsInput");
@@ -206,6 +208,18 @@ __decorate([
     }),
     __metadata("design:type", Upload_file_morphUpdateManyWithoutVenuesInput_1.Upload_file_morphUpdateManyWithoutVenuesInput)
 ], VenuesUpdateWithoutVenueTypeInput.prototype, "uploadFileMorph", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => FavouritesUpdateOneWithoutVenueInput_1.FavouritesUpdateOneWithoutVenueInput, {
+        nullable: true
+    }),
+    __metadata("design:type", FavouritesUpdateOneWithoutVenueInput_1.FavouritesUpdateOneWithoutVenueInput)
+], VenuesUpdateWithoutVenueTypeInput.prototype, "favourite", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Itinerary_placesUpdateOneWithoutVenueInput_1.Itinerary_placesUpdateOneWithoutVenueInput, {
+        nullable: true
+    }),
+    __metadata("design:type", Itinerary_placesUpdateOneWithoutVenueInput_1.Itinerary_placesUpdateOneWithoutVenueInput)
+], VenuesUpdateWithoutVenueTypeInput.prototype, "itinerary_places", void 0);
 VenuesUpdateWithoutVenueTypeInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

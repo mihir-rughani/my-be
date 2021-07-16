@@ -56,6 +56,12 @@ __decorate([
     }),
     __metadata("design:type", Number)
 ], Itinerary_placesAvgAggregate.prototype, "updated_by", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Float, {
+        nullable: true
+    }),
+    __metadata("design:type", Number)
+], Itinerary_placesAvgAggregate.prototype, "venue_id", void 0);
 Itinerary_placesAvgAggregate = __decorate([
     TypeGraphQL.ObjectType({
         isAbstract: true

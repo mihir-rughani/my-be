@@ -24,13 +24,17 @@ const TypeGraphQL = __importStar(require("type-graphql"));
 var Itinerary_placesScalarFieldEnum;
 (function (Itinerary_placesScalarFieldEnum) {
     Itinerary_placesScalarFieldEnum["id"] = "id";
-    Itinerary_placesScalarFieldEnum["user_id"] = "user_id";
     Itinerary_placesScalarFieldEnum["itinerary_id"] = "itinerary_id";
+    Itinerary_placesScalarFieldEnum["user_id"] = "user_id";
     Itinerary_placesScalarFieldEnum["venue_data"] = "venue_data";
+    Itinerary_placesScalarFieldEnum["bestFor"] = "bestFor";
     Itinerary_placesScalarFieldEnum["created_by"] = "created_by";
     Itinerary_placesScalarFieldEnum["updated_by"] = "updated_by";
     Itinerary_placesScalarFieldEnum["created_at"] = "created_at";
     Itinerary_placesScalarFieldEnum["updated_at"] = "updated_at";
+    Itinerary_placesScalarFieldEnum["date"] = "date";
+    Itinerary_placesScalarFieldEnum["time"] = "time";
+    Itinerary_placesScalarFieldEnum["venue_id"] = "venue_id";
 })(Itinerary_placesScalarFieldEnum = exports.Itinerary_placesScalarFieldEnum || (exports.Itinerary_placesScalarFieldEnum = {}));
 TypeGraphQL.registerEnumType(Itinerary_placesScalarFieldEnum, {
     name: "Itinerary_placesScalarFieldEnum",

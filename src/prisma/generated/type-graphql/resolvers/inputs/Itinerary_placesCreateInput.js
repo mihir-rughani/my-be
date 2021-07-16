@@ -33,6 +33,7 @@ const TypeGraphQL = __importStar(require("type-graphql"));
 const GraphQLScalars = __importStar(require("graphql-scalars"));
 const client_1 = require("@prisma/client");
 const ItineraryCreateNestedOneWithoutPlacesInput_1 = require("../inputs/ItineraryCreateNestedOneWithoutPlacesInput");
+const VenuesCreateNestedOneWithoutItinerary_placesInput_1 = require("../inputs/VenuesCreateNestedOneWithoutItinerary_placesInput");
 let Itinerary_placesCreateInput = class Itinerary_placesCreateInput {
 };
 __decorate([
@@ -43,10 +44,16 @@ __decorate([
 ], Itinerary_placesCreateInput.prototype, "user_id", void 0);
 __decorate([
     TypeGraphQL.Field(_type => GraphQLScalars.JSONResolver, {
-        nullable: true
+        nullable: false
     }),
     __metadata("design:type", Object)
 ], Itinerary_placesCreateInput.prototype, "venue_data", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => GraphQLScalars.JSONResolver, {
+        nullable: true
+    }),
+    __metadata("design:type", Object)
+], Itinerary_placesCreateInput.prototype, "bestFor", void 0);
 __decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: true
@@ -71,6 +78,24 @@ __decorate([
     }),
     __metadata("design:type", Date)
 ], Itinerary_placesCreateInput.prototype, "updated_at", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Date, {
+        nullable: true
+    }),
+    __metadata("design:type", Date)
+], Itinerary_placesCreateInput.prototype, "date", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => Date, {
+        nullable: true
+    }),
+    __metadata("design:type", Date)
+], Itinerary_placesCreateInput.prototype, "time", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => VenuesCreateNestedOneWithoutItinerary_placesInput_1.VenuesCreateNestedOneWithoutItinerary_placesInput, {
+        nullable: true
+    }),
+    __metadata("design:type", VenuesCreateNestedOneWithoutItinerary_placesInput_1.VenuesCreateNestedOneWithoutItinerary_placesInput)
+], Itinerary_placesCreateInput.prototype, "venue", void 0);
 __decorate([
     TypeGraphQL.Field(_type => ItineraryCreateNestedOneWithoutPlacesInput_1.ItineraryCreateNestedOneWithoutPlacesInput, {
         nullable: true

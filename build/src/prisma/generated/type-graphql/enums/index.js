@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.VenuesScalarFieldEnum = exports.VenueTypeScalarFieldEnum = exports.Upload_file_morphScalarFieldEnum = exports.Upload_fileScalarFieldEnum = exports.SortOrder = exports.QueryMode = exports.Itinerary_placesScalarFieldEnum = exports.ItineraryScalarFieldEnum = void 0;
+exports.VenuesScalarFieldEnum = exports.VenueTypeScalarFieldEnum = exports.Upload_file_morphScalarFieldEnum = exports.Upload_fileScalarFieldEnum = exports.SortOrder = exports.QueryMode = exports.Itinerary_placesScalarFieldEnum = exports.ItineraryScalarFieldEnum = exports.FavouritesScalarFieldEnum = void 0;
+var FavouritesScalarFieldEnum_1 = require("./FavouritesScalarFieldEnum");
+Object.defineProperty(exports, "FavouritesScalarFieldEnum", { enumerable: true, get: function () { return FavouritesScalarFieldEnum_1.FavouritesScalarFieldEnum; } });
 var ItineraryScalarFieldEnum_1 = require("./ItineraryScalarFieldEnum");
 Object.defineProperty(exports, "ItineraryScalarFieldEnum", { enumerable: true, get: function () { return ItineraryScalarFieldEnum_1.ItineraryScalarFieldEnum; } });
 var Itinerary_placesScalarFieldEnum_1 = require("./Itinerary_placesScalarFieldEnum");

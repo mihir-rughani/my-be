@@ -1,3 +1,15 @@
+export { FindUniqueFavouritesResolver } from "./Favourites/FindUniqueFavouritesResolver";
+export { FindFirstFavouritesResolver } from "./Favourites/FindFirstFavouritesResolver";
+export { FindManyFavouritesResolver } from "./Favourites/FindManyFavouritesResolver";
+export { CreateFavouritesResolver } from "./Favourites/CreateFavouritesResolver";
+export { CreateManyFavouritesResolver } from "./Favourites/CreateManyFavouritesResolver";
+export { DeleteFavouritesResolver } from "./Favourites/DeleteFavouritesResolver";
+export { UpdateFavouritesResolver } from "./Favourites/UpdateFavouritesResolver";
+export { DeleteManyFavouritesResolver } from "./Favourites/DeleteManyFavouritesResolver";
+export { UpdateManyFavouritesResolver } from "./Favourites/UpdateManyFavouritesResolver";
+export { UpsertFavouritesResolver } from "./Favourites/UpsertFavouritesResolver";
+export { AggregateFavouritesResolver } from "./Favourites/AggregateFavouritesResolver";
+export { GroupByFavouritesResolver } from "./Favourites/GroupByFavouritesResolver";
 export { FindUniqueItineraryResolver } from "./Itinerary/FindUniqueItineraryResolver";
 export { FindFirstItineraryResolver } from "./Itinerary/FindFirstItineraryResolver";
 export { FindManyItineraryResolver } from "./Itinerary/FindManyItineraryResolver";

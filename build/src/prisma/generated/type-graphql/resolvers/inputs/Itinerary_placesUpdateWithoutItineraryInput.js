@@ -46,6 +46,7 @@ const client_1 = require("@prisma/client");
 const NullableDateTimeFieldUpdateOperationsInput_1 = require("../inputs/NullableDateTimeFieldUpdateOperationsInput");
 const NullableIntFieldUpdateOperationsInput_1 = require("../inputs/NullableIntFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
+const VenuesUpdateOneWithoutItinerary_placesInput_1 = require("../inputs/VenuesUpdateOneWithoutItinerary_placesInput");
 let Itinerary_placesUpdateWithoutItineraryInput = class Itinerary_placesUpdateWithoutItineraryInput {
 };
 __decorate([
@@ -60,6 +61,12 @@ __decorate([
     }),
     __metadata("design:type", Object)
 ], Itinerary_placesUpdateWithoutItineraryInput.prototype, "venue_data", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => GraphQLScalars.JSONResolver, {
+        nullable: true
+    }),
+    __metadata("design:type", Object)
+], Itinerary_placesUpdateWithoutItineraryInput.prototype, "bestFor", void 0);
 __decorate([
     TypeGraphQL.Field(_type => NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput, {
         nullable: true
@@ -84,6 +91,24 @@ __decorate([
     }),
     __metadata("design:type", NullableDateTimeFieldUpdateOperationsInput_1.NullableDateTimeFieldUpdateOperationsInput)
 ], Itinerary_placesUpdateWithoutItineraryInput.prototype, "updated_at", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => NullableDateTimeFieldUpdateOperationsInput_1.NullableDateTimeFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", NullableDateTimeFieldUpdateOperationsInput_1.NullableDateTimeFieldUpdateOperationsInput)
+], Itinerary_placesUpdateWithoutItineraryInput.prototype, "date", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => NullableDateTimeFieldUpdateOperationsInput_1.NullableDateTimeFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    __metadata("design:type", NullableDateTimeFieldUpdateOperationsInput_1.NullableDateTimeFieldUpdateOperationsInput)
+], Itinerary_placesUpdateWithoutItineraryInput.prototype, "time", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => VenuesUpdateOneWithoutItinerary_placesInput_1.VenuesUpdateOneWithoutItinerary_placesInput, {
+        nullable: true
+    }),
+    __metadata("design:type", VenuesUpdateOneWithoutItinerary_placesInput_1.VenuesUpdateOneWithoutItinerary_placesInput)
+], Itinerary_placesUpdateWithoutItineraryInput.prototype, "venue", void 0);
 Itinerary_placesUpdateWithoutItineraryInput = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true

@@ -10,11 +10,6 @@ const type_graphql_2 = require("./src/prisma/generated/type-graphql");
 const client_1 = require("@prisma/client");
 const PORT = process.env.PORT || 3500;
 const prisma = new client_1.PrismaClient();
-class Context {
-    constructor(prisma) {
-        this.prisma = prisma;
-    }
-}
 dotenv.config();
 // (async () => {
 // 	await dbConnect();
@@ -57,7 +52,7 @@ app.post("/api/media-convert-status-update", (req, res) => {
 });
 app.use("/graphql", async (req, res) => {
     let schema = await type_graphql_1.buildSchema({
-        resolvers: type_graphql_2.resolvers,
+        resolvers: [...type_graphql_2.resolvers],
         validate: { enableDebugMessages: false }
     });
     try {

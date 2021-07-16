@@ -45,6 +45,7 @@ const TypeGraphQL = __importStar(require("type-graphql"));
 const DateTimeNullableFilter_1 = require("../inputs/DateTimeNullableFilter");
 const IntFilter_1 = require("../inputs/IntFilter");
 const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
+const JsonFilter_1 = require("../inputs/JsonFilter");
 const JsonNullableFilter_1 = require("../inputs/JsonNullableFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 let Itinerary_placesScalarWhereInput = Itinerary_placesScalarWhereInput_1 = class Itinerary_placesScalarWhereInput {
@@ -74,23 +75,29 @@ __decorate([
     __metadata("design:type", IntFilter_1.IntFilter)
 ], Itinerary_placesScalarWhereInput.prototype, "id", void 0);
 __decorate([
+    TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", IntFilter_1.IntFilter)
+], Itinerary_placesScalarWhereInput.prototype, "itinerary_id", void 0);
+__decorate([
     TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
     }),
     __metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], Itinerary_placesScalarWhereInput.prototype, "user_id", void 0);
 __decorate([
-    TypeGraphQL.Field(_type => IntNullableFilter_1.IntNullableFilter, {
+    TypeGraphQL.Field(_type => JsonFilter_1.JsonFilter, {
         nullable: true
     }),
-    __metadata("design:type", IntNullableFilter_1.IntNullableFilter)
-], Itinerary_placesScalarWhereInput.prototype, "itinerary_id", void 0);
+    __metadata("design:type", JsonFilter_1.JsonFilter)
+], Itinerary_placesScalarWhereInput.prototype, "venue_data", void 0);
 __decorate([
     TypeGraphQL.Field(_type => JsonNullableFilter_1.JsonNullableFilter, {
         nullable: true
     }),
     __metadata("design:type", JsonNullableFilter_1.JsonNullableFilter)
-], Itinerary_placesScalarWhereInput.prototype, "venue_data", void 0);
+], Itinerary_placesScalarWhereInput.prototype, "bestFor", void 0);
 __decorate([
     TypeGraphQL.Field(_type => IntNullableFilter_1.IntNullableFilter, {
         nullable: true
@@ -115,6 +122,24 @@ __decorate([
     }),
     __metadata("design:type", DateTimeNullableFilter_1.DateTimeNullableFilter)
 ], Itinerary_placesScalarWhereInput.prototype, "updated_at", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => DateTimeNullableFilter_1.DateTimeNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", DateTimeNullableFilter_1.DateTimeNullableFilter)
+], Itinerary_placesScalarWhereInput.prototype, "date", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => DateTimeNullableFilter_1.DateTimeNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", DateTimeNullableFilter_1.DateTimeNullableFilter)
+], Itinerary_placesScalarWhereInput.prototype, "time", void 0);
+__decorate([
+    TypeGraphQL.Field(_type => IntNullableFilter_1.IntNullableFilter, {
+        nullable: true
+    }),
+    __metadata("design:type", IntNullableFilter_1.IntNullableFilter)
+], Itinerary_placesScalarWhereInput.prototype, "venue_id", void 0);
 Itinerary_placesScalarWhereInput = Itinerary_placesScalarWhereInput_1 = __decorate([
     TypeGraphQL.InputType({
         isAbstract: true
